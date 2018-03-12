@@ -1,0 +1,189 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:switches
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:crf_1
+LIBS:VESC_6-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title "VESC 6.4"
+Date "2016-07-07"
+Rev "A"
+Comp "Benjamin Vedder"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C33
+U 1 1 53F59FA3
+P 4900 4550
+F 0 "C33" H 4925 4650 40  0000 L CNN
+F 1 "2.2u" H 4925 4475 40  0000 L CNN
+F 2 "CRF1:SMD-0603_c" H 4938 4400 30  0001 C CNN
+F 3 "" H 4900 4550 60  0000 C CNN
+	1    4900 4550
+	1    0    0    -1  
+$EndComp
+Text HLabel 5400 4150 0    60   Output ~ 0
+RX
+Text HLabel 5400 3850 0    60   Input ~ 0
+TX
+Text HLabel 7375 3950 2    60   Input ~ 0
+CANH
+Text HLabel 7375 4050 2    60   Input ~ 0
+CANL
+$Comp
+L TJA1051TK3 U4
+U 1 1 5A8B2B4D
+P 6000 4000
+F 0 "U4" H 6000 4300 60  0000 C CNN
+F 1 "TJA1051TK3" H 6000 4400 60  0000 C CNN
+F 2 "Housings_DFN_QFN:DFN-8-1EP_3x3mm_Pitch0.65mm" H 6000 4000 60  0001 C CNN
+F 3 "" H 6000 4000 60  0000 C CNN
+	1    6000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C34
+U 1 1 5A8B2DCC
+P 6775 4550
+F 0 "C34" H 6800 4650 40  0000 L CNN
+F 1 "2.2u" H 6800 4475 40  0000 L CNN
+F 2 "CRF1:SMD-0603_c" H 6813 4400 30  0001 C CNN
+F 3 "" H 6775 4550 60  0000 C CNN
+	1    6775 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR063
+U 1 1 5A8B3017
+P 4900 3750
+F 0 "#PWR063" H 4900 3600 50  0001 C CNN
+F 1 "+5V" H 4900 3890 50  0000 C CNN
+F 2 "" H 4900 3750 50  0001 C CNN
+F 3 "" H 4900 3750 50  0001 C CNN
+	1    4900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 5A8B3269
+P 7025 4000
+F 0 "R23" V 7105 4000 50  0000 C CNN
+F 1 "220R" V 7025 4000 50  0000 C CNN
+F 2 "CRF1:SMD-0603_r" V 6955 4000 50  0001 C CNN
+F 3 "" H 7025 4000 50  0001 C CNN
+	1    7025 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR064
+U 1 1 5A8B3886
+P 6775 3675
+F 0 "#PWR064" H 6775 3525 50  0001 C CNN
+F 1 "VCC" H 6775 3825 50  0000 C CNN
+F 2 "" H 6775 3675 50  0001 C CNN
+F 3 "" H 6775 3675 50  0001 C CNN
+	1    6775 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4200 6900 4050
+Wire Wire Line
+	6900 4050 6600 4050
+Wire Wire Line
+	6600 3950 6900 3950
+Wire Wire Line
+	6900 3950 6900 3800
+Wire Wire Line
+	6900 3800 7175 3800
+Wire Wire Line
+	6600 4150 6775 4150
+Wire Wire Line
+	6775 3675 6775 4400
+Wire Wire Line
+	6775 4700 6775 4925
+Wire Wire Line
+	4900 4875 6775 4875
+Wire Wire Line
+	5125 4875 5125 3950
+Wire Wire Line
+	6000 4550 6000 4875
+Connection ~ 6000 4875
+Wire Wire Line
+	5125 3950 5400 3950
+Wire Wire Line
+	4900 4700 4900 4875
+Connection ~ 5125 4875
+Wire Wire Line
+	4900 3750 4900 4400
+Wire Wire Line
+	4900 4050 5400 4050
+Connection ~ 4900 4050
+Wire Wire Line
+	6600 3850 6650 3850
+Wire Wire Line
+	6650 3850 6650 4875
+Connection ~ 6650 4875
+Wire Wire Line
+	7025 3850 7025 3800
+Connection ~ 7025 3800
+Wire Wire Line
+	7025 4150 7025 4200
+Connection ~ 7025 4200
+Wire Wire Line
+	7175 4200 7175 4050
+Wire Wire Line
+	7175 4050 7375 4050
+Wire Wire Line
+	7175 3800 7175 3950
+Wire Wire Line
+	7175 3950 7375 3950
+Wire Wire Line
+	6900 4200 7175 4200
+Connection ~ 6775 4150
+$Comp
+L GND #PWR065
+U 1 1 5A8B3BF5
+P 6775 4925
+F 0 "#PWR065" H 6775 4675 50  0001 C CNN
+F 1 "GND" H 6775 4775 50  0000 C CNN
+F 2 "" H 6775 4925 50  0001 C CNN
+F 3 "" H 6775 4925 50  0001 C CNN
+	1    6775 4925
+	1    0    0    -1  
+$EndComp
+Connection ~ 6775 4875
+$EndSCHEMATC

@@ -1,0 +1,59 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Crystal_GND3_2
+D Three pin crystal (GND on pin 3), e.g. in SMD package
+K quartz ceramic resonator oscillator
+$ENDCMP
+#
+$CMP IRF3205
+D 200A Id, 60V Vds, 1.8mOhm Rds, Single N-Channel HEXFET Power MOSFET in a TO-220AB package
+K Single N-Channel HEXFET Power MOSFET
+F http://www.irf.com/product-info/datasheets/data/irf7749l1pbf.pdf
+$ENDCMP
+#
+$CMP IRF540N
+D 100V Vds, 33A Id, HEXFET N-Channel MOSFET, TO-220
+K HEXFET N-Channel MOSFET
+F http://www.irf.com/product-info/datasheets/data/irf540n.pdf
+$ENDCMP
+#
+$CMP IRF7749
+D 60V Vds, 200A Id, N-Channel Power MOSFET, TO-220
+K N-Channel Power MOSFET
+F http://www.irf.com/product-info/datasheets/data/irf7749l1pbf.pdf
+$ENDCMP
+#
+$CMP IRLIZ44N
+D 30A Id, 55V Vds, 22mOhm Rds, Single N-Channel HEXFET Power MOSFET in a TO-220AB package
+K Single N-Channel HEXFET Power MOSFET
+F http://www.irf.com/product-info/datasheets/data/irliz44n.pdf
+$ENDCMP
+#
+$CMP IRLZ34N
+D 30A Id, 55V Vds, 35mOhm Rds, Single N-Channel HEXFET Power MOSFET in a TO-220AB package
+K Single N-Channel HEXFET Power MOSFET
+F http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720
+$ENDCMP
+#
+$CMP IRLZ44N
+D 47A Id, 55V Vds, 22mOhm Rds, Single N-Channel HEXFET Power MOSFET in a TO-220AB package
+K Single N-Channel HEXFET Power MOSFET
+F http://www.irf.com/product-info/datasheets/data/irlz44n.pdf
+$ENDCMP
+#
+$CMP LM3671
+D LM3671/-Q1 2-MHz, 600-mA Step-Down DC-DC Converter
+F http://www.ti.com/lit/ds/symlink/lm3671.pdf
+$ENDCMP
+#
+$CMP SW_SPDT-CST
+D Switch, single pole double throw
+K switch single-pole double-throw spdt ON-ON
+$ENDCMP
+#
+$CMP USB_OTG-CST
+D USB mini/micro connector
+K connector USB
+$ENDCMP
+#
+#End Doc Library

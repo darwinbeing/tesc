@@ -1,0 +1,13 @@
+(fp_lib_table
+  (lib (name CRF1)(type KiCad)(uri "$(KIPRJMOD)/Libraries/crf1.pretty")(options "")(descr ""))
+  (lib (name w_smd_inductors)(type Legacy)(uri "$(KIPRJMOD)/Libraries/w_smd_inductors.mod")(options "")(descr ""))
+  (lib (name w_smd_cap)(type Legacy)(uri "$(KIPRJMOD)/Libraries/w_smd_cap.mod")(options "")(descr ""))
+  (lib (name "JST conn")(type KiCad)(uri "$(KIPRJMOD)/Libraries/w_conn_jst-ph.pretty")(options "")(descr ""))
+  (lib (name w_smd_diode)(type Legacy)(uri "$(KIPRJMOD)/Libraries/w_smd_diode.mod")(options "")(descr ""))
+  (lib (name mojaKniznica)(type KiCad)(uri "$(KIPRJMOD)/Libraries/mojaKniznica.pretty")(options "")(descr ""))
+  (lib (name p16261)(type KiCad)(uri "$(KIPRJMOD)/Libraries/p16261.pretty")(options "")(descr ""))
+  (lib (name drv8301)(type KiCad)(uri "$(KIPRJMOD)/Libraries/drv8301.pretty")(options "")(descr ""))
+  (lib (name mysensors_radios)(type KiCad)(uri "$(KIPRJMOD)/Libraries/mysensors_radios.pretty")(options "")(descr ""))
+  (lib (name Connector_Coaxial)(type KiCad)(uri "$(KIPRJMOD)/Libraries/Connector_Coaxial.pretty")(options "")(descr ""))
+
+)
