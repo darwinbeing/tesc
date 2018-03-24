@@ -49,7 +49,6 @@ F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  C_*
- *_c
 $ENDFPLIST
 DRAW
 P 2 0 1 20 -80 -30 80 -30 N
@@ -626,7 +625,6 @@ F3 "" 0 0 50 H I C CNN
 $FPLIST
  R_*
  R_*
- *_r
 $ENDFPLIST
 DRAW
 S -40 -100 40 100 0 1 10 N
