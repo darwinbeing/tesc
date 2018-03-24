@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:crf_1
+LIBS:crf_2
 LIBS:VESC_6-cache
 EELAYER 25 0
 EELAYER END
