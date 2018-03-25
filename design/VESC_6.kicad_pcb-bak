@@ -17,13 +17,13 @@
     (0 F.Cu signal)
     (1 GND.Cu signal hide)
     (2 PWR.Cu signal hide)
-    (31 B.Cu signal)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user)
-    (37 F.SilkS user hide)
+    (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user)
@@ -72,7 +72,7 @@
     (pad_drill 0)
     (pad_to_mask_clearance 0.0508)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFEF7F)
+    (visible_elements 7FFF6F7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions true)
@@ -6927,11 +6927,11 @@
     )
   )
 
-  (module CRF1:1PAD_6x5mm (layer F.Cu) (tedit 5AB75B25) (tstamp 5AE41A51)
+  (module CRF1:1PAD_6x5mm (layer F.Cu) (tedit 5AB7986D) (tstamp 5AE41A51)
     (at 155.829 68.58)
     (attr smd)
     (fp_text reference P2 (at 0 -4.3 90) (layer F.SilkS) hide
-      (effects (font (thickness 0.3048)))
+      (effects (font (size 0.635 0.635) (thickness 0.1016)))
     )
     (fp_text value BATT_- (at 0 4) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
@@ -6968,10 +6968,10 @@
       (net 24 SUPPLY) (zone_connect 2))
   )
 
-  (module CRF1:1PAD_4x5mm (layer F.Cu) (tedit 5AB78BF6) (tstamp 5AC984E8)
+  (module CRF1:1PAD_4x5mm (layer F.Cu) (tedit 5AB79859) (tstamp 5AC984E8)
     (at 168.783 68.58)
-    (fp_text reference P2 (at 0 -4.3 270) (layer F.SilkS)
-      (effects (font (thickness 0.3048)))
+    (fp_text reference P2 (at 0 -4.3 90) (layer F.SilkS) hide
+      (effects (font (size 0.635 0.635) (thickness 0.1016)))
     )
     (fp_text value BATT_- (at 0 4) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
