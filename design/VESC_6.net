@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/VESC_6.sch)
-    (date "2018 March 25, Sunday 19:08:12")
+    (date "2018 March 27, Tuesday 04:31:33")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1446,12 +1446,12 @@
         (pin (num 5) (name GND) (type power_in))
         (pin (num 6) (name Shield) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri "/Library/Application Support/kicad/library/device.lib"))
+    (library (logical conn)
+      (uri "/Library/Application Support/kicad/library/conn.lib"))
     (library (logical crf_1)
       (uri /Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/Libraries/crf_1.lib))
-    (library (logical conn)
-      (uri "/Library/Application Support/kicad/library/conn.lib")))
+    (library (logical device)
+      (uri "/Library/Application Support/kicad/library/device.lib")))
   (nets
     (net (code 1) (name /MCU/SERVO)
       (node (ref R6) (pin 1))
