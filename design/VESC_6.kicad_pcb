@@ -7845,9 +7845,9 @@
       (net 2 GND))
   )
 
-  (module CRF1:1PAD_4x5mm (layer F.Cu) (tedit 5AB952BD) (tstamp 5AEF0C0A)
+  (module CRF1:1PAD_4x5mm (layer F.Cu) (tedit 5AB97CD6) (tstamp 5AEF0C0A)
     (at 168.529 66.421 90)
-    (fp_text reference P2 (at 0 -4.3 180) (layer F.SilkS)
+    (fp_text reference P2 (at 0 -4.3 180) (layer F.SilkS) hide
       (effects (font (size 0.635 0.635) (thickness 0.1016)))
     )
     (fp_text value BATT_- (at 0 4 90) (layer F.SilkS) hide
