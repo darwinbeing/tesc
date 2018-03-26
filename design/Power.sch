@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:crf_1
-LIBS:VESC_6-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -782,7 +781,7 @@ Connection ~ 3550 1775
 Wire Wire Line
 	3875 2750 3875 3750
 Wire Wire Line
-	3875 3750 3550 3750
+	3550 3750 3875 3750
 Connection ~ 3550 3750
 Wire Wire Line
 	3550 3400 3550 4200
@@ -856,7 +855,7 @@ Connection ~ 6900 1775
 Wire Wire Line
 	7225 2750 7225 3750
 Wire Wire Line
-	7225 3750 6900 3750
+	6900 3750 7225 3750
 Connection ~ 6900 3750
 Wire Wire Line
 	7425 1775 7425 2450
@@ -885,14 +884,11 @@ Connection ~ 10225 3500
 Wire Wire Line
 	7875 3775 8200 3775
 Wire Wire Line
-	8875 3775 8500 3775
-Wire Wire Line
-	8875 3200 8875 3500
+	8875 3200 8875 3775
 Wire Wire Line
 	8875 3375 8750 3375
 Wire Wire Line
-	8750 3475 8875 3475
-Connection ~ 8875 3475
+	8875 3475 8750 3475
 Wire Wire Line
 	7875 3375 7875 3775
 Wire Wire Line
@@ -1006,8 +1002,6 @@ Connection ~ 3950 6175
 Wire Wire Line
 	3950 5475 3950 5675
 Wire Wire Line
-	8875 3475 8875 3775
-Wire Wire Line
 	3550 4200 10400 4200
 Connection ~ 6900 4200
 Connection ~ 10225 4200
@@ -1029,4 +1023,7 @@ Wire Wire Line
 Wire Wire Line
 	9350 5175 9350 5075
 Connection ~ 9350 5075
+Connection ~ 8875 3475
+Wire Wire Line
+	8875 3775 8500 3775
 $EndSCHEMATC
