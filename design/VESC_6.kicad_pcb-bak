@@ -15,9 +15,9 @@
   (page A4)
   (layers
     (0 F.Cu signal)
-    (1 GND.Cu signal hide)
-    (2 PWR.Cu signal hide)
-    (31 B.Cu signal hide)
+    (1 GND.Cu signal)
+    (2 PWR.Cu signal)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -35,7 +35,7 @@
     (46 B.CrtYd user)
     (47 F.CrtYd user)
     (48 B.Fab user)
-    (49 F.Fab user hide)
+    (49 F.Fab user)
   )
 
   (setup
@@ -72,7 +72,7 @@
     (pad_drill 0)
     (pad_to_mask_clearance 0.0508)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFF377F)
+    (visible_elements 7FFFF77F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions true)

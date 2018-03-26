@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:crf_1
+LIBS:VESC_6-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -781,7 +782,7 @@ Connection ~ 3550 1775
 Wire Wire Line
 	3875 2750 3875 3750
 Wire Wire Line
-	3550 3750 3875 3750
+	3875 3750 3550 3750
 Connection ~ 3550 3750
 Wire Wire Line
 	3550 3400 3550 4200
@@ -855,7 +856,7 @@ Connection ~ 6900 1775
 Wire Wire Line
 	7225 2750 7225 3750
 Wire Wire Line
-	6900 3750 7225 3750
+	7225 3750 6900 3750
 Connection ~ 6900 3750
 Wire Wire Line
 	7425 1775 7425 2450
