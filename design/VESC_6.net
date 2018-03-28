@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/VESC_6.sch)
-    (date "2018 March 28, Wednesday 23:26:40")
+    (date "2018 March 29, Thursday 00:29:20")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -293,7 +293,7 @@
       (tstamp 53F757A7))
     (comp (ref X1)
       (value 8m)
-      (footprint mojaKniznica:5x3.2KRISTALL)
+      (footprint Crystals:Crystal_SMD_5032_4Pads)
       (libsource (lib crf_1) (part CRYSTAL_SMD))
       (sheetpath (names /MCU/) (tstamps /53F7501A/))
       (tstamp 5A940C20))
@@ -905,7 +905,7 @@
       (tstamp 5A92E5F0))
     (comp (ref X2)
       (value 16M)
-      (footprint mojaKniznica:5x3.2KRISTALL)
+      (footprint Crystals:Crystal_SMD_5032_4Pads)
       (libsource (lib crf_1) (part CRYSTAL_SMD))
       (sheetpath (names /nrf/) (tstamps /5A8BE5A6/))
       (tstamp 5A94122D))
@@ -1448,10 +1448,10 @@
   (libraries
     (library (logical device)
       (uri "/Library/Application Support/kicad/library/device.lib"))
-    (library (logical conn)
-      (uri "/Library/Application Support/kicad/library/conn.lib"))
     (library (logical crf_1)
-      (uri /Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/Libraries/crf_1.lib)))
+      (uri /Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/Libraries/crf_1.lib))
+    (library (logical conn)
+      (uri "/Library/Application Support/kicad/library/conn.lib")))
   (nets
     (net (code 1) (name /MCU/SWCLK)
       (node (ref U1) (pin 49))

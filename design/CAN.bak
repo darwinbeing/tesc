@@ -51,19 +51,11 @@ U 1 1 53F59FA3
 P 5050 4450
 F 0 "C33" H 5075 4550 40  0000 L CNN
 F 1 "2.2u" H 5075 4375 40  0000 L CNN
-F 2 "CRF1:SMD-0603_c" H 5088 4300 30  0001 C CNN
+F 2 "Capacitors_SMD:C_0603" H 5088 4300 30  0001 C CNN
 F 3 "" H 5050 4450 60  0000 C CNN
 	1    5050 4450
 	1    0    0    -1  
 $EndComp
-Text HLabel 5550 4150 0    60   Output ~ 0
-RX
-Text HLabel 5550 3850 0    60   Input ~ 0
-TX
-Text HLabel 7225 3950 2    60   Input ~ 0
-CANH
-Text HLabel 7225 4050 2    60   Input ~ 0
-CANL
 $Comp
 L TJA1051TK3 U4
 U 1 1 5A8B2B4D
@@ -81,7 +73,7 @@ U 1 1 5A8B2DCC
 P 6625 4450
 F 0 "C34" H 6650 4550 40  0000 L CNN
 F 1 "2.2u" H 6650 4375 40  0000 L CNN
-F 2 "CRF1:SMD-0603_c" H 6663 4300 30  0001 C CNN
+F 2 "Capacitors_SMD:C_0603" H 6663 4300 30  0001 C CNN
 F 3 "" H 6625 4450 60  0000 C CNN
 	1    6625 4450
 	1    0    0    -1  
@@ -103,7 +95,7 @@ U 1 1 5A8B3269
 P 6875 4000
 F 0 "R23" V 6955 4000 50  0000 C CNN
 F 1 "220R" V 6875 4000 50  0000 C CNN
-F 2 "CRF1:SMD-0603_r" V 6805 4000 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 6805 4000 50  0001 C CNN
 F 3 "" H 6875 4000 50  0001 C CNN
 	1    6875 4000
 	1    0    0    -1  
@@ -130,6 +122,14 @@ F 3 "" H 6625 4825 50  0001 C CNN
 	1    6625 4825
 	1    0    0    -1  
 $EndComp
+Text HLabel 5550 4150 0    60   Output ~ 0
+RX
+Text HLabel 5550 3850 0    60   Input ~ 0
+TX
+Text HLabel 7225 3950 2    60   Input ~ 0
+CANH
+Text HLabel 7225 4050 2    60   Input ~ 0
+CANL
 Wire Wire Line
 	6750 4200 6750 4050
 Wire Wire Line
@@ -148,26 +148,20 @@ Wire Wire Line
 	6625 4600 6625 4825
 Wire Wire Line
 	6000 4775 6000 4450
-Connection ~ 6000 4775
 Wire Wire Line
 	5275 3950 5550 3950
 Wire Wire Line
 	5050 4600 5050 4775
-Connection ~ 5275 4775
 Wire Wire Line
 	5050 4050 5550 4050
-Connection ~ 5050 4050
 Wire Wire Line
 	6450 3850 6500 3850
 Wire Wire Line
 	6500 3850 6500 4775
-Connection ~ 6500 4775
 Wire Wire Line
 	6875 3850 6875 3800
-Connection ~ 6875 3800
 Wire Wire Line
 	6875 4150 6875 4200
-Connection ~ 6875 4200
 Wire Wire Line
 	7025 4200 7025 4050
 Wire Wire Line
@@ -178,12 +172,18 @@ Wire Wire Line
 	7025 3950 7225 3950
 Wire Wire Line
 	6750 4200 7025 4200
-Connection ~ 6625 4150
-Connection ~ 6625 4775
 Wire Wire Line
 	5050 4775 6625 4775
 Wire Wire Line
 	5050 3750 5050 4300
 Wire Wire Line
 	5275 3950 5275 4775
+Connection ~ 6000 4775
+Connection ~ 5275 4775
+Connection ~ 5050 4050
+Connection ~ 6500 4775
+Connection ~ 6875 3800
+Connection ~ 6875 4200
+Connection ~ 6625 4150
+Connection ~ 6625 4775
 $EndSCHEMATC
