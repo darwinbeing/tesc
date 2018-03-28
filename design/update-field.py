@@ -159,8 +159,10 @@ def main():
     logger.addHandler(handler)
     logger.setLevel(logging.DEBUG)
 
-    update_field("VESC_6.sch", 'footprint', 'CRF1:SMD-0603_r', 'Resistors_SMD:R_0603', True)
-    update_field("VESC_6.sch", 'footprint', 'CRF1:SMD-0603_c', 'Capacitors_SMD:C_0603', True)
+    # update_field("VESC_6.sch", 'footprint', 'CRF1:SMD-0603_r', 'Resistors_SMD:R_0603', True)
+    # update_field("VESC_6.sch", 'footprint', 'CRF1:SMD-0603_c', 'Capacitors_SMD:C_0603', True)
+
+    update_field("VESC_6.sch", 'footprint', 'w_smd_cap:c_1210', 'Capacitors_SMD:C_1210', True)
 
 if __name__ == "__main__":
     main()
