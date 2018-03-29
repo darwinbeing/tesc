@@ -472,7 +472,7 @@
       (net 24 SUPPLY))
     (pad D smd rect (at 4.65 -2.2) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 24 SUPPLY))
-    (model ${KISYS3DMOD}/Package_DirectFET.3dshapes/DirectFET_L8.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1025,7 +1025,7 @@
       (net 23 /DRV8301/SH_C))
     (pad D smd rect (at 4.65 -2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 23 /DRV8301/SH_C))
-    (model ${KISYS3DMOD}/Package_DirectFET.3dshapes/DirectFET_L8.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2852,7 +2852,7 @@
       (net 24 SUPPLY))
     (pad D smd rect (at 4.65 -2.2) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 24 SUPPLY))
-    (model ${KISYS3DMOD}/Package_DirectFET.3dshapes/DirectFET_L8.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4369,7 +4369,7 @@
       (net 19 /DRV8301/SH_A))
     (pad D smd rect (at 4.65 -2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 19 /DRV8301/SH_A))
-    (model ${KISYS3DMOD}/Package_DirectFET.3dshapes/DirectFET_L8.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4460,7 +4460,7 @@
       (net 24 SUPPLY))
     (pad D smd rect (at 4.65 -2.2) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 24 SUPPLY))
-    (model ${KISYS3DMOD}/Package_DirectFET.3dshapes/DirectFET_L8.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4551,7 +4551,7 @@
       (net 21 /DRV8301/SH_B))
     (pad D smd rect (at 4.65 -2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 21 /DRV8301/SH_B))
-    (model ${KISYS3DMOD}/Package_DirectFET.3dshapes/DirectFET_L8.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

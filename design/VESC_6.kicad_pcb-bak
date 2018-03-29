@@ -3,7 +3,7 @@
   (general
     (links 609)
     (no_connects 0)
-    (area 114.924999 54.924999 180.075001 120.075001)
+    (area 105.150001 50.3 181.603991 120.50776)
     (thickness 1.6)
     (drawings 57)
     (tracks 2126)
@@ -14,10 +14,10 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal hide)
+    (0 F.Cu signal)
     (1 GND.Cu signal hide)
     (2 PWR.Cu signal hide)
-    (31 B.Cu signal)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -72,7 +72,7 @@
     (pad_drill 0)
     (pad_to_mask_clearance 0.0508)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFF9F7F)
+    (visible_elements 7FFF5F7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions true)
@@ -472,7 +472,7 @@
       (net 24 SUPPLY))
     (pad D smd rect (at 4.65 -2.2) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 24 SUPPLY))
-    (model ${KISYS3DMOD}/Package_DirectFET.3dshapes/DirectFET_L8.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1025,7 +1025,7 @@
       (net 23 /DRV8301/SH_C))
     (pad D smd rect (at 4.65 -2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 23 /DRV8301/SH_C))
-    (model ${KISYS3DMOD}/Package_DirectFET.3dshapes/DirectFET_L8.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2852,7 +2852,7 @@
       (net 24 SUPPLY))
     (pad D smd rect (at 4.65 -2.2) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 24 SUPPLY))
-    (model ${KISYS3DMOD}/Package_DirectFET.3dshapes/DirectFET_L8.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4369,7 +4369,7 @@
       (net 19 /DRV8301/SH_A))
     (pad D smd rect (at 4.65 -2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 19 /DRV8301/SH_A))
-    (model ${KISYS3DMOD}/Package_DirectFET.3dshapes/DirectFET_L8.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4460,7 +4460,7 @@
       (net 24 SUPPLY))
     (pad D smd rect (at 4.65 -2.2) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 24 SUPPLY))
-    (model ${KISYS3DMOD}/Package_DirectFET.3dshapes/DirectFET_L8.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4551,7 +4551,7 @@
       (net 21 /DRV8301/SH_B))
     (pad D smd rect (at 4.65 -2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 21 /DRV8301/SH_B))
-    (model ${KISYS3DMOD}/Package_DirectFET.3dshapes/DirectFET_L8.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
