@@ -193,7 +193,7 @@ def get_caps(capacitance):
                             # print(rate)
                             price_cent = "{:.2f}".format((float(usdprice[1]) * rate))
                             break
-                    print("{} {} {}".format(mpn, price_cent, stockqty))
+                    print("{} {} {} {} {}".format(sku, mpn, brand, price_cent, stockqty))
                     if int(stockqty) > 0:
                         # if pack_size in valid_packsize:
                         #     if dielec_rate in valid_dielec:
@@ -201,7 +201,6 @@ def get_caps(capacitance):
                         outlist.append(outline)
                         # print(json.dumps(part, indent=4, sort_keys=True))
 
-    time.sleep(0.5)
     return outlist
 
 def get_cap_mpn(_mpn):
@@ -294,7 +293,6 @@ def get_cap_mpn(_mpn):
             outlist.append(outline)
         # print(json.dumps(part, indent=4, sort_keys=True))
 
-    time.sleep(0.5)
     return outlist
 
 
