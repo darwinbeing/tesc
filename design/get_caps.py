@@ -84,13 +84,13 @@ def get_caps(capacitance):
 
     print('Querying ' + str(capacitance) + ' ...')
 
-    url += '&' + urllib.parse.urlencode(args)
+    url += '&' + urllib.urlencode(args)
 
     gotresponse = False
 
     while (gotresponse == False):
         try:
-            data = urllib.request.urlopen(url).read()
+            data = urllib.urlopen(url).read()
             search_response = json.loads(data)
         except:
             'Error querying !!'
@@ -223,13 +223,13 @@ def get_cap_mpn(_mpn):
 
     print('Querying ' + str(_mpn) + ' ...')
 
-    url += '&' + urllib.parse.urlencode(args)
+    url += '&' + urllib.urlencode(args)
 
     gotresponse = False
 
     while (gotresponse == False):
         try:
-            data = urllib.request.urlopen(url).read()
+            data = urllib.urlopen(url).read()
             search_response = json.loads(data)
         except:
             'Error querying !!'
@@ -310,22 +310,20 @@ for capval in valid_capvals:
     for cap in olist:
         for param in cap:
             if type(param) is list:
-                # f.write(str(param[0].encode('utf-8') + b','))
-                f.write(param[0] + ',')
+                f.write(param[0].encode('utf-8') + b',')
             else:
-                # f.write(str(param.encode('utf-8') + b','))
-                f.write(param + ',')
+                f.write(param.encode('utf-8') + b',')
         f.write('\n')
 
 # append extra special part numbers
-# for extra_cap in extra_capacitors:
-#     olist = get_cap_mpn(extra_cap)
-#     for cap in olist:
-#         for param in cap:
-#             if type(param) is list:
-#                 f.write(param[0] + ',')
-#             else:
-#                 f.write(param + ',')
-#         f.write('\n')
+for extra_cap in extra_capacitors:
+    olist = get_cap_mpn(extra_cap)
+    for cap in olist:
+        for param in cap:
+            if type(param) is list:
+                f.write(param[0].encode('utf-8') + b',')
+            else:
+                f.write(param.encode('utf-8') + b',')
+        f.write('\n')
 
-# f.close()
+f.close()
