@@ -71,7 +71,7 @@ def get_caps(capacitance):
     args = [
         # ('filter[fields][brand.name][]', pref_brand),
         ('filter[fields][specs.capacitance.value][]', capacitance),
-        ('filter[fields][specs.voltage_rating_dc.value][]', '16'),
+        ('filter[fields][specs.voltage_rating_dc.value][]', '50'),
         # ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b15%'.encode('utf-8')),
         # ('filter[fields][specs.pin_count.value][]', '2'),
         ('filter[fields][specs.case_package.value][]', '0603'),
@@ -140,18 +140,19 @@ def get_caps(capacitance):
             pkg = part['specs']['packaging']['value']
 
         # Check for non-active lifecycle status.
-        if 'lifecycle_status' in part['specs']:
-            # print(part['specs']['lifecycle_status']['display_value'])
-            # print(part['specs']['lifecycle_status']['value'])
-            if part['specs']['lifecycle_status']['display_value'] != 'Active':
-                print('WARNING: Lifecycle Status is ' + part['specs']['lifecycle_status']['display_value'])
+        # if 'lifecycle_status' in part['specs']:
+        #     # print(part['specs']['lifecycle_status']['display_value'])
+        #     # print(part['specs']['lifecycle_status']['value'])
+        #     if part['specs']['lifecycle_status']['display_value'] != 'Active':
+        #         print('WARNING: Lifecycle Status is ' + part['specs']['lifecycle_status']['display_value'])
 
         for offer in part['offers']:
             # print(offer['seller']['name'])
             if offer['seller']['name'] == distributor:
                 sku = offer['sku']
                 stockqty = str(offer['in_stock_quantity'])
-                if pkg[0] == 'Tape & Reel (TR)':
+                # if pkg[0] == 'Tape & Reel (TR)':
+                if True:
                     # print(offer['prices'])
 
                     # This needs to be looked up:
