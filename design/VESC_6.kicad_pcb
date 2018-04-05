@@ -14,7 +14,7 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal hide)
+    (0 F.Cu signal)
     (1 GND.Cu signal)
     (2 PWR.Cu signal)
     (31 B.Cu signal)
@@ -39,7 +39,7 @@
   )
 
   (setup
-    (last_trace_width 0.3048)
+    (last_trace_width 0.2032)
     (user_trace_width 0.2032)
     (user_trace_width 0.254)
     (user_trace_width 0.3048)
@@ -1089,6 +1089,11 @@
       (net 23 /DRV8301/SH_C))
     (pad 1 smd rect (at -4.3 1.9 270) (size 2.7 2.3) (layers B.Cu B.Paste B.Mask)
       (net 79 "Net-(P10-Pad1)"))
+    (model ${KIPRJMOD}/Libraries/packages3d/CSS2H-3920.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module CRF1:VIA-0.5mm (layer F.Cu) (tedit 5AB76320) (tstamp 5AE5FBC8)
@@ -3494,7 +3499,7 @@
       (net 2 GND))
     (pad 1 smd rect (at -1.72974 0 45) (size 2.10058 1.69926) (layers F.Cu F.Paste F.Mask)
       (net 9 +5V))
-    (model walter/smd_diode/do214ac.wrl
+    (model ${KIPRJMOD}/Libraries/3D/walter/smd_diode/do214ac.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4723,7 +4728,7 @@
       (net 2 GND))
     (pad 6 thru_hole oval (at 0 -1.075 270) (size 2.2 1.1) (drill oval 1.6 0.5) (layers *.Cu *.Mask)
       (net 2 GND))
-    (model Connectors_USB.3dshapes/USB_Micro-B_Molex_47346-0001.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/USB_Micro-B_Molex_47346-0001.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4816,6 +4821,11 @@
       (net 19 /DRV8301/SH_A))
     (pad 1 smd rect (at -4.3 1.9 270) (size 2.7 2.3) (layers B.Cu B.Paste B.Mask)
       (net 73 "Net-(P8-Pad1)"))
+    (model ${KIPRJMOD}/Libraries/packages3d/CSS2H-3920.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module CRF1:SHUNT_CSS2H-3920 (layer B.Cu) (tedit 5AA2DAB2) (tstamp 5AA2A768)
@@ -4839,6 +4849,11 @@
       (net 21 /DRV8301/SH_B))
     (pad 1 smd rect (at -4.3 1.9 270) (size 2.7 2.3) (layers B.Cu B.Paste B.Mask)
       (net 76 "Net-(P9-Pad1)"))
+    (model ${KIPRJMOD}/Libraries/packages3d/CSS2H-3920.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module CRF1:1PAD_4x5mm (layer B.Cu) (tedit 5AB9239F) (tstamp 5AA43EE0)
