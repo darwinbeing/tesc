@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/VESC_6.sch)
-    (date "2018 March 29, Thursday 00:29:20")
+    (date "2018 April 05, Thursday 09:48:12")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -419,7 +419,7 @@
       (tstamp 5A8AAF5D))
     (comp (ref C32)
       (value 100u)
-      (footprint Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Wave)
+      (footprint Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Wave)
       (libsource (lib device) (part CP))
       (sheetpath (names /DRV8301/) (tstamps /504F83BE/))
       (tstamp 5A8AB050))
@@ -521,7 +521,7 @@
       (tstamp 5A9748A2))
     (comp (ref C21)
       (value 100u)
-      (footprint Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Wave)
+      (footprint Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Wave)
       (libsource (lib device) (part CP))
       (sheetpath (names /DRV8301/) (tstamps /504F83BE/))
       (tstamp 5A9748A8))
@@ -1446,12 +1446,12 @@
         (pin (num 5) (name GND) (type power_in))
         (pin (num 6) (name Shield) (type passive)))))
   (libraries
+    (library (logical conn)
+      (uri "/Library/Application Support/kicad/library/conn.lib"))
     (library (logical device)
       (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical crf_1)
-      (uri /Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/Libraries/crf_1.lib))
-    (library (logical conn)
-      (uri "/Library/Application Support/kicad/library/conn.lib")))
+      (uri /Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/Libraries/crf_1.lib)))
   (nets
     (net (code 1) (name /MCU/SWCLK)
       (node (ref U1) (pin 49))
