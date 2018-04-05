@@ -6,7 +6,7 @@
     (area 114.924999 54.924999 180.075001 120.075001)
     (thickness 1.6)
     (drawings 57)
-    (tracks 2127)
+    (tracks 2128)
     (zones 0)
     (modules 305)
     (nets 139)
@@ -34,8 +34,8 @@
     (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
-    (48 B.Fab user)
-    (49 F.Fab user)
+    (48 B.Fab user hide)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -72,7 +72,7 @@
     (pad_drill 0)
     (pad_to_mask_clearance 0.0508)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFDF7F)
+    (visible_elements 7FFF9F7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions true)
@@ -1089,6 +1089,11 @@
       (net 23 /DRV8301/SH_C))
     (pad 1 smd rect (at -4.3 1.9 270) (size 2.7 2.3) (layers B.Cu B.Paste B.Mask)
       (net 79 "Net-(P10-Pad1)"))
+    (model ${KIPRJMOD}/Libraries/packages3d/CSS2H-3920.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module CRF1:VIA-0.5mm (layer F.Cu) (tedit 5AB76320) (tstamp 5AE5FBC8)
@@ -3494,7 +3499,7 @@
       (net 2 GND))
     (pad 1 smd rect (at -1.72974 0 45) (size 2.10058 1.69926) (layers F.Cu F.Paste F.Mask)
       (net 9 +5V))
-    (model walter/smd_diode/do214ac.wrl
+    (model ${KIPRJMOD}/Libraries/3D/walter/smd_diode/do214ac.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4723,7 +4728,7 @@
       (net 2 GND))
     (pad 6 thru_hole oval (at 0 -1.075 270) (size 2.2 1.1) (drill oval 1.6 0.5) (layers *.Cu *.Mask)
       (net 2 GND))
-    (model Connectors_USB.3dshapes/USB_Micro-B_Molex_47346-0001.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/USB_Micro-B_Molex_47346-0001.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4788,7 +4793,7 @@
       (net 35 "Net-(C56-Pad1)"))
     (pad 2 smd rect (at 0.475 1.475 135) (size 2.2 1.05) (layers B.Cu B.Paste B.Mask)
       (net 2 GND))
-    (model ${KISYS3DMOD}/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.wrl
+    (model ${KIPRJMOD}/Libraries/packages3d/U.FL-R-SMT-1.wrl
       (at (xyz 0.018701 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4816,6 +4821,11 @@
       (net 19 /DRV8301/SH_A))
     (pad 1 smd rect (at -4.3 1.9 270) (size 2.7 2.3) (layers B.Cu B.Paste B.Mask)
       (net 73 "Net-(P8-Pad1)"))
+    (model ${KIPRJMOD}/Libraries/packages3d/CSS2H-3920.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module CRF1:SHUNT_CSS2H-3920 (layer B.Cu) (tedit 5AA2DAB2) (tstamp 5AA2A768)
@@ -4839,6 +4849,11 @@
       (net 21 /DRV8301/SH_B))
     (pad 1 smd rect (at -4.3 1.9 270) (size 2.7 2.3) (layers B.Cu B.Paste B.Mask)
       (net 76 "Net-(P9-Pad1)"))
+    (model ${KIPRJMOD}/Libraries/packages3d/CSS2H-3920.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module CRF1:1PAD_4x5mm (layer B.Cu) (tedit 5AB9239F) (tstamp 5AA43EE0)
@@ -10735,10 +10750,11 @@
   (segment (start 143.383 77.597) (end 144.145 77.597) (width 0.508) (layer B.Cu) (net 136) (status 10))
   (segment (start 144.145 77.597) (end 144.272 77.724) (width 0.508) (layer B.Cu) (net 136))
   (via (at 144.272 77.724) (size 0.5) (drill 0.3) (layers F.Cu B.Cu) (net 136))
-  (segment (start 143.383 79.248) (end 144.2085 79.248) (width 0.508) (layer B.Cu) (net 137) (status 10))
-  (segment (start 144.2085 79.248) (end 145.567803 77.888697) (width 0.508) (layer B.Cu) (net 137))
-  (segment (start 145.567803 77.888697) (end 145.567803 72.034803) (width 0.508) (layer B.Cu) (net 137))
-  (segment (start 145.567803 72.034803) (end 145.288 71.755) (width 0.508) (layer B.Cu) (net 137))
+  (segment (start 142.875 71.755) (end 145.288 71.755) (width 0.3048) (layer B.Cu) (net 137))
+  (segment (start 142.621 72.009) (end 142.875 71.755) (width 0.3048) (layer B.Cu) (net 137))
+  (segment (start 142.621 78.523) (end 142.621 72.009) (width 0.3048) (layer B.Cu) (net 137))
+  (segment (start 143.371 79.248) (end 143.346 79.248) (width 0.3048) (layer B.Cu) (net 137))
+  (segment (start 143.346 79.248) (end 142.621 78.523) (width 0.3048) (layer B.Cu) (net 137))
   (segment (start 167.64 69.342) (end 171.16 72.862) (width 0.508) (layer F.Cu) (net 137))
   (segment (start 171.16 72.862) (end 171.16 76.749) (width 0.508) (layer F.Cu) (net 137) (status 20))
   (segment (start 165.227 69.342) (end 167.64 69.342) (width 0.508) (layer F.Cu) (net 137))
