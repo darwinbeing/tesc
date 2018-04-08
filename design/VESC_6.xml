@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/VESC_6.sch</source>
-    <date>2018 March 31, Saturday 19:48:21</date>
+    <date>2018 April 08, Sunday 20:21:15</date>
     <tool>Eeschema 4.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -477,7 +477,7 @@
     </comp>
     <comp ref="L2">
       <value>22u</value>
-      <footprint>w_smd_inductors:inductor_smd_4.8x2.8mm</footprint>
+      <footprint>CRF1:L_Coilcraft_XAL5050</footprint>
       <libsource lib="device" part="L"/>
       <sheetpath names="/DRV8301/" tstamps="/504F83BE/"/>
       <tstamp>5A8AA4C7</tstamp>
@@ -491,7 +491,7 @@
     </comp>
     <comp ref="C32">
       <value>100u</value>
-      <footprint>Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Wave</footprint>
+      <footprint>Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow</footprint>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/DRV8301/" tstamps="/504F83BE/"/>
       <tstamp>5A8AB050</tstamp>
@@ -519,7 +519,7 @@
     </comp>
     <comp ref="D5">
       <value>TVS 5V</value>
-      <footprint>w_smd_diode:do214ac</footprint>
+      <footprint>Diodes_SMD:D_SMA</footprint>
       <libsource lib="device" part="D"/>
       <sheetpath names="/DRV8301/" tstamps="/504F83BE/"/>
       <tstamp>5A8BBD36</tstamp>
@@ -610,7 +610,7 @@
     </comp>
     <comp ref="C21">
       <value>100u</value>
-      <footprint>Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Wave</footprint>
+      <footprint>Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow</footprint>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/DRV8301/" tstamps="/504F83BE/"/>
       <tstamp>5A9748A8</tstamp>
