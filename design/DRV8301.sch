@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:crf_1
+LIBS:VESC_6-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -358,7 +359,7 @@ U 1 1 5A8AA4C7
 P 7100 2525
 F 0 "L2" V 7050 2525 50  0000 C CNN
 F 1 "22u" V 7175 2525 50  0000 C CNN
-F 2 "w_smd_inductors:inductor_smd_4.8x2.8mm" H 7100 2525 50  0001 C CNN
+F 2 "CRF1:L_Coilcraft_XAL5050" H 7100 2525 50  0001 C CNN
 F 3 "" H 7100 2525 50  0001 C CNN
 	1    7100 2525
 	0    -1   -1   0   

@@ -391,7 +391,7 @@ U 1 1 5A8AB050
 P 7625 2725
 F 0 "C32" H 7650 2825 50  0000 L CNN
 F 1 "100u" H 7650 2625 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:Tantalum_Case-A_EIA-3216-18_Wave" H 7663 2575 50  0001 C CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Wave" H 7663 2575 50  0001 C CNN
 F 3 "" H 7625 2725 50  0001 C CNN
 	1    7625 2725
 	1    0    0    -1  
@@ -710,7 +710,7 @@ U 1 1 5A9748A8
 P 4750 6575
 F 0 "C21" H 4775 6675 50  0000 L CNN
 F 1 "100u" H 4775 6475 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:Tantalum_Case-A_EIA-3216-18_Wave" H 4788 6425 50  0001 C CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Wave" H 4788 6425 50  0001 C CNN
 F 3 "" H 4750 6575 50  0001 C CNN
 	1    4750 6575
 	1    0    0    -1  
