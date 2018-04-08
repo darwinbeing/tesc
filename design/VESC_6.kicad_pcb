@@ -33,7 +33,7 @@
     (44 Edge.Cuts user)
     (45 Margin user)
     (46 B.CrtYd user)
-    (47 F.CrtYd user)
+    (47 F.CrtYd user hide)
     (48 B.Fab user)
     (49 F.Fab user)
   )
@@ -3359,7 +3359,7 @@
   )
 
   (module Inductors_SMD:L_0603 (layer F.Cu) (tedit 5ACA2E70) (tstamp 5A9A25EC)
-    (at 133.096 108.966 225)
+    (at 133.477 109.093 225)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /5A8BE5A6/5A8C0DD7)
@@ -3395,7 +3395,7 @@
   )
 
   (module Inductors_SMD:L_0603 (layer F.Cu) (tedit 5ACA2E83) (tstamp 5A9A25FD)
-    (at 135.001 109.855 135)
+    (at 135.128 110.109 135)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /5A8BE5A6/5A8C20CF)
@@ -3431,7 +3431,7 @@
   )
 
   (module Inductors_SMD:L_0603 (layer F.Cu) (tedit 5ACA2F29) (tstamp 5A9A260E)
-    (at 133.223 110.871 45)
+    (at 133.477 110.998 45)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /5A8BE5A6/5A8C0D3C)
@@ -3854,7 +3854,7 @@
   )
 
   (module Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm (layer F.Cu) (tedit 5AA569F9) (tstamp 5A9A2A15)
-    (at 130.815117 106.299 315)
+    (at 131.191 106.685117 315)
     (descr "20-Lead Plastic Quad Flat, No Lead Package (ML) - 4x4x0.9 mm Body [QFN]; (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "QFN 0.5")
     (path /5A8BE5A6/5A8BF95B)
@@ -6243,7 +6243,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5ACA2F09) (tstamp 5ABBB2D4)
-    (at 134.747 112.268 315)
+    (at 134.62 112.649 315)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5A8BE5A6/5A8C177A)
@@ -6276,12 +6276,12 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5ACA2F23) (tstamp 5ABBB2E3)
-    (at 133.731 113.411 315)
+    (at 133.604 113.665 315)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5A8BE5A6/5A8C11A3)
     (attr smd)
-    (fp_text reference C55 (at 0 -1.9 315) (layer F.SilkS)
+    (fp_text reference C55 (at -0.898026 1.257236 315) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_text value 4.7p (at 0 1.9 315) (layer F.Fab) hide
@@ -6309,7 +6309,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5ACA3027) (tstamp 5ABBB2F2)
-    (at 136.779 111.633 135)
+    (at 136.779 111.76 135)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5A8BE5A6/5A8C100C)
@@ -6342,7 +6342,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5ACA33B6) (tstamp 5ABBB301)
-    (at 138.557 112.903 225)
+    (at 138.557 112.395 225)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5A8BE5A6/5A8C10BB)

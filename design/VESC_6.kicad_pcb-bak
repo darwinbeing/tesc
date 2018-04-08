@@ -72,7 +72,7 @@
     (pad_drill 0)
     (pad_to_mask_clearance 0.0508)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFD77F)
+    (visible_elements 7FFF577F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions true)
@@ -3359,7 +3359,7 @@
   )
 
   (module Inductors_SMD:L_0603 (layer F.Cu) (tedit 5ACA2E70) (tstamp 5A9A25EC)
-    (at 133.4008 109.2962 225)
+    (at 133.096 108.966 225)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /5A8BE5A6/5A8C0DD7)
@@ -3395,7 +3395,7 @@
   )
 
   (module Inductors_SMD:L_0603 (layer F.Cu) (tedit 5ACA2E83) (tstamp 5A9A25FD)
-    (at 135.509 110.236 135)
+    (at 135.001 109.855 135)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /5A8BE5A6/5A8C20CF)
@@ -3431,7 +3431,7 @@
   )
 
   (module Inductors_SMD:L_0603 (layer F.Cu) (tedit 5ACA2F29) (tstamp 5A9A260E)
-    (at 133.604 111.379 45)
+    (at 133.223 110.871 45)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /5A8BE5A6/5A8C0D3C)
@@ -3467,7 +3467,7 @@
   )
 
   (module "JST conn:b4b-ph-kl" (layer B.Cu) (tedit 0) (tstamp 5A9A2649)
-    (at 120.25376 111.252 180)
+    (at 119.80672 111.379 180)
     (descr "JST PH series connector, B4B-PH-KL")
     (path /5A92AEB4)
     (fp_text reference P2 (at 0 2.99974 180) (layer B.SilkS)
@@ -3854,7 +3854,7 @@
   )
 
   (module Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm (layer F.Cu) (tedit 5AA569F9) (tstamp 5A9A2A15)
-    (at 130.937 106.807 315)
+    (at 130.815117 106.299 315)
     (descr "20-Lead Plastic Quad Flat, No Lead Package (ML) - 4x4x0.9 mm Body [QFN]; (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "QFN 0.5")
     (path /5A8BE5A6/5A8BF95B)
@@ -4493,7 +4493,7 @@
   )
 
   (module Connectors_USB:USB_Micro-B_Vertical_Molex-105133-0001 (layer B.Cu) (tedit 5AA574EB) (tstamp 5A9ED459)
-    (at 127.381 110.363 270)
+    (at 127.186 110.363 270)
     (descr "Molex Vertical Micro USB Typ-B (http://www.molex.com/pdm_docs/sd/1051330001_sd.pdf)")
     (tags "Micro-USB SMD Typ-B Vertical")
     (path /5A94AE92)
@@ -5220,7 +5220,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB103)
-    (at 127.5588 98.1202)
+    (at 125.095 99.441)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /53F7501A/53F77447)
@@ -6243,7 +6243,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5ACA2F09) (tstamp 5ABBB2D4)
-    (at 135.382 113.157 315)
+    (at 134.747 112.268 315)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5A8BE5A6/5A8C177A)
@@ -6276,7 +6276,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5ACA2F23) (tstamp 5ABBB2E3)
-    (at 134.21667 114.27767 315)
+    (at 133.731 113.411 315)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5A8BE5A6/5A8C11A3)
@@ -6309,7 +6309,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5ACA3027) (tstamp 5ABBB2F2)
-    (at 137.414 112.141 135)
+    (at 136.779 111.633 135)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5A8BE5A6/5A8C100C)
@@ -6341,8 +6341,8 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB301)
-    (at 138.9888 114.2492 225)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5ACA33B6) (tstamp 5ABBB301)
+    (at 138.557 112.903 225)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5A8BE5A6/5A8C10BB)
@@ -6350,7 +6350,7 @@
     (fp_text reference C57 (at 0.071842 -1.077631 225) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 1p (at 0 1.9 225) (layer F.Fab)
+    (fp_text value 1p (at 0 1.9 225) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
