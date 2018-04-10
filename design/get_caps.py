@@ -21,7 +21,8 @@ import requests
 # valid_capvals = ['1.00E-07']
 # valid_capvals = ['1.50E-11']
 # valid_capvals = ['2.20E-06']
-valid_capvals = ['1.00E-04']
+# valid_capvals = ['1.00E-04']
+valid_capvals = ['2.20E-09']
 
 valid_dielec = ['X5R','X6R','X7R','X8R', 'Y5R', 'Y6R', 'Y7R', 'Y8R','C0G/NP0']
 # pref_brand = 'Yageo'
@@ -73,11 +74,12 @@ def get_caps(capacitance):
     args = [
         # ('filter[fields][brand.name][]', pref_brand),
         ('filter[fields][specs.capacitance.value][]', capacitance),
-        ('filter[fields][specs.voltage_rating_dc.value][]', '6.3'),
-        ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b120%'.encode('utf-8')),
+        ('filter[fields][specs.voltage_rating_dc.value][]', '50'),
+        # ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b120%'.encode('utf-8')),
         # ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b15%'.encode('utf-8')),
         # ('filter[fields][specs.pin_count.value][]', '2'),
-        ('filter[fields][specs.case_package.value][]', '1206'),
+        # ('filter[fields][specs.case_package.value][]', '1206'),
+        ('filter[fields][specs.case_package.value][]', '0402'),
         ('filter[fields][offers.seller.name][]', distributor),
         # ('filter[fields][specs.packaging.value][]', 'Tape & Reel (TR)'),
         ('include[]','specs'),
