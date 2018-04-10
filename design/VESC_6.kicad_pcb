@@ -14,9 +14,9 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (1 GND.Cu signal)
-    (2 PWR.Cu signal)
+    (0 F.Cu signal hide)
+    (1 GND.Cu signal hide)
+    (2 PWR.Cu signal hide)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -34,7 +34,7 @@
     (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user hide)
-    (48 B.Fab user)
+    (48 B.Fab user hide)
     (49 F.Fab user hide)
   )
 
@@ -72,7 +72,7 @@
     (pad_drill 0)
     (pad_to_mask_clearance 0.0508)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFD77F)
+    (visible_elements 7FFF977F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions true)
@@ -8480,7 +8480,7 @@
   )
 
   (module CRF1:SHUNT_CSS2H-3920 (layer B.Cu) (tedit 5AA2A2FC) (tstamp 5AA2A768)
-    (at 157.557 65.532 270)
+    (at 157.5435 65.405 270)
     (path /53F826DC/5A8B9A6E)
     (fp_text reference R29 (at 0 -0.05 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
@@ -8508,7 +8508,7 @@
   )
 
   (module CRF1:SHUNT_CSS2H-3920 (layer B.Cu) (tedit 5AA2A2FC) (tstamp 5AA2A75E)
-    (at 144.78 65.532 270)
+    (at 144.862 65.3825 270)
     (path /53F826DC/5A8AF798)
     (fp_text reference R24 (at 0 0 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
@@ -8536,7 +8536,7 @@
   )
 
   (module CRF1:SHUNT_CSS2H-3920 (layer B.Cu) (tedit 5AA2A2FC) (tstamp 5AA2A772)
-    (at 170.439 65.532 270)
+    (at 170.434 65.405 270)
     (path /53F826DC/5A8BA284)
     (fp_text reference R32 (at 0 0.005 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
@@ -8563,6 +8563,8 @@
     )
   )
 
+  (gr_line (start 175 57) (end 175 84) (layer Edge.Cuts) (width 0.15))
+  (gr_arc (start 173 57) (end 173 55) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_text "AD2\n\n\n" (at 116.078 82.677) (layer F.SilkS) (tstamp 5ACB6767)
     (effects (font (size 0.508 0.508) (thickness 0.1016)))
   )
@@ -8575,10 +8577,8 @@
   (gr_arc (start 162 85) (end 161 85) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 161 88) (end 154 88) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 162 84) (end 167 84) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 175 56) (end 175 84) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 175 84) (end 167 84) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 174 55) (end 117 55) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_arc (start 174 56) (end 174 55) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 173 55) (end 117 55) (angle 90) (layer Edge.Cuts) (width 0.15))
   (dimension 60 (width 0.3) (layer Cmts.User)
     (gr_text "60.000 mm" (at 145 51.65) (layer Cmts.User)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
