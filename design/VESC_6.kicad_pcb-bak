@@ -14,17 +14,17 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (1 GND.Cu signal)
-    (2 PWR.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (1 GND.Cu signal hide)
+    (2 PWR.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
-    (34 B.Paste user)
+    (34 B.Paste user hide)
     (35 F.Paste user)
     (36 B.SilkS user)
     (37 F.SilkS user)
-    (38 B.Mask user)
+    (38 B.Mask user hide)
     (39 F.Mask user)
     (40 Dwgs.User user)
     (41 Cmts.User user)
@@ -39,7 +39,7 @@
   )
 
   (setup
-    (last_trace_width 0.508)
+    (last_trace_width 0.2032)
     (user_trace_width 0.2032)
     (user_trace_width 0.254)
     (user_trace_width 0.3048)
@@ -72,7 +72,7 @@
     (pad_drill 0.3)
     (pad_to_mask_clearance 0.0508)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFD77F)
+    (visible_elements 7FFF577F)
     (pcbplotparams
       (layerselection 0x010fc_80000007)
       (usegerberextensions true)
@@ -10241,6 +10241,40 @@
         (xy 148.124354 73.914) (xy 148.153377 73.920381) (xy 148.286898 73.923178) (xy 148.338949 73.914) (xy 148.844 73.914)
         (xy 148.879381 73.908972) (xy 148.911961 73.894286) (xy 148.93916 73.871105) (xy 148.958823 73.841264) (xy 148.969395 73.807127)
         (xy 148.971 73.787) (xy 148.971 63.881) (xy 153.736186 63.881)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer F.Paste) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.254))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 151.257 73.152) (xy 153.543 73.152) (xy 153.543 79.756) (xy 156.718 82.677) (xy 155.448 84.074)
+        (xy 151.257 80.01)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 153.416 79.756) (xy 153.426006 79.80541) (xy 153.457014 79.849463) (xy 156.539105 82.684987) (xy 155.442254 83.891523)
+        (xy 151.384 79.956247) (xy 151.384 73.279) (xy 153.416 73.279)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer F.Paste) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.254))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 162.433 73.152) (xy 164.973 73.152) (xy 164.973 80.01) (xy 160.274 83.693) (xy 159.131 82.169)
+        (xy 162.433 79.629)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 164.846 79.94818) (xy 160.297762 83.513015) (xy 159.307876 82.193168) (xy 162.510433 79.729663) (xy 162.543496 79.691607)
+        (xy 162.56 79.629) (xy 162.56 73.279) (xy 164.846 73.279)
       )
     )
   )
