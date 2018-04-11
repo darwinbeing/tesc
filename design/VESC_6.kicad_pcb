@@ -14,17 +14,17 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (1 GND.Cu signal)
-    (2 PWR.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (1 GND.Cu signal hide)
+    (2 PWR.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
-    (34 B.Paste user)
+    (34 B.Paste user hide)
     (35 F.Paste user)
     (36 B.SilkS user)
     (37 F.SilkS user)
-    (38 B.Mask user)
+    (38 B.Mask user hide)
     (39 F.Mask user)
     (40 Dwgs.User user)
     (41 Cmts.User user)
@@ -39,7 +39,7 @@
   )
 
   (setup
-    (last_trace_width 0.508)
+    (last_trace_width 0.2032)
     (user_trace_width 0.2032)
     (user_trace_width 0.254)
     (user_trace_width 0.3048)
@@ -72,7 +72,7 @@
     (pad_drill 0.3)
     (pad_to_mask_clearance 0.0508)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFD77F)
+    (visible_elements 7FFF577F)
     (pcbplotparams
       (layerselection 0x010fc_80000007)
       (usegerberextensions true)
@@ -10241,6 +10241,74 @@
         (xy 148.124354 73.914) (xy 148.153377 73.920381) (xy 148.286898 73.923178) (xy 148.338949 73.914) (xy 148.844 73.914)
         (xy 148.879381 73.908972) (xy 148.911961 73.894286) (xy 148.93916 73.871105) (xy 148.958823 73.841264) (xy 148.969395 73.807127)
         (xy 148.971 73.787) (xy 148.971 63.881) (xy 153.736186 63.881)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer F.Paste) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.254))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 151.13 72.898) (xy 153.543 72.898) (xy 153.67 80.899) (xy 156.845 82.804) (xy 155.575 84.455)
+        (xy 151.257 81.661)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 153.543016 80.901016) (xy 153.553805 80.950261) (xy 153.582903 80.991429) (xy 153.604659 81.007902) (xy 156.65742 82.839559)
+        (xy 155.545711 84.284781) (xy 151.383003 81.591264) (xy 151.258854 73.025) (xy 153.418 73.025)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.254))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 151.13 72.898) (xy 153.543 72.898) (xy 153.67 80.899) (xy 156.845 82.804) (xy 155.575 84.455)
+        (xy 151.257 81.661)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 153.543016 80.901016) (xy 153.553805 80.950261) (xy 153.582903 80.991429) (xy 153.604659 81.007902) (xy 156.65742 82.839559)
+        (xy 155.545711 84.284781) (xy 151.383003 81.591264) (xy 151.258854 73.025) (xy 153.418 73.025)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer F.Paste) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.254))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 162.56 73.025) (xy 164.973 73.025) (xy 164.973 79.629) (xy 160.274 84.836) (xy 159.131 82.169)
+        (xy 162.433 79.629)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 164.846 79.580168) (xy 160.3126 84.603666) (xy 159.286558 82.209567) (xy 162.510433 79.729663) (xy 162.543496 79.691607)
+        (xy 162.559977 79.631442) (xy 162.684582 73.152) (xy 164.846 73.152)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.254))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 162.56 73.025) (xy 164.973 73.025) (xy 164.973 79.629) (xy 160.274 84.836) (xy 159.131 82.169)
+        (xy 162.433 79.629)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 164.846 79.580168) (xy 160.3126 84.603666) (xy 159.286558 82.209567) (xy 162.510433 79.729663) (xy 162.543496 79.691607)
+        (xy 162.559977 79.631442) (xy 162.684582 73.152) (xy 164.846 73.152)
       )
     )
   )
