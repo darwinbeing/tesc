@@ -1,8 +1,12 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import json
 import urllib
 import time
 import requests
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 # valid_capvals = ['1.00E-13','1.20E-13','1.50E-13','1.80E-13','2.20E-13','2.70E-13','3.30E-13','3.90E-13','4.70E-13','5.60E-13','6.80E-13','8.20E-13',\
 #                  '1.00E-12','1.20E-12','1.50E-12','1.80E-12','2.20E-12','2.70E-12','3.30E-12','3.90E-12','4.70E-12','5.60E-12','6.80E-12','8.20E-12',\
@@ -22,7 +26,8 @@ import requests
 # valid_capvals = ['1.50E-11']
 # valid_capvals = ['2.20E-06']
 # valid_capvals = ['1.00E-04']
-valid_capvals = ['2.20E-09']
+# valid_capvals = ['2.20E-09']
+valid_capvals = ['1.00E-07']
 
 valid_dielec = ['X5R','X6R','X7R','X8R', 'Y5R', 'Y6R', 'Y7R', 'Y8R','C0G/NP0']
 # pref_brand = 'Yageo'
@@ -74,13 +79,15 @@ def get_caps(capacitance):
     args = [
         # ('filter[fields][brand.name][]', pref_brand),
         ('filter[fields][specs.capacitance.value][]', capacitance),
+        # ('filter[fields][specs.voltage_rating_dc.value][]', '25'),
         ('filter[fields][specs.voltage_rating_dc.value][]', '50'),
         # ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b120%'.encode('utf-8')),
         # ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b15%'.encode('utf-8')),
         # ('filter[fields][specs.pin_count.value][]', '2'),
         # ('filter[fields][specs.case_package.value][]', '1206'),
         ('filter[fields][specs.case_package.value][]', '0402'),
-        ('filter[fields][offers.seller.name][]', distributor),
+        # ('filter[fields][offers.seller.name][]', distributor),
+        # ('filter[fields][specs.dielectric_characteristic.value][]', 'X7R'),
         # ('filter[fields][specs.packaging.value][]', 'Tape & Reel (TR)'),
         ('include[]','specs'),
         ('start', 0),
@@ -125,10 +132,12 @@ def get_caps(capacitance):
         dielec_rate = '-1'
         voltage_rate = '1-'
         ctol = '-1'
+        dielectric_characteristic = '-1'
         mpn = part['mpn']
         brand = part['brand']['name']
         price_cent = '-1'
         stockqty = '-1'
+        mydistributor = '-1'
         if 'case_package' in part['specs']:
             pack_size = part['specs']['case_package']['value'][0]
 
@@ -144,6 +153,9 @@ def get_caps(capacitance):
         if 'packaging' in part['specs']:
             pkg = part['specs']['packaging']['value']
 
+        if 'dielectric_characteristic' in part['specs']:
+            dielectric_characteristic = part['specs']['dielectric_characteristic']['display_value']
+
         # Check for non-active lifecycle status.
         # if 'lifecycle_status' in part['specs']:
         #     # print(part['specs']['lifecycle_status']['display_value'])
@@ -153,7 +165,9 @@ def get_caps(capacitance):
 
         for offer in part['offers']:
             # print(offer['seller']['name'])
-            if offer['seller']['name'] == distributor:
+            mydistributor = offer['seller']['name']
+            # if offer['seller']['name'] == distributor:
+            if True:
                 sku = offer['sku']
                 stockqty = str(offer['in_stock_quantity'])
                 # if pkg[0] == 'Tape & Reel (TR)':
@@ -199,11 +213,11 @@ def get_caps(capacitance):
                             # print(rate)
                             price_cent = "{:.2f}".format((float(usdprice[1]) * rate))
                             break
-                    print("{} {} {} {} {}".format(sku, mpn, brand, price_cent, stockqty))
+                    print("{} {} {} {} {} {} {}".format(sku, mpn, dielectric_characteristic, brand, price_cent, stockqty, mydistributor))
                     if int(stockqty) > 0:
                         # if pack_size in valid_packsize:
                         #     if dielec_rate in valid_dielec:
-                        outline = [capval, pack_size, dielec_rate, voltage_rate, ctol, sku, mpn, brand, price_cent,stockqty]
+                        outline = [capval, pack_size, dielec_rate, voltage_rate, ctol, sku, mpn, dielectric_characteristic, brand, price_cent,stockqty, mydistributor]
                         outlist.append(outline)
                         # print(json.dumps(part, indent=4, sort_keys=True))
 
