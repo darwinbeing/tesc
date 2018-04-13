@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/VESC_6.sch</source>
-    <date>2018 April 08, Sunday 20:21:15</date>
+    <date>2018 April 14, Saturday 07:34:17</date>
     <tool>Eeschema 4.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -337,7 +337,7 @@
     </comp>
     <comp ref="U1">
       <value>STM32F40X_LQFP64</value>
-      <footprint>CRF1:lqfp64_pad_mod</footprint>
+      <footprint>CRF1:STM32F4x5RG</footprint>
       <libsource lib="crf_1" part="STM32F40X_LQFP64"/>
       <sheetpath names="/MCU/" tstamps="/53F7501A/"/>
       <tstamp>53F757A7</tstamp>
@@ -659,21 +659,21 @@
     </comp>
     <comp ref="R26">
       <value>4.7R</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8ADEEE</tstamp>
     </comp>
     <comp ref="R25">
       <value>4.7R</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8ADEF4</tstamp>
     </comp>
     <comp ref="R35">
       <value>100R</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8ADF24</tstamp>
@@ -729,14 +729,14 @@
     </comp>
     <comp ref="R31">
       <value>4.7R</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8B9A47</tstamp>
     </comp>
     <comp ref="R30">
       <value>4.7R</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8B9A4D</tstamp>
@@ -778,14 +778,14 @@
     </comp>
     <comp ref="R34">
       <value>4.7R</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8BA25D</tstamp>
     </comp>
     <comp ref="R33">
       <value>4.7R</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8BA263</tstamp>
@@ -813,14 +813,14 @@
     </comp>
     <comp ref="P12">
       <value>GND</value>
-      <footprint>CRF1:1PAD_6x5mm</footprint>
+      <footprint>CRF1:1PAD_7x6mm</footprint>
       <libsource lib="conn" part="Conn_01x01"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8BD287</tstamp>
     </comp>
     <comp ref="P11">
       <value>SUPPLY</value>
-      <footprint>CRF1:1PAD_6x5mm</footprint>
+      <footprint>CRF1:1PAD_7x6mm</footprint>
       <libsource lib="conn" part="Conn_01x01"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8BE23A</tstamp>
@@ -834,7 +834,7 @@
     </comp>
     <comp ref="R36">
       <value>100R</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8C6C1F</tstamp>
@@ -848,7 +848,7 @@
     </comp>
     <comp ref="R37">
       <value>100R</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8C6E0E</tstamp>
@@ -862,14 +862,14 @@
     </comp>
     <comp ref="R27">
       <value>NTC 10k</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8CA3C8</tstamp>
     </comp>
     <comp ref="R28">
       <value>10k</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8CA3C9</tstamp>
@@ -883,14 +883,14 @@
     </comp>
     <comp ref="C46">
       <value>680u_63V</value>
-      <footprint>Capacitors_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <footprint>CRF1:CP_Radial_D12.5mm_P5.00mm</footprint>
       <libsource lib="device" part="CP1"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A97FCAA</tstamp>
     </comp>
     <comp ref="C47">
       <value>680u_63V</value>
-      <footprint>Capacitors_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <footprint>CRF1:CP_Radial_D12.5mm_P5.00mm</footprint>
       <libsource lib="device" part="CP1"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A98145F</tstamp>
@@ -988,28 +988,28 @@
     </comp>
     <comp ref="C56">
       <value>1.5p</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Capacitors_SMD:C_0402</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/nrf/" tstamps="/5A8BE5A6/"/>
       <tstamp>5A8C100C</tstamp>
     </comp>
     <comp ref="C57">
       <value>1p</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Capacitors_SMD:C_0402</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/nrf/" tstamps="/5A8BE5A6/"/>
       <tstamp>5A8C10BB</tstamp>
     </comp>
     <comp ref="C55">
       <value>4.7p</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Capacitors_SMD:C_0402</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/nrf/" tstamps="/5A8BE5A6/"/>
       <tstamp>5A8C11A3</tstamp>
     </comp>
     <comp ref="C54">
       <value>2.2n</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Capacitors_SMD:C_0402</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/nrf/" tstamps="/5A8BE5A6/"/>
       <tstamp>5A8C177A</tstamp>
@@ -1709,14 +1709,14 @@
     </libpart>
   </libparts>
   <libraries>
+    <library logical="device">
+      <uri>/Library/Application Support/kicad/library/device.lib</uri>
+    </library>
     <library logical="crf_1">
       <uri>/Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/Libraries/crf_1.lib</uri>
     </library>
     <library logical="conn">
       <uri>/Library/Application Support/kicad/library/conn.lib</uri>
-    </library>
-    <library logical="device">
-      <uri>/Library/Application Support/kicad/library/device.lib</uri>
     </library>
   </libraries>
   <nets>
