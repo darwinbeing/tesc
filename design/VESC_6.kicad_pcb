@@ -3,7 +3,7 @@
   (general
     (links 607)
     (no_connects 0)
-    (area 114.924999 54.924999 175.075001 115.075001)
+    (area 104.829157 50.3 176.000001 116.582217)
     (thickness 1.6)
     (drawings 56)
     (tracks 2028)
@@ -32,10 +32,10 @@
     (43 Eco2.User user)
     (44 Edge.Cuts user)
     (45 Margin user)
-    (46 B.CrtYd user hide)
-    (47 F.CrtYd user hide)
-    (48 B.Fab user hide)
-    (49 F.Fab user hide)
+    (46 B.CrtYd user)
+    (47 F.CrtYd user)
+    (48 B.Fab user)
+    (49 F.Fab user)
   )
 
   (setup
