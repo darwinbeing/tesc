@@ -54,7 +54,7 @@ F 1 "IRF7749" H 3150 2250 50  0000 L CNN
 F 2 "IR-DirectFETs:DirectFET_L8" H 3700 2025 50  0001 L CIN
 F 3 "" H 3450 2100 50  0001 L CNN
 	1    3450 2100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L IRF7749 Q2
@@ -65,7 +65,7 @@ F 1 "IRF7749" H 3150 3350 50  0000 L CNN
 F 2 "IR-DirectFETs:DirectFET_L8" H 3700 3125 50  0001 L CIN
 F 3 "" H 3450 3200 50  0001 L CNN
 	1    3450 3200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L R R26
@@ -76,7 +76,7 @@ F 1 "4.7R" V 2900 3200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 2900 3200 60  0001 C CNN
 F 3 "" H 2900 3200 60  0001 C CNN
 	1    2900 3200
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L R R25
@@ -87,7 +87,7 @@ F 1 "4.7R" V 2900 2100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 2900 2100 60  0001 C CNN
 F 3 "" H 2900 2100 60  0001 C CNN
 	1    2900 2100
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L R R35
@@ -98,7 +98,7 @@ F 1 "100R" V 1775 5175 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 1875 5175 60  0001 C CNN
 F 3 "" H 1875 5175 60  0001 C CNN
 	1    1875 5175
-	0    1    -1   0
+	0    1    -1   0   
 $EndComp
 $Comp
 L C C35
@@ -109,7 +109,7 @@ F 1 "2.2u" H 1700 3675 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1713 3625 50  0001 C CNN
 F 3 "" H 1675 3775 50  0001 C CNN
 	1    1675 3775
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR066
@@ -120,7 +120,7 @@ F 1 "GND" H 1075 3450 50  0000 C CNN
 F 2 "" H 1075 3600 50  0001 C CNN
 F 3 "" H 1075 3600 50  0001 C CNN
 	1    1075 3600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR067
@@ -131,7 +131,7 @@ F 1 "VCC" H 2200 3350 50  0000 C CNN
 F 2 "" H 2200 3200 50  0001 C CNN
 F 3 "" H 2200 3200 50  0001 C CNN
 	1    2200 3200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L SHUNT R24
@@ -142,7 +142,7 @@ F 1 "0.0005R" V 1755 2425 50  0000 C CNN
 F 2 "CRF1:SHUNT_CSS2H-3920" H 1675 2425 60  0001 C CNN
 F 3 "" H 1675 2425 60  0000 C CNN
 	1    1675 2425
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L C C37
@@ -153,7 +153,7 @@ F 1 "4.7u_100V" V 3800 2850 50  0000 C TNN
 F 2 "Capacitors_SMD:C_1210" H 3913 2450 50  0001 C CNN
 F 3 "" H 3875 2600 50  0001 C CNN
 	1    3875 2600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C39
@@ -164,7 +164,7 @@ F 1 "4.7u_100V" V 4000 2850 50  0000 C TNN
 F 2 "Capacitors_SMD:C_1210" H 4113 2450 50  0001 C CNN
 F 3 "" H 4075 2600 50  0001 C CNN
 	1    4075 2600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 P8
@@ -175,7 +175,7 @@ F 1 "PH_A" H 1325 2425 50  0000 C CNN
 F 2 "CRF1:1PAD_4x5mm" H 1125 2425 50  0001 C CNN
 F 3 "" H 1125 2425 50  0001 C CNN
 	1    1125 2425
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 $Comp
 L IRF7749 Q3
@@ -186,7 +186,7 @@ F 1 "IRF7749" H 6500 2250 50  0000 L CNN
 F 2 "IR-DirectFETs:DirectFET_L8" H 7050 2025 50  0001 L CIN
 F 3 "" H 6800 2100 50  0001 L CNN
 	1    6800 2100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L IRF7749 Q4
@@ -197,7 +197,7 @@ F 1 "IRF7749" H 6500 3350 50  0000 L CNN
 F 2 "IR-DirectFETs:DirectFET_L8" H 7050 3125 50  0001 L CIN
 F 3 "" H 6800 3200 50  0001 L CNN
 	1    6800 3200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L R R31
@@ -208,7 +208,7 @@ F 1 "4.7R" V 6250 3200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 6250 3200 60  0001 C CNN
 F 3 "" H 6250 3200 60  0001 C CNN
 	1    6250 3200
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L R R30
@@ -219,7 +219,7 @@ F 1 "4.7R" V 6250 2100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 6250 2100 60  0001 C CNN
 F 3 "" H 6250 2100 60  0001 C CNN
 	1    6250 2100
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR068
@@ -230,7 +230,7 @@ F 1 "GND" H 4425 3450 50  0000 C CNN
 F 2 "" H 4425 3600 50  0001 C CNN
 F 3 "" H 4425 3600 50  0001 C CNN
 	1    4425 3600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR069
@@ -241,7 +241,7 @@ F 1 "VCC" H 5550 3350 50  0000 C CNN
 F 2 "" H 5550 3200 50  0001 C CNN
 F 3 "" H 5550 3200 50  0001 C CNN
 	1    5550 3200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L SHUNT R29
@@ -252,7 +252,7 @@ F 1 "0.0005R" V 5105 2425 50  0000 C CNN
 F 2 "CRF1:SHUNT_CSS2H-3920" H 5025 2425 60  0001 C CNN
 F 3 "" H 5025 2425 60  0000 C CNN
 	1    5025 2425
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L C C41
@@ -263,7 +263,7 @@ F 1 "4.7u_100V" V 7150 2850 50  0000 C TNN
 F 2 "Capacitors_SMD:C_1210" H 7263 2450 50  0001 C CNN
 F 3 "" H 7225 2600 50  0001 C CNN
 	1    7225 2600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C40
@@ -274,7 +274,7 @@ F 1 "4.7u_100V" V 7350 2850 50  0000 C TNN
 F 2 "Capacitors_SMD:C_1210" H 7463 2450 50  0001 C CNN
 F 3 "" H 7425 2600 50  0001 C CNN
 	1    7425 2600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L IRF7749 Q5
@@ -285,7 +285,7 @@ F 1 "IRF7749" H 9825 2250 50  0000 L CNN
 F 2 "IR-DirectFETs:DirectFET_L8" H 10375 2025 50  0001 L CIN
 F 3 "" H 10125 2100 50  0001 L CNN
 	1    10125 2100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L IRF7749 Q6
@@ -296,7 +296,7 @@ F 1 "IRF7749" H 9825 3350 50  0000 L CNN
 F 2 "IR-DirectFETs:DirectFET_L8" H 10375 3125 50  0001 L CIN
 F 3 "" H 10125 3200 50  0001 L CNN
 	1    10125 3200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L R R34
@@ -307,7 +307,7 @@ F 1 "4.7R" V 9575 3200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 9575 3200 60  0001 C CNN
 F 3 "" H 9575 3200 60  0001 C CNN
 	1    9575 3200
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L R R33
@@ -318,7 +318,7 @@ F 1 "4.7R" V 9575 2100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 9575 2100 60  0001 C CNN
 F 3 "" H 9575 2100 60  0001 C CNN
 	1    9575 2100
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR070
@@ -329,7 +329,7 @@ F 1 "GND" H 7750 3450 50  0000 C CNN
 F 2 "" H 7750 3600 50  0001 C CNN
 F 3 "" H 7750 3600 50  0001 C CNN
 	1    7750 3600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR071
@@ -340,7 +340,7 @@ F 1 "VCC" H 8875 3350 50  0000 C CNN
 F 2 "" H 8875 3200 50  0001 C CNN
 F 3 "" H 8875 3200 50  0001 C CNN
 	1    8875 3200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L SHUNT R32
@@ -351,7 +351,7 @@ F 1 "0.0005R" V 8430 2425 50  0000 C CNN
 F 2 "CRF1:SHUNT_CSS2H-3920" H 8350 2425 60  0001 C CNN
 F 3 "" H 8350 2425 60  0000 C CNN
 	1    8350 2425
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L C C43
@@ -362,7 +362,7 @@ F 1 "4.7u_100V" V 10475 2850 50  0000 C TNN
 F 2 "Capacitors_SMD:C_1210" H 10588 2450 50  0001 C CNN
 F 3 "" H 10550 2600 50  0001 C CNN
 	1    10550 2600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C44
@@ -373,7 +373,7 @@ F 1 "4.7u_100V" V 10675 2850 50  0000 C TNN
 F 2 "Capacitors_SMD:C_1210" H 10788 2450 50  0001 C CNN
 F 3 "" H 10750 2600 50  0001 C CNN
 	1    10750 2600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR072
@@ -384,7 +384,7 @@ F 1 "GND" H 10225 4150 50  0000 C CNN
 F 2 "" H 10225 4300 50  0001 C CNN
 F 3 "" H 10225 4300 50  0001 C CNN
 	1    10225 4300
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 P12
@@ -395,7 +395,7 @@ F 1 "GND" H 10600 4100 50  0000 C CNN
 F 2 "CRF1:1PAD_7x6mm" H 10600 4200 50  0001 C CNN
 F 3 "" H 10600 4200 50  0001 C CNN
 	1    10600 4200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 P11
@@ -406,7 +406,7 @@ F 1 "SUPPLY" H 10600 1350 50  0000 C CNN
 F 2 "CRF1:1PAD_7x6mm" H 10600 1450 50  0001 C CNN
 F 3 "" H 10600 1450 50  0001 C CNN
 	1    10600 1450
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C29
@@ -417,7 +417,7 @@ F 1 "4.7n" H 1575 5365 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1513 5350 50  0001 C CNN
 F 3 "" H 1475 5400 50  0001 C CNN
 	1    1475 5400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR073
@@ -428,7 +428,7 @@ F 1 "GND" H 1475 5500 50  0000 C CNN
 F 2 "" H 1475 5650 50  0001 C CNN
 F 3 "" H 1475 5650 50  0001 C CNN
 	1    1475 5650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L R R36
@@ -439,7 +439,7 @@ F 1 "100R" V 1775 5950 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 1875 5950 60  0001 C CNN
 F 3 "" H 1875 5950 60  0001 C CNN
 	1    1875 5950
-	0    1    -1   0
+	0    1    -1   0   
 $EndComp
 $Comp
 L C C30
@@ -450,7 +450,7 @@ F 1 "4.7n" H 1575 6140 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1513 6125 50  0001 C CNN
 F 3 "" H 1475 6175 50  0001 C CNN
 	1    1475 6175
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR074
@@ -461,7 +461,7 @@ F 1 "GND" H 1475 6275 50  0000 C CNN
 F 2 "" H 1475 6425 50  0001 C CNN
 F 3 "" H 1475 6425 50  0001 C CNN
 	1    1475 6425
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L R R37
@@ -472,7 +472,7 @@ F 1 "100R" V 1775 6725 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 1875 6725 60  0001 C CNN
 F 3 "" H 1875 6725 60  0001 C CNN
 	1    1875 6725
-	0    1    -1   0
+	0    1    -1   0   
 $EndComp
 $Comp
 L C C45
@@ -483,7 +483,7 @@ F 1 "4.7n" H 1575 6915 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1513 6900 50  0001 C CNN
 F 3 "" H 1475 6950 50  0001 C CNN
 	1    1475 6950
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR075
@@ -494,7 +494,7 @@ F 1 "GND" H 1475 7050 50  0000 C CNN
 F 2 "" H 1475 7200 50  0001 C CNN
 F 3 "" H 1475 7200 50  0001 C CNN
 	1    1475 7200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L R R27
@@ -505,7 +505,7 @@ F 1 "NTC 10k" V 3850 5826 40  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3880 5825 30  0001 C CNN
 F 3 "" H 3950 5825 30  0000 C CNN
 	1    3950 5825
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L R R28
@@ -516,7 +516,7 @@ F 1 "10k" V 3850 6526 40  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3880 6525 30  0001 C CNN
 F 3 "" H 3950 6525 30  0000 C CNN
 	1    3950 6525
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C36
@@ -527,7 +527,7 @@ F 1 "2.2u" H 3725 6450 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 3738 6375 30  0001 C CNN
 F 3 "" H 3700 6525 60  0000 C CNN
 	1    3700 6525
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR076
@@ -538,7 +538,7 @@ F 1 "GND" H 3950 6875 50  0000 C CNN
 F 2 "" H 3950 7025 50  0001 C CNN
 F 3 "" H 3950 7025 50  0001 C CNN
 	1    3950 7025
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR077
@@ -549,7 +549,7 @@ F 1 "GND" H 3950 6875 50  0000 C CNN
 F 2 "" H 3950 7025 50  0001 C CNN
 F 3 "" H 3950 7025 50  0001 C CNN
 	1    3950 7025
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR078
@@ -560,7 +560,7 @@ F 1 "VCC" H 3950 5625 50  0000 C CNN
 F 2 "" H 3950 5475 50  0001 C CNN
 F 3 "" H 3950 5475 50  0001 C CNN
 	1    3950 5475
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L CP1 C46
@@ -568,10 +568,10 @@ U 1 1 5A97FCAA
 P 8750 5325
 F 0 "C46" H 8850 5375 50  0000 L CNN
 F 1 "680u_63V" H 8850 5300 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D12.5mm_P5.00mm" H 8750 5325 50  0001 C CNN
+F 2 "CRF1:CP_Radial_D12.5mm_P5.00mm" H 8750 5325 50  0001 C CNN
 F 3 "" H 8750 5325 50  0001 C CNN
 	1    8750 5325
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR079
@@ -582,7 +582,7 @@ F 1 "GND" H 9350 5450 50  0000 C CNN
 F 2 "" H 9350 5600 50  0001 C CNN
 F 3 "" H 9350 5600 50  0001 C CNN
 	1    9350 5600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L CP1 C47
@@ -590,10 +590,10 @@ U 1 1 5A98145F
 P 9350 5325
 F 0 "C47" H 9450 5375 50  0000 L CNN
 F 1 "680u_63V" H 9450 5300 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D12.5mm_P5.00mm" H 9350 5325 50  0001 C CNN
+F 2 "CRF1:CP_Radial_D12.5mm_P5.00mm" H 9350 5325 50  0001 C CNN
 F 3 "" H 9350 5325 50  0001 C CNN
 	1    9350 5325
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L AD8418-CST U5
@@ -604,7 +604,7 @@ F 1 "AD8418" H 1825 2925 50  0000 R CNN
 F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 1725 2925 50  0001 C CNN
 F 3 "" H 2325 2575 50  0001 C CNN
 	1    1675 3275
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 $Comp
 L AD8418-CST U6
@@ -615,7 +615,7 @@ F 1 "AD8418" H 5175 2925 50  0000 R CNN
 F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 5075 2925 50  0001 C CNN
 F 3 "" H 5675 2575 50  0001 C CNN
 	1    5025 3275
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 $Comp
 L AD8418-CST U7
@@ -626,7 +626,7 @@ F 1 "AD8418" H 8500 2925 50  0000 R CNN
 F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 8400 2925 50  0001 C CNN
 F 3 "" H 9000 2575 50  0001 C CNN
 	1    8350 3275
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 P9
@@ -637,7 +637,7 @@ F 1 "PH_B" H 4675 2425 50  0000 C CNN
 F 2 "CRF1:1PAD_4x5mm" H 4475 2425 50  0001 C CNN
 F 3 "" H 4475 2425 50  0001 C CNN
 	1    4475 2425
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 P10
@@ -648,7 +648,7 @@ F 1 "PH_C" H 8000 2425 50  0000 C CNN
 F 2 "CRF1:1PAD_4x5mm" H 7800 2425 50  0001 C CNN
 F 3 "" H 7800 2425 50  0001 C CNN
 	1    7800 2425
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 $Comp
 L C C38
@@ -659,7 +659,7 @@ F 1 "2.2u" H 5050 3675 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 5063 3625 50  0001 C CNN
 F 3 "" H 5025 3775 50  0001 C CNN
 	1    5025 3775
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L C C42
@@ -670,7 +670,7 @@ F 1 "2.2u" H 8375 3675 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 8388 3625 50  0001 C CNN
 F 3 "" H 8350 3775 50  0001 C CNN
 	1    8350 3775
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Text HLabel 1325 5175 0    60   Input ~ 0
 CURR_A

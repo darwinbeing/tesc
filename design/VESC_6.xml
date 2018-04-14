@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/VESC_6.sch</source>
-    <date>2018 April 14, Saturday 07:34:17</date>
+    <date>2018 April 14, Saturday 15:05:43</date>
     <tool>Eeschema 4.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -498,7 +498,7 @@
     </comp>
     <comp ref="D4">
       <value>DIODE</value>
-      <footprint>Diodes_SMD:D_SMA_Handsoldering</footprint>
+      <footprint>CRF1:SOD-123F-2</footprint>
       <libsource lib="device" part="D_Schottky_Small"/>
       <sheetpath names="/DRV8301/" tstamps="/504F83BE/"/>
       <tstamp>5A8AB2D0</tstamp>
@@ -532,7 +532,7 @@
       <tstamp>5A8BF835</tstamp>
     </comp>
     <comp ref="R16">
-      <value>2K2</value>
+      <value>2k2</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/DRV8301/" tstamps="/504F83BE/"/>
@@ -546,7 +546,7 @@
       <tstamp>5A8C1566</tstamp>
     </comp>
     <comp ref="R18">
-      <value>2K2</value>
+      <value>2k2</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/DRV8301/" tstamps="/504F83BE/"/>
@@ -560,7 +560,7 @@
       <tstamp>5A8C15F3</tstamp>
     </comp>
     <comp ref="R20">
-      <value>2K2</value>
+      <value>2k2</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/DRV8301/" tstamps="/504F83BE/"/>
@@ -574,7 +574,7 @@
       <tstamp>5A8C16E7</tstamp>
     </comp>
     <comp ref="R22">
-      <value>2K2</value>
+      <value>2k2</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/DRV8301/" tstamps="/504F83BE/"/>
