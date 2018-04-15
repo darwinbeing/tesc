@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/VESC_6.sch</source>
-    <date>2018 April 14, Saturday 15:05:43</date>
+    <date>2018 April 15, Sunday 15:32:14</date>
     <tool>Eeschema 4.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -498,7 +498,7 @@
     </comp>
     <comp ref="D4">
       <value>DIODE</value>
-      <footprint>CRF1:SOD-123F-2</footprint>
+      <footprint>Diodes_SMD:D_SMB</footprint>
       <libsource lib="device" part="D_Schottky_Small"/>
       <sheetpath names="/DRV8301/" tstamps="/504F83BE/"/>
       <tstamp>5A8AB2D0</tstamp>

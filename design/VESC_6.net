@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/VESC_6.sch)
-    (date "2018 April 14, Saturday 15:05:40")
+    (date "2018 April 15, Sunday 15:32:02")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -425,7 +425,7 @@
       (tstamp 5A8AB050))
     (comp (ref D4)
       (value DIODE)
-      (footprint CRF1:SOD-123F-2)
+      (footprint Diodes_SMD:D_SMB)
       (libsource (lib device) (part D_Schottky_Small))
       (sheetpath (names /DRV8301/) (tstamps /504F83BE/))
       (tstamp 5A8AB2D0))
