@@ -3,7 +3,7 @@
   (general
     (links 598)
     (no_connects 0)
-    (area 104.829157 50.3 175.833353 116.556817)
+    (area 114.924999 54.924999 175.075001 115.075001)
     (thickness 1.6)
     (drawings 72)
     (tracks 2029)
@@ -3961,7 +3961,7 @@
     (tags "DirectFET L8")
     (path /53F826DC/5A8B9A3B)
     (attr smd)
-    (fp_text reference Q3 (at -4.813 4.318) (layer F.SilkS)
+    (fp_text reference Q3 (at -4.813 4.699) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_text value IRF7749 (at 0 4.5) (layer F.Fab) hide
@@ -7782,10 +7782,10 @@
       (net 24 SUPPLY))
   )
 
-  (module CRF1:1PAD_7x6mm (layer B.Cu) (tedit 5ACD6D87) (tstamp 5AEF2F23)
+  (module CRF1:1PAD_7x6mm (layer B.Cu) (tedit 5AD77131) (tstamp 5AEF2F23)
     (at 157.7 84.3)
     (path /53F826DC/5A8BD287)
-    (fp_text reference P12 (at 0 4.3 90) (layer B.SilkS) hide
+    (fp_text reference P12 (at 6.384 -1.369 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_text value GND (at 0 -4) (layer B.SilkS) hide
@@ -7799,12 +7799,12 @@
       (net 2 GND))
   )
 
-  (module CRF1:CP_Radial_D12.5mm_P5.00mm (layer F.Cu) (tedit 5AD2145A) (tstamp 5A9A24CD)
+  (module CRF1:CP_Radial_D12.5mm_P5.00mm (layer F.Cu) (tedit 5AD76FD3) (tstamp 5A9A24CD)
     (at 171.2 81.9 180)
     (descr "CP, Radial series, Radial, pin pitch=5.00mm, , diameter=12.5mm, Electrolytic Capacitor")
     (tags "CP Radial series Radial pin pitch 5.00mm  diameter 12.5mm Electrolytic Capacitor")
     (path /53F826DC/5A98145F)
-    (fp_text reference C47 (at 2.671 -1.285 180) (layer F.SilkS)
+    (fp_text reference C47 (at 2.671 -1.285 180) (layer F.SilkS) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_text value 680u_63V (at 3.048 3.175 180) (layer F.Fab) hide
@@ -7815,19 +7815,14 @@
       (net 24 SUPPLY))
     (pad 2 thru_hole circle (at 5 0 180) (size 2.4 2.4) (drill 1.2) (layers *.Cu *.Mask)
       (net 2 GND))
-    (model ${KISYS3DMOD}/Capacitors_THT.3dshapes/CP_Radial_D12.5mm_P5.00mm.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
   )
 
-  (module CRF1:CP_Radial_D12.5mm_P5.00mm (layer F.Cu) (tedit 5AD2142D) (tstamp 5A9A23D8)
+  (module CRF1:CP_Radial_D12.5mm_P5.00mm (layer F.Cu) (tedit 5AD76FD1) (tstamp 5A9A23D8)
     (at 144.3 81.9)
     (descr "CP, Radial series, Radial, pin pitch=5.00mm, , diameter=12.5mm, Electrolytic Capacitor")
     (tags "CP Radial series Radial pin pitch 5.00mm  diameter 12.5mm Electrolytic Capacitor")
     (path /53F826DC/5A97FCAA)
-    (fp_text reference C46 (at 2.766 1.285) (layer F.SilkS)
+    (fp_text reference C46 (at 2.766 1.285) (layer F.SilkS) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_text value 680u_63V (at 3.048 3.175) (layer F.Fab) hide
@@ -7838,11 +7833,6 @@
       (net 24 SUPPLY))
     (pad 2 thru_hole circle (at 5 0) (size 2.4 2.4) (drill 1.2) (layers *.Cu *.Mask)
       (net 2 GND))
-    (model ${KISYS3DMOD}/Capacitors_THT.3dshapes/CP_Radial_D12.5mm_P5.00mm.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
   )
 
   (module CRF1:STM32F4x5RG (layer F.Cu) (tedit 5AD68963) (tstamp 5ACB75F4)
@@ -8049,7 +8039,7 @@
     )
   )
 
-  (gr_line (start 152.4 82.296) (end 153.416 82.296) (layer B.SilkS) (width 0.2032))
+  (gr_line (start 151.003 82.931) (end 152.019 82.931) (layer B.SilkS) (width 0.2032))
   (gr_line (start 152.908 81.788) (end 152.908 82.804) (layer F.SilkS) (width 0.2032))
   (gr_line (start 152.4 82.296) (end 153.416 82.296) (layer F.SilkS) (width 0.2032))
   (gr_line (start 138.684 58.039) (end 141.097 58.039) (layer F.SilkS) (width 0.1016))
@@ -10486,14 +10476,14 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 152.527 79.756) (xy 157.226 83.693) (xy 155.194 85.852) (xy 150.114 80.137) (xy 150.114 63.754)
+        (xy 152.527 79.756) (xy 157.099 83.82) (xy 155.194 85.852) (xy 150.114 80.264) (xy 150.114 63.754)
         (xy 152.527 63.754)
       )
     )
     (filled_polygon
       (pts
-        (xy 152.4 79.756) (xy 152.410006 79.80541) (xy 152.445438 79.853348) (xy 157.041303 83.703938) (xy 155.196678 85.663853)
-        (xy 150.241 80.088715) (xy 150.241 63.881) (xy 152.4 63.881)
+        (xy 152.4 79.756) (xy 152.410006 79.80541) (xy 152.442626 79.850921) (xy 156.917155 83.82828) (xy 155.195435 85.66478)
+        (xy 150.241 80.214902) (xy 150.241 63.881) (xy 152.4 63.881)
       )
     )
   )
@@ -10503,14 +10493,14 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 152.527 79.756) (xy 157.099 83.566) (xy 155.067 85.725) (xy 150.114 80.137) (xy 150.114 63.754)
+        (xy 152.527 79.756) (xy 156.972 83.693) (xy 155.067 85.725) (xy 150.114 80.264) (xy 150.114 63.754)
         (xy 152.527 63.754)
       )
     )
     (filled_polygon
       (pts
-        (xy 152.4 79.756) (xy 152.410006 79.80541) (xy 152.445697 79.853564) (xy 156.914058 83.577198) (xy 155.069813 85.536709)
-        (xy 150.241 80.088817) (xy 150.241 63.881) (xy 152.4 63.881)
+        (xy 152.4 79.756) (xy 152.410006 79.80541) (xy 152.442795 79.851071) (xy 156.789996 83.701449) (xy 155.068545 85.537664)
+        (xy 150.241 80.214986) (xy 150.241 63.881) (xy 152.4 63.881)
       )
     )
   )
@@ -10520,13 +10510,13 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 164.973 80.137) (xy 159.893 86.36) (xy 157.48 83.693) (xy 162.56 79.756) (xy 162.56 63.754)
+        (xy 164.973 80.264) (xy 159.893 86.36) (xy 158.242 84.582) (xy 162.56 79.756) (xy 162.56 63.754)
         (xy 164.973 63.754)
       )
     )
     (filled_polygon
       (pts
-        (xy 164.846 80.091745) (xy 159.88805 86.165234) (xy 157.666128 83.709426) (xy 162.637797 79.856383) (xy 162.670722 79.818207)
+        (xy 164.846 80.21802) (xy 159.887844 86.167807) (xy 158.413835 84.580413) (xy 162.654646 79.840683) (xy 162.680135 79.797189)
         (xy 162.687 79.756) (xy 162.687 63.881) (xy 164.846 63.881)
       )
     )
@@ -10537,13 +10527,13 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 164.973 80.137) (xy 159.893 86.36) (xy 157.353 83.82) (xy 162.56 79.756) (xy 162.56 63.754)
+        (xy 164.973 80.264) (xy 159.893 86.36) (xy 158.115 84.709) (xy 162.56 79.756) (xy 162.56 63.754)
         (xy 164.973 63.754)
       )
     )
     (filled_polygon
       (pts
-        (xy 164.846 80.091745) (xy 159.883461 86.170855) (xy 157.544357 83.831751) (xy 162.638139 79.856116) (xy 162.670934 79.817828)
+        (xy 164.846 80.21802) (xy 159.881222 86.175754) (xy 158.292915 84.700898) (xy 162.654519 79.840825) (xy 162.680074 79.797368)
         (xy 162.687 79.756) (xy 162.687 63.881) (xy 164.846 63.881)
       )
     )
@@ -10652,74 +10642,6 @@
         (xy 148.844 75.819) (xy 141.732 75.819) (xy 141.732 74.041) (xy 148.844 74.041) (xy 148.879381 74.035972)
         (xy 148.911961 74.021286) (xy 148.93916 73.998105) (xy 148.958823 73.968264) (xy 148.969395 73.934127) (xy 148.971 73.914)
         (xy 148.971 63.881) (xy 153.797 63.881)
-      )
-    )
-  )
-  (zone (net 0) (net_name "") (layer F.Paste) (tstamp 0) (hatch edge 0.508)
-    (connect_pads (clearance 0.254))
-    (min_thickness 0.254)
-    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
-    (polygon
-      (pts
-        (xy 151.003 73.152) (xy 153.416 73.152) (xy 153.416 79.756) (xy 156.718 82.677) (xy 155.448 84.074)
-        (xy 151.003 80.01)
-      )
-    )
-    (filled_polygon
-      (pts
-        (xy 153.289 79.756) (xy 153.299006 79.80541) (xy 153.331853 79.851123) (xy 156.537432 82.686827) (xy 155.4397 83.894331)
-        (xy 151.13 79.954034) (xy 151.13 73.279) (xy 153.289 73.279)
-      )
-    )
-  )
-  (zone (net 0) (net_name "") (layer F.Paste) (tstamp 0) (hatch edge 0.508)
-    (connect_pads (clearance 0.254))
-    (min_thickness 0.254)
-    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
-    (polygon
-      (pts
-        (xy 162.052 73.152) (xy 164.465 73.152) (xy 164.465 80.01) (xy 160.274 83.693) (xy 159.131 82.169)
-        (xy 162.052 79.629)
-      )
-    )
-    (filled_polygon
-      (pts
-        (xy 164.338 79.952535) (xy 160.293255 83.507007) (xy 159.303485 82.187313) (xy 162.135335 79.724835) (xy 162.166054 79.684863)
-        (xy 162.179 79.629) (xy 162.179 73.279) (xy 164.338 73.279)
-      )
-    )
-  )
-  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 0) (hatch edge 0.508)
-    (connect_pads (clearance 0.254))
-    (min_thickness 0.254)
-    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
-    (polygon
-      (pts
-        (xy 151.003 73.152) (xy 153.416 73.152) (xy 153.416 79.756) (xy 156.718 82.677) (xy 155.448 84.074)
-        (xy 151.003 80.01)
-      )
-    )
-    (filled_polygon
-      (pts
-        (xy 153.289 79.756) (xy 153.299006 79.80541) (xy 153.331853 79.851123) (xy 156.537432 82.686827) (xy 155.4397 83.894331)
-        (xy 151.13 79.954034) (xy 151.13 73.279) (xy 153.289 73.279)
-      )
-    )
-  )
-  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 0) (hatch edge 0.508)
-    (connect_pads (clearance 0.254))
-    (min_thickness 0.254)
-    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
-    (polygon
-      (pts
-        (xy 162.052 73.152) (xy 164.465 73.152) (xy 164.465 80.01) (xy 160.274 83.693) (xy 159.131 82.169)
-        (xy 162.052 79.629)
-      )
-    )
-    (filled_polygon
-      (pts
-        (xy 164.338 79.952535) (xy 160.293255 83.507007) (xy 159.303485 82.187313) (xy 162.135335 79.724835) (xy 162.166054 79.684863)
-        (xy 162.179 79.629) (xy 162.179 73.279) (xy 164.338 73.279)
       )
     )
   )
