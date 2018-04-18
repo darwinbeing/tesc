@@ -22,8 +22,8 @@
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
-    (36 B.SilkS user)
-    (37 F.SilkS user)
+    (36 B.SilkS user hide)
+    (37 F.SilkS user hide)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user)
@@ -98,7 +98,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory Gerber))
+      (outputdirectory Plot))
   )
 
   (net 0 "")
@@ -388,7 +388,7 @@
     (add_net VCC)
   )
 
-  (module Housings_DFN_QFN:QFN-24_4x4mm_Pitch0.5mm (layer F.Cu) (tedit 5AB72F76) (tstamp 5AB7301D)
+  (module Housings_DFN_QFN:QFN-24_4x4mm_Pitch0.5mm (layer F.Cu) (tedit 5AD68975) (tstamp 5AB7301D)
     (at 121.584 81.776 90)
     (descr "24-Lead Plastic Quad Flat, No Lead Package (MJ) - 4x4x0.9 mm Body [QFN]; (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "QFN 0.5")
@@ -397,7 +397,7 @@
     (fp_text reference U10 (at -0.127 -0.299 90) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value MPU9150 (at 0 3.375 90) (layer F.Fab)
+    (fp_text value MPU9150 (at 0 3.375 90) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -1 -2) (end 2 -2) (layer F.Fab) (width 0.15))
@@ -668,7 +668,7 @@
       (net 24 SUPPLY) (zone_connect 2))
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB0F4)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68BD2) (tstamp 5ABBB0F4)
     (at 134.874 97.028 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -677,7 +677,7 @@
     (fp_text reference C10 (at -1.143 1.3335 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 2.2u (at 0 -1.9 180) (layer B.Fab)
+    (fp_text value 2.2u (at 0 -1.9 180) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -772,7 +772,7 @@
       (net 24 SUPPLY) (zone_connect 2))
   )
 
-  (module Crystals:Crystal_SMD_5032_4Pads (layer B.Cu) (tedit 56EB1F0C) (tstamp 5ABBC558)
+  (module Crystals:Crystal_SMD_5032_4Pads (layer B.Cu) (tedit 5AD68BAC) (tstamp 5ABBC558)
     (at 134.525 89.04732 180)
     (descr "Ceramic SMD crystal, 5.0x3.2mm, 4 Pads")
     (tags "crystal oscillator quartz SMD SMT 5032")
@@ -781,7 +781,7 @@
     (fp_text reference X1 (at 0 3 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 8m (at 0 -3.25 180) (layer B.Fab)
+    (fp_text value 8m (at 0 -3.25 180) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -2.6 -0.2) (end -3.3 -0.2) (layer B.SilkS) (width 0.15))
@@ -2373,7 +2373,7 @@
       (net 24 SUPPLY) (zone_connect 2))
   )
 
-  (module Capacitors_SMD:C_1210 (layer F.Cu) (tedit 5ACB7956) (tstamp 5ABBB907)
+  (module Capacitors_SMD:C_1210 (layer F.Cu) (tedit 5AD688A7) (tstamp 5ABBB907)
     (at 131.953 83.947 180)
     (descr "Capacitor SMD 1210, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 1210")
@@ -2382,7 +2382,7 @@
     (fp_text reference C26 (at 0 -2.7 180) (layer F.SilkS) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 4.7u_100V (at 0 2.7 180) (layer F.Fab)
+    (fp_text value 4.7u_100V (at 0 2.7 180) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -1.6 1.25) (end -1.6 -1.25) (layer F.Fab) (width 0.15))
@@ -2406,7 +2406,7 @@
     )
   )
 
-  (module Crystals:Crystal_SMD_5032_4Pads (layer B.Cu) (tedit 56EB1F0C) (tstamp 5ABBC55F)
+  (module Crystals:Crystal_SMD_5032_4Pads (layer B.Cu) (tedit 5AD68C00) (tstamp 5ABBC55F)
     (at 133.6548 110.0582 45)
     (descr "Ceramic SMD crystal, 5.0x3.2mm, 4 Pads")
     (tags "crystal oscillator quartz SMD SMT 5032")
@@ -2415,7 +2415,7 @@
     (fp_text reference X2 (at 0.017961 0.089803 45) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 16M (at 0 -3.25 45) (layer B.Fab)
+    (fp_text value 16M (at 0 -3.25 45) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -2.6 -0.2) (end -3.3 -0.2) (layer B.SilkS) (width 0.15))
@@ -2546,14 +2546,14 @@
     )
   )
 
-  (module CRF1:TSSOP-56-PP (layer F.Cu) (tedit 5050C42C) (tstamp 5A9A2977)
+  (module CRF1:TSSOP-56-PP (layer F.Cu) (tedit 5AD690D0) (tstamp 5A9A2977)
     (at 132.08 74.549 270)
     (descr TSSOP-56-PP)
     (path /504F83BE/5A8A8132)
-    (fp_text reference U3 (at 0 1.27 270) (layer F.SilkS)
+    (fp_text reference U3 (at 0 0 270) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value DRV8301 (at 0 -1.2065 270) (layer F.SilkS)
+    (fp_text value DRV8301 (at 0 -1.2065 270) (layer F.SilkS) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -7.39648 2.99974) (end 7.60222 2.99974) (layer F.SilkS) (width 0.127))
@@ -2751,7 +2751,7 @@
     )
   )
 
-  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AB72F2F) (tstamp 5A9A3FC5)
+  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AD688E9) (tstamp 5A9A3FC5)
     (at 168.734 76.241)
     (descr "DirectFET L8 https://www.infineon.com/dgdl/Infineon-AN-1035-AN-v29_00-EN.pdf?fileId=5546d462533600a40153559159020f76")
     (tags "DirectFET L8")
@@ -2769,7 +2769,7 @@
     (fp_line (start -3.95 -2.975) (end -3.95 -3.3) (layer F.Fab) (width 0.1))
     (fp_line (start 5.45 -3.3) (end 5.45 3.3) (layer F.CrtYd) (width 0.05))
     (fp_line (start -4.2 -3.3) (end -5.45 -3.3) (layer F.CrtYd) (width 0.05))
-    (fp_text user %R (at 0 0) (layer F.Fab)
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start 3.775 -3.475) (end -3.775 -3.475) (layer F.Fab) (width 0.1))
@@ -2854,7 +2854,7 @@
       (net 23 /DRV8301/SH_C) (zone_connect 2))
   )
 
-  (module Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm (layer B.Cu) (tedit 5AA2DC25) (tstamp 5A9E9D66)
+  (module Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm (layer B.Cu) (tedit 5AD68B30) (tstamp 5A9E9D66)
     (at 138.43 65.913 270)
     (descr "8-Lead Plastic Micro Small Outline Package (MS) [MSOP] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SSOP 0.65")
@@ -2882,7 +2882,7 @@
     (fp_line (start -1.675 1.675) (end 1.675 1.675) (layer B.SilkS) (width 0.15))
     (fp_line (start -1.675 -1.675) (end 1.675 -1.675) (layer B.SilkS) (width 0.15))
     (fp_line (start -1.675 1.5) (end -2.925 1.5) (layer B.SilkS) (width 0.15))
-    (fp_text user %R (at 0 0 270) (layer B.Fab)
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (pad 1 smd rect (at -2.2 0.975 270) (size 1.45 0.45) (layers B.Cu B.Paste B.Mask)
@@ -2908,7 +2908,7 @@
     )
   )
 
-  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AD1E8DC) (tstamp 5A9A4000)
+  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AD688EE) (tstamp 5A9A4000)
     (at 170.393 65.167 90)
     (descr "DirectFET L8 https://www.infineon.com/dgdl/Infineon-AN-1035-AN-v29_00-EN.pdf?fileId=5546d462533600a40153559159020f76")
     (tags "DirectFET L8")
@@ -2926,7 +2926,7 @@
     (fp_line (start -3.95 -2.975) (end -3.95 -3.3) (layer F.Fab) (width 0.1))
     (fp_line (start 5.45 -3.3) (end 5.45 3.3) (layer F.CrtYd) (width 0.05))
     (fp_line (start -4.2 -3.3) (end -5.45 -3.3) (layer F.CrtYd) (width 0.05))
-    (fp_text user %R (at 0 0 90) (layer F.Fab)
+    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start 3.775 -3.475) (end -3.775 -3.475) (layer F.Fab) (width 0.1))
@@ -3032,7 +3032,7 @@
       (net 19 /DRV8301/SH_A) (zone_connect 2))
   )
 
-  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AB72D2F) (tstamp 5A9A3ED9)
+  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AD688DE) (tstamp 5A9A3ED9)
     (at 146.734 76.2)
     (descr "DirectFET L8 https://www.infineon.com/dgdl/Infineon-AN-1035-AN-v29_00-EN.pdf?fileId=5546d462533600a40153559159020f76")
     (tags "DirectFET L8")
@@ -3050,7 +3050,7 @@
     (fp_line (start -3.95 -2.975) (end -3.95 -3.3) (layer F.Fab) (width 0.1))
     (fp_line (start 5.45 -3.3) (end 5.45 3.3) (layer F.CrtYd) (width 0.05))
     (fp_line (start -4.2 -3.3) (end -5.45 -3.3) (layer F.CrtYd) (width 0.05))
-    (fp_text user %R (at 0 0) (layer F.Fab)
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start 3.775 -3.475) (end -3.775 -3.475) (layer F.Fab) (width 0.1))
@@ -3161,7 +3161,7 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask))
   )
 
-  (module Inductors_SMD:L_0805 (layer B.Cu) (tedit 5AAC0B56) (tstamp 5A9A25D1)
+  (module Inductors_SMD:L_0805 (layer B.Cu) (tedit 5AD68B86) (tstamp 5A9A25D1)
     (at 121.5 80.123 270)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
@@ -3173,7 +3173,7 @@
     (fp_text value 2.2u (at 0 -2.1 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 270) (layer B.Fab)
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -1 -0.62) (end -1 0.62) (layer B.Fab) (width 0.1))
@@ -3512,7 +3512,7 @@
     )
   )
 
-  (module TO_SOT_Packages_SMD:SOT-23-5 (layer B.Cu) (tedit 5AAC0BED) (tstamp 5A9A2935)
+  (module TO_SOT_Packages_SMD:SOT-23-5 (layer B.Cu) (tedit 5AD68B8E) (tstamp 5A9A2935)
     (at 124.6 80.123 180)
     (descr "5-pin SOT23 package")
     (tags SOT-23-5)
@@ -3524,7 +3524,7 @@
     (fp_text value LM3671 (at 0 -2.9 180) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 450) (layer B.Fab)
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.9 -1.61) (end 0.9 -1.61) (layer B.SilkS) (width 0.12))
@@ -3867,7 +3867,7 @@
     )
   )
 
-  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AD1E8C0) (tstamp 5A9A3F14)
+  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AD688F7) (tstamp 5A9A3F14)
     (at 145.087 65.167 90)
     (descr "DirectFET L8 https://www.infineon.com/dgdl/Infineon-AN-1035-AN-v29_00-EN.pdf?fileId=5546d462533600a40153559159020f76")
     (tags "DirectFET L8")
@@ -3885,7 +3885,7 @@
     (fp_line (start -3.95 -2.975) (end -3.95 -3.3) (layer F.Fab) (width 0.1))
     (fp_line (start 5.45 -3.3) (end 5.45 3.3) (layer F.CrtYd) (width 0.05))
     (fp_line (start -4.2 -3.3) (end -5.45 -3.3) (layer F.CrtYd) (width 0.05))
-    (fp_text user %R (at 0 0 90) (layer F.Fab)
+    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start 3.775 -3.475) (end -3.775 -3.475) (layer F.Fab) (width 0.1))
@@ -3955,7 +3955,7 @@
     )
   )
 
-  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AB72DA0) (tstamp 5A9A3F4F)
+  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AD688E5) (tstamp 5A9A3F4F)
     (at 157.721 76.2)
     (descr "DirectFET L8 https://www.infineon.com/dgdl/Infineon-AN-1035-AN-v29_00-EN.pdf?fileId=5546d462533600a40153559159020f76")
     (tags "DirectFET L8")
@@ -3973,7 +3973,7 @@
     (fp_line (start -3.95 -2.975) (end -3.95 -3.3) (layer F.Fab) (width 0.1))
     (fp_line (start 5.45 -3.3) (end 5.45 3.3) (layer F.CrtYd) (width 0.05))
     (fp_line (start -4.2 -3.3) (end -5.45 -3.3) (layer F.CrtYd) (width 0.05))
-    (fp_text user %R (at 0 0) (layer F.Fab)
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start 3.775 -3.475) (end -3.775 -3.475) (layer F.Fab) (width 0.1))
@@ -4046,7 +4046,7 @@
     )
   )
 
-  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AD1E8CE) (tstamp 5A9A3F8A)
+  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AD688F1) (tstamp 5A9A3F8A)
     (at 157.406 65.167 90)
     (descr "DirectFET L8 https://www.infineon.com/dgdl/Infineon-AN-1035-AN-v29_00-EN.pdf?fileId=5546d462533600a40153559159020f76")
     (tags "DirectFET L8")
@@ -4064,7 +4064,7 @@
     (fp_line (start -3.95 -2.975) (end -3.95 -3.3) (layer F.Fab) (width 0.1))
     (fp_line (start 5.45 -3.3) (end 5.45 3.3) (layer F.CrtYd) (width 0.05))
     (fp_line (start -4.2 -3.3) (end -5.45 -3.3) (layer F.CrtYd) (width 0.05))
-    (fp_text user %R (at 0 0 90) (layer F.Fab)
+    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start 3.775 -3.475) (end -3.775 -3.475) (layer F.Fab) (width 0.1))
@@ -4134,7 +4134,7 @@
     )
   )
 
-  (module Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm (layer B.Cu) (tedit 5AA2DBEF) (tstamp 5A9DBBE7)
+  (module Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm (layer B.Cu) (tedit 5AD68B28) (tstamp 5A9DBBE7)
     (at 133.5278 63.7032 90)
     (descr "8-Lead Plastic Micro Small Outline Package (MS) [MSOP] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SSOP 0.65")
@@ -4162,7 +4162,7 @@
     (fp_line (start -1.675 1.675) (end 1.675 1.675) (layer B.SilkS) (width 0.15))
     (fp_line (start -1.675 -1.675) (end 1.675 -1.675) (layer B.SilkS) (width 0.15))
     (fp_line (start -1.675 1.5) (end -2.925 1.5) (layer B.SilkS) (width 0.15))
-    (fp_text user %R (at 0 0 90) (layer B.Fab)
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (pad 1 smd rect (at -2.2 0.975 90) (size 1.45 0.45) (layers B.Cu B.Paste B.Mask)
@@ -4188,7 +4188,7 @@
     )
   )
 
-  (module Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm (layer B.Cu) (tedit 5AA2DBC4) (tstamp 5A9DBC04)
+  (module Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm (layer B.Cu) (tedit 5AD68B23) (tstamp 5A9DBC04)
     (at 128.1303 65.2272 90)
     (descr "8-Lead Plastic Micro Small Outline Package (MS) [MSOP] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SSOP 0.65")
@@ -4216,7 +4216,7 @@
     (fp_line (start -1.675 1.675) (end 1.675 1.675) (layer B.SilkS) (width 0.15))
     (fp_line (start -1.675 -1.675) (end 1.675 -1.675) (layer B.SilkS) (width 0.15))
     (fp_line (start -1.675 1.5) (end -2.925 1.5) (layer B.SilkS) (width 0.15))
-    (fp_text user %R (at 0 0 90) (layer B.Fab)
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (pad 1 smd rect (at -2.2 0.975 90) (size 1.45 0.45) (layers B.Cu B.Paste B.Mask)
@@ -4301,7 +4301,7 @@
     )
   )
 
-  (module Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical (layer B.Cu) (tedit 5AA57499) (tstamp 5A9EE5A4)
+  (module Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical (layer B.Cu) (tedit 5AD68BFC) (tstamp 5A9EE5A4)
     (at 137.795 112.649 135)
     (descr "Hirose U.FL Coaxial https://www.hirose.com/product/en/products/U.FL/U.FL-R-SMT-1%2810%29/")
     (tags "Hirose U.FL Coaxial")
@@ -4313,7 +4313,7 @@
     (fp_text value CONN_U_FL (at 0.475 -3.2 135) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text user %R (at 0.475 0 405) (layer B.Fab)
+    (fp_text user %R (at 0.475 0 225) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -2.02 -1) (end -2.02 1) (layer B.CrtYd) (width 0.05))
@@ -4449,7 +4449,7 @@
       (net 2 GND))
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB06D)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68BC6) (tstamp 5ABBB06D)
     (at 121.2723 95.3897 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4458,7 +4458,7 @@
     (fp_text reference C1 (at -1.7272 0.0127 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 100n (at 0 -1.9 180) (layer B.Fab)
+    (fp_text value 100n (at 0 -1.9 180) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -4515,7 +4515,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB08B)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68BCB) (tstamp 5ABBB08B)
     (at 126.492 96.2025 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4524,7 +4524,7 @@
     (fp_text reference C3 (at 0 1.0795 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 2.2u (at 0 -1.9 180) (layer B.Fab)
+    (fp_text value 2.2u (at 0 -1.9 180) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -4581,7 +4581,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB0A9)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD68885) (tstamp 5ABBB0A9)
     (at 123.8885 89.535 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4590,7 +4590,7 @@
     (fp_text reference C5 (at 0 -1.016 90) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2.2u (at 0 1.9 90) (layer F.Fab)
+    (fp_text value 2.2u (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -4614,7 +4614,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB0B8)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD6889C) (tstamp 5ABBB0B8)
     (at 127.762 85.09 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4623,7 +4623,7 @@
     (fp_text reference C6 (at -0.254 -1.016 90) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2.2u (at 0 1.9 90) (layer F.Fab)
+    (fp_text value 2.2u (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -4647,7 +4647,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB0C7)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68BD4) (tstamp 5ABBB0C7)
     (at 133.0325 99.199 270)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4656,7 +4656,7 @@
     (fp_text reference C7 (at 0 1.143 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 100n (at 0 -1.9 270) (layer B.Fab)
+    (fp_text value 100n (at 0 -1.9 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -4680,7 +4680,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB0D6)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68BA7) (tstamp 5ABBB0D6)
     (at 130.556 89.027 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4689,7 +4689,7 @@
     (fp_text reference C8 (at 0 -1.016 90) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 15p (at 0 -1.9 90) (layer B.Fab)
+    (fp_text value 15p (at 0 -1.9 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -4713,7 +4713,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB0E5)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD6887F) (tstamp 5ABBB0E5)
     (at 120.142 90.424 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4722,7 +4722,7 @@
     (fp_text reference C9 (at -1.778 0 90) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2.2u (at 0 1.9 90) (layer F.Fab)
+    (fp_text value 2.2u (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -4812,7 +4812,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB121)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68B94) (tstamp 5ABBB121)
     (at 127.3 82.677 270)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4821,7 +4821,7 @@
     (fp_text reference C13 (at -2.436 0.046 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 2.2u (at 0 -1.9 270) (layer B.Fab)
+    (fp_text value 2.2u (at 0 -1.9 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -4845,7 +4845,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB130)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD68939) (tstamp 5ABBB130)
     (at 123.4948 72.9742 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4854,7 +4854,7 @@
     (fp_text reference C14 (at 2.4638 0.0762 180) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2.2u (at 0 1.9 180) (layer F.Fab)
+    (fp_text value 2.2u (at 0 1.9 180) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -4878,7 +4878,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB13F)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD6893D) (tstamp 5ABBB13F)
     (at 123.4948 74.422 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4887,7 +4887,7 @@
     (fp_text reference C15 (at 2.4638 -0.0508 180) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2.2u (at 0 1.9 180) (layer F.Fab)
+    (fp_text value 2.2u (at 0 1.9 180) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -4911,7 +4911,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB14E)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD68925) (tstamp 5ABBB14E)
     (at 125.1204 70.104 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4920,7 +4920,7 @@
     (fp_text reference C16 (at 5.2324 0 180) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 6.8n (at 0 1.9 180) (layer F.Fab)
+    (fp_text value 6.8n (at 0 1.9 180) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -4944,7 +4944,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB15D)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD688B6) (tstamp 5ABBB15D)
     (at 125.222 77.978 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4953,7 +4953,7 @@
     (fp_text reference C17 (at 0.889 -1.143 90) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2.2u (at 0 1.9 90) (layer F.Fab)
+    (fp_text value 2.2u (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -4977,7 +4977,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB16C)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD6892F) (tstamp 5ABBB16C)
     (at 125.095 67.183)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -4986,7 +4986,7 @@
     (fp_text reference C18 (at -5.207 0) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 120p (at 0 1.9) (layer F.Fab)
+    (fp_text value 120p (at 0 1.9) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5010,7 +5010,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB17B)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD688B3) (tstamp 5ABBB17B)
     (at 125.984 75.311 270)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5019,7 +5019,7 @@
     (fp_text reference C19 (at 0 6.223 270) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 22n (at 0 1.9 270) (layer F.Fab)
+    (fp_text value 22n (at 0 1.9 270) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5076,7 +5076,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB199)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD68904) (tstamp 5ABBB199)
     (at 139.573 63.754 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5085,7 +5085,7 @@
     (fp_text reference C22 (at 2.286 0 180) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 15n (at 0 1.9 180) (layer F.Fab)
+    (fp_text value 15n (at 0 1.9 180) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5109,7 +5109,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB1A8)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD68989) (tstamp 5ABBB1A8)
     (at 137.922 72.39 270)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5118,7 +5118,7 @@
     (fp_text reference C23 (at 0.254 -1.143 270) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 220n (at 0 1.9 270) (layer F.Fab)
+    (fp_text value 220n (at 0 1.9 270) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5142,7 +5142,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB1B7)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD68984) (tstamp 5ABBB1B7)
     (at 137.922 74.93 270)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5151,7 +5151,7 @@
     (fp_text reference C24 (at 0 -1.143 270) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 220n (at 0 1.9 270) (layer F.Fab)
+    (fp_text value 220n (at 0 1.9 270) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5175,7 +5175,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB1C6)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD68981) (tstamp 5ABBB1C6)
     (at 137.922 77.4192 270)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5184,7 +5184,7 @@
     (fp_text reference C25 (at 2.0828 -0.381 270) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 220n (at 0 1.9 270) (layer F.Fab)
+    (fp_text value 220n (at 0 1.9 270) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5208,7 +5208,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB1D5)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD689B1) (tstamp 5ABBB1D5)
     (at 139.319 70.231 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5217,7 +5217,7 @@
     (fp_text reference C28 (at 0 -1.143 180) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 100n (at 0 1.9 180) (layer F.Fab)
+    (fp_text value 100n (at 0 1.9 180) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5241,7 +5241,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB1E4)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68BAF) (tstamp 5ABBB1E4)
     (at 132.334 92.7862 270)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5250,7 +5250,7 @@
     (fp_text reference C29 (at 1.5748 0 540) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7n (at 0 -1.9 270) (layer B.Fab)
+    (fp_text value 4.7n (at 0 -1.9 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -5274,7 +5274,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB1F3)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68BB6) (tstamp 5ABBB1F3)
     (at 129.286 92.7862 270)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5283,7 +5283,7 @@
     (fp_text reference C30 (at -1.7272 0 360) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7n (at 0 -1.9 270) (layer B.Fab)
+    (fp_text value 4.7n (at 0 -1.9 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -5307,7 +5307,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB202)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD68907) (tstamp 5ABBB202)
     (at 138.049 62.23)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5316,7 +5316,7 @@
     (fp_text reference C31 (at -2.032 0.381) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2.2u (at 0 1.9) (layer F.Fab)
+    (fp_text value 2.2u (at 0 1.9) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5373,7 +5373,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB220)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD6A441) (tstamp 5ABBB220)
     (at 120.4468 101.4222 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5382,7 +5382,7 @@
     (fp_text reference C34 (at 0.0762 -1.0668 90) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2.2u (at 0 1.9 90) (layer F.Fab)
+    (fp_text value 2.2u (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5406,7 +5406,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB22F)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68B2B) (tstamp 5ABBB22F)
     (at 135.89 67.691 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5415,7 +5415,7 @@
     (fp_text reference C35 (at 2.298 0 90) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 2.2u (at 0 -1.9 90) (layer B.Fab)
+    (fp_text value 2.2u (at 0 -1.9 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -5439,7 +5439,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB23E)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD68899) (tstamp 5ABBB23E)
     (at 123.3805 87.122 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5448,7 +5448,7 @@
     (fp_text reference C36 (at 0.5715 1.016 180) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2.2u (at 0 1.9 180) (layer F.Fab)
+    (fp_text value 2.2u (at 0 1.9 180) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5472,7 +5472,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB24D)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68B26) (tstamp 5ABBB24D)
     (at 130.937 63.6785 270)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5481,7 +5481,7 @@
     (fp_text reference C38 (at -2.3375 0 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 2.2u (at 0 -1.9 270) (layer B.Fab)
+    (fp_text value 2.2u (at 0 -1.9 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -5505,7 +5505,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB25C)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68B1F) (tstamp 5ABBB25C)
     (at 125.5395 65.2265 270)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5514,7 +5514,7 @@
     (fp_text reference C42 (at -2.3615 0 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 2.2u (at 0 -1.9 270) (layer B.Fab)
+    (fp_text value 2.2u (at 0 -1.9 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -5538,7 +5538,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB26B)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68BBE) (tstamp 5ABBB26B)
     (at 126.238 92.7862 270)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5547,7 +5547,7 @@
     (fp_text reference C45 (at -1.7272 0 540) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7n (at 0 -1.9 270) (layer B.Fab)
+    (fp_text value 4.7n (at 0 -1.9 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -5604,7 +5604,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB2A7)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68BF8) (tstamp 5ABBB2A7)
     (at 130.429 113.157 135)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5613,7 +5613,7 @@
     (fp_text reference C51 (at -0.089803 -1.167433 135) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 15p (at 0 -1.9 135) (layer B.Fab)
+    (fp_text value 15p (at 0 -1.9 135) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -5637,7 +5637,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB2B6)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68BDA) (tstamp 5ABBB2B6)
     (at 137.922 108.077 315)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5646,7 +5646,7 @@
     (fp_text reference C52 (at 0 -1.077631 315) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 15p (at 0 -1.9 315) (layer B.Fab)
+    (fp_text value 15p (at 0 -1.9 315) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -5670,7 +5670,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB310)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD68901) (tstamp 5ABBB310)
     (at 136.0678 56.0832)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5679,7 +5679,7 @@
     (fp_text reference C58 (at 1.7272 0.0508 90) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 100n (at 0 1.9) (layer F.Fab)
+    (fp_text value 100n (at 0 1.9) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5802,7 +5802,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB34C)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD688A3) (tstamp 5ABBB34C)
     (at 120.257 85.217 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5811,7 +5811,7 @@
     (fp_text reference C62 (at 0 -1.143 180) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2.2u (at 0 1.9 180) (layer F.Fab)
+    (fp_text value 2.2u (at 0 1.9 180) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5835,7 +5835,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5ABBB35B)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5AD6889F) (tstamp 5ABBB35B)
     (at 124.714 84.086 270)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5844,7 +5844,7 @@
     (fp_text reference C63 (at 0.127 -1.143 270) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2.2u (at 0 1.9 270) (layer F.Fab)
+    (fp_text value 2.2u (at 0 1.9 270) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.15))
@@ -5868,7 +5868,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5415D631) (tstamp 5ABBB36A)
+  (module Capacitors_SMD:C_0603 (layer B.Cu) (tedit 5AD68B89) (tstamp 5ABBB36A)
     (at 123.571 82.042)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -5877,7 +5877,7 @@
     (fp_text reference C64 (at 2.159 0) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 2.2u (at 0 -1.9) (layer B.Fab)
+    (fp_text value 2.2u (at 0 -1.9) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.15))
@@ -5901,7 +5901,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB379)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68BE2) (tstamp 5ABBB379)
     (at 130.8608 103.8352 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -5910,7 +5910,7 @@
     (fp_text reference R1 (at 1.8542 -0.0508 90) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 0R (at 0 -1.9 90) (layer B.Fab)
+    (fp_text value 0R (at 0 -1.9 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -5934,7 +5934,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB388)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68BE7) (tstamp 5ABBB388)
     (at 129.0363 103.8037 270)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -5943,7 +5943,7 @@
     (fp_text reference R2 (at -1.8227 0.0043 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 22R (at 0 -1.9 270) (layer B.Fab)
+    (fp_text value 22R (at 0 -1.9 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -5967,7 +5967,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB397)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68BE4) (tstamp 5ABBB397)
     (at 127.1313 103.8037 270)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -5976,7 +5976,7 @@
     (fp_text reference R3 (at -1.8227 0.0043 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 22R (at 0 -1.9 270) (layer B.Fab)
+    (fp_text value 22R (at 0 -1.9 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6000,7 +6000,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB3A6)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68BC8) (tstamp 5ABBB3A6)
     (at 121.285 96.8375 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6009,7 +6009,7 @@
     (fp_text reference R6 (at -1.6002 0.0127 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 100R (at 0 -1.9 180) (layer B.Fab)
+    (fp_text value 100R (at 0 -1.9 180) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6033,7 +6033,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB3B5)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68BF0) (tstamp 5ABBB3B5)
     (at 138.049 105.664)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6042,7 +6042,7 @@
     (fp_text reference R7 (at -1.651 0) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 1k (at 0 -1.9) (layer B.Fab)
+    (fp_text value 1k (at 0 -1.9) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6066,7 +6066,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB3C4)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68BEB) (tstamp 5ABBB3C4)
     (at 133.6548 105.2322)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6075,7 +6075,7 @@
     (fp_text reference R8 (at 0 1.1938) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 220R (at 0 -1.9) (layer B.Fab)
+    (fp_text value 220R (at 0 -1.9) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6099,7 +6099,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB3D3)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68BD6) (tstamp 5ABBB3D3)
     (at 133.6548 103.632)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6108,7 +6108,7 @@
     (fp_text reference R9 (at -0.4318 -1.27) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 220R (at 0 -1.9) (layer B.Fab)
+    (fp_text value 220R (at 0 -1.9) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6132,7 +6132,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58307A47) (tstamp 5ABBB3E2)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5AD68936) (tstamp 5ABBB3E2)
     (at 122.7328 70.358 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6141,7 +6141,7 @@
     (fp_text reference R10 (at 0 -1.1938 90) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 3.3k (at 0 1.9 90) (layer F.Fab)
+    (fp_text value 3.3k (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.1))
@@ -6165,7 +6165,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58307A47) (tstamp 5ABBB3F1)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5AD68929) (tstamp 5ABBB3F1)
     (at 122.7328 67.7672 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6174,7 +6174,7 @@
     (fp_text reference R11 (at -0.0508 -1.1938 90) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 18k (at 0 1.9 90) (layer F.Fab)
+    (fp_text value 18k (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.1))
@@ -6198,7 +6198,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58307A47) (tstamp 5ABBB400)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5AD68932) (tstamp 5ABBB400)
     (at 125.1204 68.6308)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6207,7 +6207,7 @@
     (fp_text reference R12 (at -5.2324 0.0508) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 15k (at 0 1.9) (layer F.Fab)
+    (fp_text value 15k (at 0 1.9) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.1))
@@ -6231,7 +6231,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58307A47) (tstamp 5ABBB40F)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5AD68940) (tstamp 5ABBB40F)
     (at 125.1204 71.5772)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6240,7 +6240,7 @@
     (fp_text reference R13 (at -5.2324 0.0508) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 10k (at 0 1.9) (layer F.Fab)
+    (fp_text value 10k (at 0 1.9) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.1))
@@ -6264,7 +6264,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58307A47) (tstamp 5ABBB41E)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5AD6892C) (tstamp 5ABBB41E)
     (at 125.095 65.7352)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6273,7 +6273,7 @@
     (fp_text reference R14 (at -1.9558 0.0508) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 220k (at 0 1.9) (layer F.Fab)
+    (fp_text value 220k (at 0 1.9) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.1))
@@ -6297,7 +6297,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB42D)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68B9A) (tstamp 5ABBB42D)
     (at 132.9 83.75 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6306,7 +6306,7 @@
     (fp_text reference R15 (at 0 1.212 90) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 39k (at 0 -1.9 90) (layer B.Fab)
+    (fp_text value 39k (at 0 -1.9 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6330,7 +6330,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB43C)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68B97) (tstamp 5ABBB43C)
     (at 131.3038 83.7612 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6339,7 +6339,7 @@
     (fp_text reference R16 (at -0.0588 -1.1288 90) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 2k2 (at 0 -1.9 90) (layer B.Fab)
+    (fp_text value 2k2 (at 0 -1.9 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6363,7 +6363,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB44B)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68B81) (tstamp 5ABBB44B)
     (at 131.8355 72.263)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6372,7 +6372,7 @@
     (fp_text reference R17 (at 1.4732 -0.0762 90) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 39k (at 0 -1.9) (layer B.Fab)
+    (fp_text value 39k (at 0 -1.9) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6396,7 +6396,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB45A)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68B7E) (tstamp 5ABBB45A)
     (at 131.8355 73.7235)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6405,7 +6405,7 @@
     (fp_text reference R18 (at 1.4732 -0.0127 90) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 2k2 (at 0 -1.9) (layer B.Fab)
+    (fp_text value 2k2 (at 0 -1.9) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6429,7 +6429,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB469)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68B7A) (tstamp 5ABBB469)
     (at 131.8355 75.2475)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6438,7 +6438,7 @@
     (fp_text reference R19 (at 1.4732 -0.0127 90) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 39k (at 0 -1.9) (layer B.Fab)
+    (fp_text value 39k (at 0 -1.9) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6462,7 +6462,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB478)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68B77) (tstamp 5ABBB478)
     (at 131.8355 76.7715)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6471,7 +6471,7 @@
     (fp_text reference R20 (at 1.4732 -0.0127 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 2k2 (at 0 -1.9) (layer B.Fab)
+    (fp_text value 2k2 (at 0 -1.9) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6495,7 +6495,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB487)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68B73) (tstamp 5ABBB487)
     (at 131.8355 78.2955)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6504,7 +6504,7 @@
     (fp_text reference R21 (at 1.4732 -0.0635 90) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 39k (at 0 -1.9) (layer B.Fab)
+    (fp_text value 39k (at 0 -1.9) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6528,7 +6528,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB496)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68B70) (tstamp 5ABBB496)
     (at 131.8355 79.8195)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6537,7 +6537,7 @@
     (fp_text reference R22 (at 1.7685 -0.4445 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 2k2 (at 0 -1.9) (layer B.Fab)
+    (fp_text value 2k2 (at 0 -1.9) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6627,7 +6627,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB577)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68BA3) (tstamp 5ABBB577)
     (at 123.6218 89.2937 270)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6636,7 +6636,7 @@
     (fp_text reference R40 (at -0.0127 -1.2192 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 1k (at 0 -1.9 270) (layer B.Fab)
+    (fp_text value 1k (at 0 -1.9 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6660,7 +6660,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ABBB586)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68BA0) (tstamp 5ABBB586)
     (at 121.4755 87.6935 135)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6669,7 +6669,7 @@
     (fp_text reference R41 (at 0 1.1303 135) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 1k (at 0 -1.9 135) (layer B.Fab)
+    (fp_text value 1k (at 0 -1.9 135) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -6726,7 +6726,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58307A47) (tstamp 5ABBB5A4)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5AD68913) (tstamp 5ABBB5A4)
     (at 123.825 57.912 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6735,7 +6735,7 @@
     (fp_text reference R43 (at 1.5283 0.0447 270) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2k2 (at 0 1.9 180) (layer F.Fab)
+    (fp_text value 2k2 (at 0 1.9 180) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.1))
@@ -6759,7 +6759,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58307A47) (tstamp 5ABBB5B3)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5AD68916) (tstamp 5ABBB5B3)
     (at 123.825 59.563 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -6768,7 +6768,7 @@
     (fp_text reference R44 (at -1.905 0 360) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2k2 (at 0 1.9 180) (layer F.Fab)
+    (fp_text value 2k2 (at 0 1.9 180) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.1))
@@ -6792,7 +6792,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_1210 (layer F.Cu) (tedit 5ACC1381) (tstamp 5ABBB916)
+  (module Capacitors_SMD:C_1210 (layer F.Cu) (tedit 5AD688FB) (tstamp 5ABBB916)
     (at 138.811 67.056 90)
     (descr "Capacitor SMD 1210, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 1210")
@@ -6801,7 +6801,7 @@
     (fp_text reference C27 (at 0 -1.905 90) (layer F.SilkS) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 4.7u_100V (at 0 2.7 90) (layer F.Fab)
+    (fp_text value 4.7u_100V (at 0 2.7 90) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -1.6 1.25) (end -1.6 -1.25) (layer F.Fab) (width 0.15))
@@ -6825,7 +6825,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_1210 (layer B.Cu) (tedit 5415D85D) (tstamp 5ABBB925)
+  (module Capacitors_SMD:C_1210 (layer B.Cu) (tedit 5AD68B5A) (tstamp 5ABBB925)
     (at 143.383 76.581 90)
     (descr "Capacitor SMD 1210, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 1210")
@@ -6834,7 +6834,7 @@
     (fp_text reference C37 (at 0 0 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7u_100V (at 0 -2.7 90) (layer B.Fab)
+    (fp_text value 4.7u_100V (at 0 -2.7 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -1.6 -1.25) (end -1.6 1.25) (layer B.Fab) (width 0.15))
@@ -6858,7 +6858,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_1210 (layer B.Cu) (tedit 5415D85D) (tstamp 5ABBB934)
+  (module Capacitors_SMD:C_1210 (layer B.Cu) (tedit 5AD68B56) (tstamp 5ABBB934)
     (at 146.685 76.605 90)
     (descr "Capacitor SMD 1210, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 1210")
@@ -6867,7 +6867,7 @@
     (fp_text reference C39 (at 0.024 0 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7u_100V (at 0 -2.7 90) (layer B.Fab)
+    (fp_text value 4.7u_100V (at 0 -2.7 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -1.6 -1.25) (end -1.6 1.25) (layer B.Fab) (width 0.15))
@@ -6891,7 +6891,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_1210 (layer B.Cu) (tedit 5415D85D) (tstamp 5ABBB943)
+  (module Capacitors_SMD:C_1210 (layer B.Cu) (tedit 5AD68B4E) (tstamp 5ABBB943)
     (at 159.131 76.581 90)
     (descr "Capacitor SMD 1210, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 1210")
@@ -6900,7 +6900,7 @@
     (fp_text reference C40 (at 0 0 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7u_100V (at 0 -2.7 90) (layer B.Fab)
+    (fp_text value 4.7u_100V (at 0 -2.7 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -1.6 -1.25) (end -1.6 1.25) (layer B.Fab) (width 0.15))
@@ -6924,7 +6924,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_1210 (layer B.Cu) (tedit 5415D85D) (tstamp 5ABBB952)
+  (module Capacitors_SMD:C_1210 (layer B.Cu) (tedit 5AD68B52) (tstamp 5ABBB952)
     (at 155.829 76.605 90)
     (descr "Capacitor SMD 1210, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 1210")
@@ -6933,7 +6933,7 @@
     (fp_text reference C41 (at 0 0.127 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7u_100V (at 0 -2.7 90) (layer B.Fab)
+    (fp_text value 4.7u_100V (at 0 -2.7 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -1.6 -1.25) (end -1.6 1.25) (layer B.Fab) (width 0.15))
@@ -6957,7 +6957,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_1210 (layer B.Cu) (tedit 5415D85D) (tstamp 5ABBB961)
+  (module Capacitors_SMD:C_1210 (layer B.Cu) (tedit 5AD68B47) (tstamp 5ABBB961)
     (at 168.783 76.581 90)
     (descr "Capacitor SMD 1210, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 1210")
@@ -6966,7 +6966,7 @@
     (fp_text reference C43 (at 0 0 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7u_100V (at 0 -2.7 90) (layer B.Fab)
+    (fp_text value 4.7u_100V (at 0 -2.7 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -1.6 -1.25) (end -1.6 1.25) (layer B.Fab) (width 0.15))
@@ -6990,7 +6990,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_1210 (layer B.Cu) (tedit 5415D85D) (tstamp 5ABBB970)
+  (module Capacitors_SMD:C_1210 (layer B.Cu) (tedit 5AD68B44) (tstamp 5ABBB970)
     (at 171.958 76.581 90)
     (descr "Capacitor SMD 1210, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 1210")
@@ -6999,7 +6999,7 @@
     (fp_text reference C44 (at 0 0 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7u_100V (at 0 -2.7 90) (layer B.Fab)
+    (fp_text value 4.7u_100V (at 0 -2.7 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -1.6 -1.25) (end -1.6 1.25) (layer B.Fab) (width 0.15))
@@ -7023,13 +7023,13 @@
     )
   )
 
-  (module CRF1:L_Coilcraft_XAL5050 (layer F.Cu) (tedit 5AC9CAFC) (tstamp 5AC99AF9)
+  (module CRF1:L_Coilcraft_XAL5050 (layer F.Cu) (tedit 5AD688FE) (tstamp 5AC99AF9)
     (at 131.449 62.103)
     (path /504F83BE/5A8AA4C7)
     (fp_text reference L2 (at 0.004 0) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 22u (at 0.635 3.175) (layer F.Fab)
+    (fp_text value 22u (at 0.635 3.175) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -2.74 2.84) (end -2.74 -2.84) (layer F.SilkS) (width 0.15))
@@ -7096,7 +7096,7 @@
     )
   )
 
-  (module Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow (layer F.Cu) (tedit 58CC8C08) (tstamp 5AC5A4C2)
+  (module Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow (layer F.Cu) (tedit 5AD6890D) (tstamp 5AC5A4C2)
     (at 138.557 60.198)
     (descr "Tantalum capacitor, Case A, EIA 3216-18, 3.2x1.6x1.6mm, Reflow soldering footprint")
     (tags "capacitor tantalum smd")
@@ -7105,10 +7105,10 @@
     (fp_text reference C32 (at 0.254 -1.524) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 100u (at 0 2.55) (layer F.Fab)
+    (fp_text value 100u (at 0 2.55) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab)
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -2.75 -1.2) (end -2.75 1.2) (layer F.CrtYd) (width 0.05))
@@ -7135,7 +7135,7 @@
     )
   )
 
-  (module Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow (layer B.Cu) (tedit 58CC8C08) (tstamp 5AC5A4AF)
+  (module Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow (layer B.Cu) (tedit 5AD68B92) (tstamp 5AC5A4AF)
     (at 123.5 83.527)
     (descr "Tantalum capacitor, Case A, EIA 3216-18, 3.2x1.6x1.6mm, Reflow soldering footprint")
     (tags "capacitor tantalum smd")
@@ -7144,10 +7144,10 @@
     (fp_text reference C21 (at 0 1.563) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 100u (at 0 -2.55) (layer B.Fab)
+    (fp_text value 100u (at 0 -2.55) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -2.75 1.2) (end -2.75 -1.2) (layer B.CrtYd) (width 0.05))
@@ -7174,7 +7174,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0402 (layer F.Cu) (tedit 5AD2A956) (tstamp 5ABBB2E3)
+  (module Capacitors_SMD:C_0402 (layer F.Cu) (tedit 5AD68956) (tstamp 5ABBB2E3)
     (at 133.223 113.538 315)
     (descr "Capacitor SMD 0402, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0402")
@@ -7186,7 +7186,7 @@
     (fp_text value 4.7p (at 0 1.27 315) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text user %R (at 0 -1.27 315) (layer F.Fab)
+    (fp_text user %R (at 0 -1.27 315) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.5 0.25) (end -0.5 -0.25) (layer F.Fab) (width 0.1))
@@ -7210,7 +7210,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0402 (layer F.Cu) (tedit 5AD2A960) (tstamp 5ACB4AA1)
+  (module Capacitors_SMD:C_0402 (layer F.Cu) (tedit 5AD6895B) (tstamp 5ACB4AA1)
     (at 133.985 112.776 315)
     (descr "Capacitor SMD 0402, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0402")
@@ -7219,7 +7219,7 @@
     (fp_text reference C54 (at 1.616446 0.35921 315) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 2.2n (at 0 1.27 315) (layer F.Fab)
+    (fp_text value 2.2n (at 0 1.27 315) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_text user %R (at 0 -1.27 315) (layer F.Fab) hide
@@ -7318,7 +7318,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ACB8FE4)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68C1B) (tstamp 5ACB8FE4)
     (at 138.291 71.3105 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -7327,7 +7327,7 @@
     (fp_text reference R25 (at 2.2098 0.0762 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7R (at 0 -1.9 180) (layer B.Fab)
+    (fp_text value 4.7R (at 0 -1.9 180) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -7351,7 +7351,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ACB8FE9)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68C1E) (tstamp 5ACB8FE9)
     (at 138.2903 72.8472 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -7360,7 +7360,7 @@
     (fp_text reference R26 (at 2.2098 0.0762 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7R (at 0 -1.9 180) (layer B.Fab)
+    (fp_text value 4.7R (at 0 -1.9 180) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -7384,7 +7384,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58307A47) (tstamp 5ACB8FEE)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5AD6897D) (tstamp 5ACB8FEE)
     (at 140.335 77.089 270)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -7393,7 +7393,7 @@
     (fp_text reference R27 (at -1.905 -0.381 270) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value "NTC 10k" (at 0 1.9 270) (layer F.Fab)
+    (fp_text value "NTC 10k" (at 0 1.9 270) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.1))
@@ -7417,7 +7417,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58307A47) (tstamp 5ACB8FF3)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5AD688AE) (tstamp 5ACB8FF3)
     (at 140.335 79.883 270)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -7426,7 +7426,7 @@
     (fp_text reference R28 (at 1.905 0 270) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value 10k (at 0 1.9 270) (layer F.Fab)
+    (fp_text value 10k (at 0 1.9 270) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.1))
@@ -7450,7 +7450,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ACB8FF8)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68B68) (tstamp 5ACB8FF8)
     (at 138.303 74.3585 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -7459,7 +7459,7 @@
     (fp_text reference R30 (at 2.2098 0.0762 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7R (at 0 -1.9 180) (layer B.Fab)
+    (fp_text value 4.7R (at 0 -1.9 180) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -7483,7 +7483,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ACB8FFD)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68B64) (tstamp 5ACB8FFD)
     (at 138.303 75.8825 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -7492,7 +7492,7 @@
     (fp_text reference R31 (at 2.2098 -0.0508 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7R (at 0 -1.9 180) (layer B.Fab)
+    (fp_text value 4.7R (at 0 -1.9 180) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -7516,7 +7516,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ACB9002)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68B61) (tstamp 5ACB9002)
     (at 138.303 77.4065 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -7525,7 +7525,7 @@
     (fp_text reference R33 (at 2.2098 0.0762 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7R (at 0 -1.9 180) (layer B.Fab)
+    (fp_text value 4.7R (at 0 -1.9 180) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -7549,7 +7549,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ACB9007)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68B5D) (tstamp 5ACB9007)
     (at 138.303 78.9305 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -7558,7 +7558,7 @@
     (fp_text reference R34 (at 2.2098 0.0762 180) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 4.7R (at 0 -1.9 180) (layer B.Fab)
+    (fp_text value 4.7R (at 0 -1.9 180) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -7582,7 +7582,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ACB900C)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68BB3) (tstamp 5ACB900C)
     (at 133.858 92.7862 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -7591,7 +7591,7 @@
     (fp_text reference R35 (at -1.5748 0 360) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 100R (at 0 -1.9 90) (layer B.Fab)
+    (fp_text value 100R (at 0 -1.9 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -7615,7 +7615,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ACB9011)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68BB9) (tstamp 5ACB9011)
     (at 130.81 92.7862 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -7624,7 +7624,7 @@
     (fp_text reference R36 (at -1.5748 0 360) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 100R (at 0 -1.9 90) (layer B.Fab)
+    (fp_text value 100R (at 0 -1.9 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -7648,7 +7648,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58307A47) (tstamp 5ACB9016)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AD68BC2) (tstamp 5ACB9016)
     (at 127.762 92.7862 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -7657,7 +7657,7 @@
     (fp_text reference R37 (at 1.6002 0 360) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 100R (at 0 -1.9 90) (layer B.Fab)
+    (fp_text value 100R (at 0 -1.9 90) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -7681,13 +7681,13 @@
     )
   )
 
-  (module CRF1:SHUNT_CSS2H-3920 (layer B.Cu) (tedit 5AA2A2FC) (tstamp 5AA2A768)
+  (module CRF1:SHUNT_CSS2H-3920 (layer B.Cu) (tedit 5AD68B3D) (tstamp 5AA2A768)
     (at 157.5435 65.405 270)
     (path /53F826DC/5A8B9A6E)
     (fp_text reference R29 (at 0 -0.05 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 0.0005R (at 0 -3.9 270) (layer B.Fab)
+    (fp_text value 0.0005R (at 0 -3.9 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (pad 4 smd rect (at 4.15 0 270) (size 2.7 0.6) (layers B.Cu B.Paste B.Mask)
@@ -7709,13 +7709,13 @@
     )
   )
 
-  (module CRF1:SHUNT_CSS2H-3920 (layer B.Cu) (tedit 5AA2A2FC) (tstamp 5AA2A75E)
+  (module CRF1:SHUNT_CSS2H-3920 (layer B.Cu) (tedit 5AD68B35) (tstamp 5AA2A75E)
     (at 144.862 65.3825 270)
     (path /53F826DC/5A8AF798)
     (fp_text reference R24 (at 0 0 270) (layer B.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
-    (fp_text value 0.0005R (at 0 -3.9 270) (layer B.Fab)
+    (fp_text value 0.0005R (at 0 -3.9 270) (layer B.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
     )
     (pad 4 smd rect (at 4.15 0 270) (size 2.7 0.6) (layers B.Cu B.Paste B.Mask)
@@ -7845,7 +7845,7 @@
     )
   )
 
-  (module CRF1:STM32F4x5RG (layer F.Cu) (tedit 5AD2B328) (tstamp 5ACB75F4)
+  (module CRF1:STM32F4x5RG (layer F.Cu) (tedit 5AD68963) (tstamp 5ACB75F4)
     (at 131.445 92.964 270)
     (path /53F7501A/53F757A7)
     (fp_text reference U1 (at 0 0 270) (layer F.SilkS)
@@ -7854,7 +7854,7 @@
     (fp_text value STM32F40X_LQFP64 (at 0 0 270) (layer F.SilkS) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text user "Copyright 2016 Accelerated Designs. All rights reserved." (at 0 0 270) (layer Cmts.User)
+    (fp_text user "Copyright 2016 Accelerated Designs. All rights reserved." (at 0 0 270) (layer Cmts.User) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -5.0038 -3.7338) (end -3.7338 -5.0038) (layer Dwgs.User) (width 0.1524))
@@ -8006,7 +8006,7 @@
     )
   )
 
-  (module Diodes_SMD:D_SMB (layer F.Cu) (tedit 58645DF3) (tstamp 5AD2360D)
+  (module Diodes_SMD:D_SMB (layer F.Cu) (tedit 5AD68990) (tstamp 5AD2360D)
     (at 124.079 62.865 180)
     (descr "Diode SMB (DO-214AA)")
     (tags "Diode SMB (DO-214AA)")
@@ -8015,10 +8015,10 @@
     (fp_text reference D4 (at 3.048 -2.159 180) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text value DIODE (at 0 3.1 180) (layer F.Fab)
+    (fp_text value DIODE (at 0 3.1 180) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
-    (fp_text user %R (at 0 -3 180) (layer F.Fab)
+    (fp_text user %R (at 0 -3 180) (layer F.Fab) hide
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_line (start -3.55 -2.15) (end -3.55 2.15) (layer F.SilkS) (width 0.12))
@@ -9358,6 +9358,11 @@
   (segment (start 121.019 108.216) (end 121.019 109.855) (width 0.2032) (layer F.Cu) (net 48) (status 30))
   (segment (start 121.019 108.204) (end 121.019 110.12748) (width 0.2032) (layer F.Cu) (net 48) (status 30))
   (segment (start 121.019 110.12748) (end 121.25452 110.363) (width 0.2032) (layer F.Cu) (net 48) (status 30))
+  (segment (start 124.575 57.912) (end 125.0282 57.912) (width 0.2032) (layer F.Cu) (net 49) (status 10))
+  (segment (start 125.0282 57.912) (end 126.1712 56.769) (width 0.2032) (layer F.Cu) (net 49))
+  (segment (start 126.1712 56.769) (end 130.07721 56.769) (width 0.2032) (layer F.Cu) (net 49))
+  (segment (start 130.07721 56.769) (end 131.09702 57.78881) (width 0.2032) (layer F.Cu) (net 49) (status 20))
+  (segment (start 131.09702 57.78881) (end 131.09702 58.039) (width 0.2032) (layer F.Cu) (net 49) (status 30))
   (segment (start 120.396011 65.889145) (end 123.293156 62.992) (width 0.2032) (layer PWR.Cu) (net 49))
   (segment (start 120.396011 99.725841) (end 120.396011 65.889145) (width 0.2032) (layer PWR.Cu) (net 49))
   (segment (start 122.397179 101.727009) (end 120.396011 99.725841) (width 0.2032) (layer PWR.Cu) (net 49))
@@ -9366,11 +9371,6 @@
   (segment (start 123.293156 62.992) (end 127.889 62.992) (width 0.2032) (layer PWR.Cu) (net 49))
   (segment (start 128.92587 101.727009) (end 122.397179 101.727009) (width 0.2032) (layer PWR.Cu) (net 49))
   (segment (start 127.889 62.992) (end 131.09702 59.78398) (width 0.2032) (layer PWR.Cu) (net 49))
-  (segment (start 124.575 57.912) (end 125.0282 57.912) (width 0.2032) (layer F.Cu) (net 49) (status 10))
-  (segment (start 125.0282 57.912) (end 126.030231 56.909969) (width 0.2032) (layer F.Cu) (net 49))
-  (segment (start 126.030231 56.909969) (end 130.218179 56.909969) (width 0.2032) (layer F.Cu) (net 49))
-  (segment (start 130.218179 56.909969) (end 131.09702 57.78881) (width 0.2032) (layer F.Cu) (net 49) (status 20))
-  (segment (start 131.09702 57.78881) (end 131.09702 58.039) (width 0.2032) (layer F.Cu) (net 49) (status 30))
   (segment (start 130.195 99.514099) (end 130.558014 99.877113) (width 0.2032) (layer F.Cu) (net 49))
   (segment (start 130.558014 99.877113) (end 130.558014 100.094865) (width 0.2032) (layer F.Cu) (net 49))
   (segment (start 130.195 98.713999) (end 130.195 99.514099) (width 0.2032) (layer F.Cu) (net 49) (status 10))
@@ -12651,7 +12651,7 @@
         (xy 129.204 59.364536) (xy 129.06281 59.391103) (xy 128.933135 59.474546) (xy 128.846141 59.601866) (xy 128.815536 59.753)
         (xy 128.815536 60.296365) (xy 128.720661 60.066748) (xy 128.529259 59.875013) (xy 128.291079 59.776111) (xy 128.826882 59.240307)
         (xy 129.0955 59.293739) (xy 129.470698 59.219107) (xy 129.788776 59.006575) (xy 130.001308 58.688497) (xy 130.07594 58.313299)
-        (xy 130.07594 57.764701) (xy 130.001918 57.392569) (xy 130.018279 57.392569) (xy 130.162012 57.536302) (xy 130.11658 57.764701)
+        (xy 130.07594 57.764701) (xy 130.001308 57.389503) (xy 129.973308 57.347598) (xy 130.162012 57.536302) (xy 130.11658 57.764701)
         (xy 130.11658 58.313299) (xy 130.191212 58.688497) (xy 130.403744 59.006575) (xy 130.721822 59.219107) (xy 131.09702 59.293739)
         (xy 131.472218 59.219107) (xy 131.790296 59.006575) (xy 132.002828 58.688497) (xy 132.07746 58.313299) (xy 132.07746 57.764701)
         (xy 132.002828 57.389503) (xy 131.979943 57.355253) (xy 132.160992 57.536302) (xy 132.11556 57.764701) (xy 132.11556 58.313299)
