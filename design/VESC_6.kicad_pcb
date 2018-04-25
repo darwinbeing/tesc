@@ -3,7 +3,7 @@
   (general
     (links 600)
     (no_connects 0)
-    (area 114.924999 54.924999 175.075001 115.075001)
+    (area 104.829157 50.3 175.858753 116.556817)
     (thickness 1.6)
     (drawings 72)
     (tracks 1998)
@@ -2932,7 +2932,7 @@
     )
   )
 
-  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AD688EE) (tstamp 5A9A4000)
+  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AE0AA23) (tstamp 5A9A4000)
     (at 170.393 65.167 90)
     (descr "DirectFET L8 https://www.infineon.com/dgdl/Infineon-AN-1035-AN-v29_00-EN.pdf?fileId=5546d462533600a40153559159020f76")
     (tags "DirectFET L8")
@@ -3891,7 +3891,7 @@
     )
   )
 
-  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AD688F7) (tstamp 5A9A3F14)
+  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AE0AA0C) (tstamp 5A9A3F14)
     (at 145.087 65.151 90)
     (descr "DirectFET L8 https://www.infineon.com/dgdl/Infineon-AN-1035-AN-v29_00-EN.pdf?fileId=5546d462533600a40153559159020f76")
     (tags "DirectFET L8")
@@ -4070,7 +4070,7 @@
     )
   )
 
-  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AD688F1) (tstamp 5A9A3F8A)
+  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5AE0AA18) (tstamp 5A9A3F8A)
     (at 157.734 65.151 90)
     (descr "DirectFET L8 https://www.infineon.com/dgdl/Infineon-AN-1035-AN-v29_00-EN.pdf?fileId=5546d462533600a40153559159020f76")
     (tags "DirectFET L8")
