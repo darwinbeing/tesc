@@ -8150,7 +8150,7 @@
   (gr_line (start 153.2935 114.4745) (end 140.7935 114.4745) (angle 90) (layer Dwgs.User) (width 0.2) (tstamp 5AC8302E))
   (gr_line (start 140.7935 114.4745) (end 140.7935 84.4745) (angle 90) (layer Dwgs.User) (width 0.2) (tstamp 5AC8302D))
   (gr_line (start 153.2935 84.4745) (end 153.2935 114.4745) (angle 90) (layer Dwgs.User) (width 0.2) (tstamp 5AC8302B))
-  (gr_text USB (at 127.254 112.014 90) (layer F.SilkS) (tstamp 5ABA3C62)
+  (gr_text USB (at 127.762 112.268 90) (layer F.SilkS) (tstamp 5ABA3C62)
     (effects (font (size 0.508 0.508) (thickness 0.1016)))
   )
   (gr_text GND (at 123.317 112.903 90) (layer F.SilkS) (tstamp 5ABA3C50)
