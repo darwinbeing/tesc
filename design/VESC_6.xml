@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/VESC_6.sch</source>
-    <date>2018 April 15, Sunday 15:32:14</date>
+    <date>2018 May 05, Saturday 08:19:33</date>
     <tool>Eeschema 4.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -338,6 +338,9 @@
     <comp ref="U1">
       <value>STM32F40X_LQFP64</value>
       <footprint>CRF1:STM32F4x5RG</footprint>
+      <fields>
+        <field name="manf#">STM32F405RGT6</field>
+      </fields>
       <libsource lib="crf_1" part="STM32F40X_LQFP64"/>
       <sheetpath names="/MCU/" tstamps="/53F7501A/"/>
       <tstamp>53F757A7</tstamp>
@@ -352,6 +355,9 @@
     <comp ref="U3">
       <value>DRV8301</value>
       <footprint>CRF1:TSSOP-56-PP</footprint>
+      <fields>
+        <field name="manf#">DRV8301DCA</field>
+      </fields>
       <libsource lib="crf_1" part="DRV8301"/>
       <sheetpath names="/DRV8301/" tstamps="/504F83BE/"/>
       <tstamp>5A8A8132</tstamp>
@@ -625,6 +631,9 @@
     <comp ref="U4">
       <value>TJA1051TK3</value>
       <footprint>Housings_DFN_QFN:DFN-8-1EP_3x3mm_Pitch0.65mm</footprint>
+      <fields>
+        <field name="manf#">TJA1051TK/3</field>
+      </fields>
       <libsource lib="crf_1" part="TJA1051TK3"/>
       <sheetpath names="/CAN/" tstamps="/53FFB6E1/"/>
       <tstamp>5A8B2B4D</tstamp>
@@ -646,6 +655,9 @@
     <comp ref="Q1">
       <value>IRF7749</value>
       <footprint>IR-DirectFETs:DirectFET_L8</footprint>
+      <fields>
+        <field name="manf#">IRF7749L1TRPBF</field>
+      </fields>
       <libsource lib="crf_1" part="IRF7749"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8AC7BA</tstamp>
@@ -653,6 +665,9 @@
     <comp ref="Q2">
       <value>IRF7749</value>
       <footprint>IR-DirectFETs:DirectFET_L8</footprint>
+      <fields>
+        <field name="manf#">IRF7749L1TRPBF</field>
+      </fields>
       <libsource lib="crf_1" part="IRF7749"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8AC8BF</tstamp>
@@ -716,6 +731,9 @@
     <comp ref="Q3">
       <value>IRF7749</value>
       <footprint>IR-DirectFETs:DirectFET_L8</footprint>
+      <fields>
+        <field name="manf#">IRF7749L1TRPBF</field>
+      </fields>
       <libsource lib="crf_1" part="IRF7749"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8B9A3B</tstamp>
@@ -723,6 +741,9 @@
     <comp ref="Q4">
       <value>IRF7749</value>
       <footprint>IR-DirectFETs:DirectFET_L8</footprint>
+      <fields>
+        <field name="manf#">IRF7749L1TRPBF</field>
+      </fields>
       <libsource lib="crf_1" part="IRF7749"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8B9A41</tstamp>
@@ -765,6 +786,9 @@
     <comp ref="Q5">
       <value>IRF7749</value>
       <footprint>IR-DirectFETs:DirectFET_L8</footprint>
+      <fields>
+        <field name="manf#">IRF7749L1TRPBF</field>
+      </fields>
       <libsource lib="crf_1" part="IRF7749"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8BA251</tstamp>
@@ -772,6 +796,9 @@
     <comp ref="Q6">
       <value>IRF7749</value>
       <footprint>IR-DirectFETs:DirectFET_L8</footprint>
+      <fields>
+        <field name="manf#">IRF7749L1TRPBF</field>
+      </fields>
       <libsource lib="crf_1" part="IRF7749"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8BA257</tstamp>
@@ -813,14 +840,14 @@
     </comp>
     <comp ref="P12">
       <value>GND</value>
-      <footprint>CRF1:1PAD_7x6mm</footprint>
+      <footprint>CRF1:1PAD_6x5mm</footprint>
       <libsource lib="conn" part="Conn_01x01"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8BD287</tstamp>
     </comp>
     <comp ref="P11">
       <value>SUPPLY</value>
-      <footprint>CRF1:1PAD_7x6mm</footprint>
+      <footprint>CRF1:1PAD_6x5mm</footprint>
       <libsource lib="conn" part="Conn_01x01"/>
       <sheetpath names="/Power/" tstamps="/53F826DC/"/>
       <tstamp>5A8BE23A</tstamp>
@@ -947,6 +974,9 @@
     <comp ref="U8">
       <value>NRF24L01P</value>
       <footprint>Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm</footprint>
+      <fields>
+        <field name="manf#">nRF24L01P-T</field>
+      </fields>
       <libsource lib="crf_1" part="NRF24L01"/>
       <sheetpath names="/nrf/" tstamps="/5A8BE5A6/"/>
       <tstamp>5A8BF95B</tstamp>
@@ -1712,11 +1742,11 @@
     <library logical="device">
       <uri>/Library/Application Support/kicad/library/device.lib</uri>
     </library>
-    <library logical="crf_1">
-      <uri>/Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/Libraries/crf_1.lib</uri>
-    </library>
     <library logical="conn">
       <uri>/Library/Application Support/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="crf_1">
+      <uri>/Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/Libraries/crf_1.lib</uri>
     </library>
   </libraries>
   <nets>
@@ -1833,19 +1863,19 @@
     </net>
     <net code="12" name="/MCU/HALL_1">
       <node ref="U1" pin="37"/>
-      <node ref="P4" pin="4"/>
       <node ref="R42" pin="1"/>
+      <node ref="P4" pin="4"/>
     </net>
     <net code="13" name="Net-(P4-Pad6)">
-      <node ref="U11" pin="2"/>
-      <node ref="R42" pin="2"/>
       <node ref="P4" pin="6"/>
-      <node ref="R43" pin="2"/>
+      <node ref="R42" pin="2"/>
+      <node ref="U11" pin="2"/>
       <node ref="R44" pin="2"/>
+      <node ref="R43" pin="2"/>
     </net>
     <net code="14" name="/MCU/ADC_15">
-      <node ref="U1" pin="25"/>
       <node ref="P5" pin="8"/>
+      <node ref="U1" pin="25"/>
     </net>
     <net code="15" name="/MCU/MISO_ADC_EXT2">
       <node ref="U1" pin="22"/>
@@ -1856,32 +1886,32 @@
       <node ref="P5" pin="4"/>
     </net>
     <net code="17" name="/MCU/SWDIO">
-      <node ref="U1" pin="46"/>
       <node ref="P7" pin="2"/>
+      <node ref="U1" pin="46"/>
     </net>
     <net code="18" name="/MCU/NRST">
-      <node ref="P7" pin="1"/>
       <node ref="U1" pin="7"/>
+      <node ref="P7" pin="1"/>
       <node ref="C7" pin="1"/>
     </net>
     <net code="19" name="Net-(P1-Pad1)">
-      <node ref="P1" pin="1"/>
       <node ref="R1" pin="1"/>
+      <node ref="P1" pin="1"/>
     </net>
     <net code="20" name="Net-(P1-Pad4)">
       <node ref="P1" pin="4"/>
     </net>
     <net code="21" name="Net-(P1-Pad3)">
-      <node ref="R3" pin="2"/>
       <node ref="P1" pin="3"/>
+      <node ref="R3" pin="2"/>
     </net>
     <net code="22" name="Net-(P1-Pad2)">
       <node ref="R2" pin="2"/>
       <node ref="P1" pin="2"/>
     </net>
     <net code="23" name="/MCU/H2">
-      <node ref="U1" pin="42"/>
       <node ref="U3" pin="19"/>
+      <node ref="U1" pin="42"/>
     </net>
     <net code="24" name="/MCU/H3">
       <node ref="U3" pin="21"/>
@@ -1892,8 +1922,8 @@
       <node ref="U3" pin="18"/>
     </net>
     <net code="26" name="/MCU/H1">
-      <node ref="U1" pin="41"/>
       <node ref="U3" pin="17"/>
+      <node ref="U1" pin="41"/>
     </net>
     <net code="27" name="/DRV8301/FAULT">
       <node ref="U1" pin="59"/>
@@ -1904,18 +1934,18 @@
       <node ref="U3" pin="22"/>
     </net>
     <net code="29" name="/DRV8301/INL_B">
-      <node ref="U3" pin="20"/>
       <node ref="U1" pin="35"/>
+      <node ref="U3" pin="20"/>
     </net>
     <net code="30" name="/CAN/CANL">
-      <node ref="P2" pin="2"/>
       <node ref="R23" pin="2"/>
+      <node ref="P2" pin="2"/>
       <node ref="U4" pin="6"/>
     </net>
     <net code="31" name="/CAN/CANH">
-      <node ref="U4" pin="7"/>
-      <node ref="P2" pin="3"/>
       <node ref="R23" pin="1"/>
+      <node ref="P2" pin="3"/>
+      <node ref="U4" pin="7"/>
     </net>
     <net code="32" name="/MCU/CAN_TX">
       <node ref="U4" pin="1"/>
@@ -1930,28 +1960,28 @@
       <node ref="U1" pin="44"/>
     </net>
     <net code="35" name="/MCU/USB_DP">
-      <node ref="U1" pin="45"/>
       <node ref="R3" pin="1"/>
+      <node ref="U1" pin="45"/>
     </net>
     <net code="36" name="/DRV8301/EN_GATE">
-      <node ref="U1" pin="57"/>
       <node ref="U3" pin="16"/>
+      <node ref="U1" pin="57"/>
     </net>
     <net code="37" name="/DRV8301/SDO">
-      <node ref="U3" pin="10"/>
       <node ref="U1" pin="52"/>
+      <node ref="U3" pin="10"/>
     </net>
     <net code="38" name="/DRV8301/SDI">
-      <node ref="U3" pin="9"/>
       <node ref="U1" pin="53"/>
+      <node ref="U3" pin="9"/>
     </net>
     <net code="39" name="/DRV8301/SCLK">
       <node ref="U1" pin="51"/>
       <node ref="U3" pin="11"/>
     </net>
     <net code="40" name="/DRV8301/CS">
-      <node ref="U1" pin="40"/>
       <node ref="U3" pin="8"/>
+      <node ref="U1" pin="40"/>
     </net>
     <net code="41" name="/DRV8301/SENS_B">
       <node ref="R20" pin="1"/>
@@ -1962,22 +1992,22 @@
       <node ref="U8" pin="6"/>
     </net>
     <net code="43" name="/MCU/HALL_3">
-      <node ref="P4" pin="2"/>
       <node ref="R44" pin="1"/>
       <node ref="U1" pin="39"/>
+      <node ref="P4" pin="2"/>
     </net>
     <net code="44" name="/MCU/TEMP_MOTOR">
+      <node ref="C58" pin="1"/>
       <node ref="U1" pin="24"/>
       <node ref="P4" pin="5"/>
-      <node ref="C58" pin="1"/>
       <node ref="R39" pin="1"/>
     </net>
-    <net code="45" name="/MCU/LED_GREEN">
+    <net code="45" name="/MCU/LED_RED">
       <node ref="D2" pin="2"/>
-      <node ref="U1" pin="26"/>
-    </net>
-    <net code="46" name="/MCU/LED_RED">
       <node ref="U1" pin="27"/>
+    </net>
+    <net code="46" name="/MCU/LED_GREEN">
+      <node ref="U1" pin="26"/>
       <node ref="D3" pin="2"/>
     </net>
     <net code="47" name="Net-(D1-Pad1)">
@@ -1985,8 +2015,8 @@
       <node ref="R7" pin="2"/>
     </net>
     <net code="48" name="Net-(D2-Pad1)">
-      <node ref="D2" pin="1"/>
       <node ref="R8" pin="2"/>
+      <node ref="D2" pin="1"/>
     </net>
     <net code="49" name="Net-(D3-Pad1)">
       <node ref="D3" pin="1"/>
@@ -1994,40 +2024,40 @@
     </net>
     <net code="50" name="/MCU/HALL_2">
       <node ref="U1" pin="38"/>
-      <node ref="R43" pin="1"/>
       <node ref="P4" pin="3"/>
+      <node ref="R43" pin="1"/>
     </net>
     <net code="51" name="/DRV8301/SENS_C">
-      <node ref="R21" pin="1"/>
-      <node ref="R22" pin="1"/>
       <node ref="U1" pin="16"/>
+      <node ref="R22" pin="1"/>
+      <node ref="R21" pin="1"/>
     </net>
     <net code="52" name="/MCU/AI_IN">
       <node ref="R16" pin="1"/>
-      <node ref="R15" pin="1"/>
       <node ref="U1" pin="11"/>
+      <node ref="R15" pin="1"/>
     </net>
     <net code="53" name="/DRV8301/GH_A">
       <node ref="U3" pin="47"/>
       <node ref="R25" pin="2"/>
     </net>
     <net code="54" name="/DRV8301/SH_A">
-      <node ref="C23" pin="2"/>
       <node ref="U3" pin="46"/>
-      <node ref="Q2" pin="D"/>
-      <node ref="Q1" pin="S"/>
-      <node ref="R17" pin="2"/>
       <node ref="R24" pin="2"/>
+      <node ref="Q1" pin="S"/>
+      <node ref="C23" pin="2"/>
+      <node ref="Q2" pin="D"/>
+      <node ref="R17" pin="2"/>
     </net>
     <net code="55" name="/DRV8301/GL_A">
       <node ref="U3" pin="45"/>
       <node ref="R26" pin="2"/>
     </net>
     <net code="56" name="GND">
-      <node ref="C49" pin="1"/>
-      <node ref="R38" pin="1"/>
       <node ref="C48" pin="2"/>
       <node ref="C53" pin="2"/>
+      <node ref="C49" pin="1"/>
+      <node ref="R38" pin="1"/>
       <node ref="U10" pin="9"/>
       <node ref="U10" pin="15"/>
       <node ref="U10" pin="17"/>
@@ -2037,56 +2067,56 @@
       <node ref="C63" pin="2"/>
       <node ref="C59" pin="1"/>
       <node ref="C60" pin="1"/>
-      <node ref="R8" pin="1"/>
       <node ref="C58" pin="2"/>
+      <node ref="R8" pin="1"/>
       <node ref="P5" pin="3"/>
       <node ref="C34" pin="2"/>
       <node ref="U4" pin="9"/>
       <node ref="U4" pin="8"/>
       <node ref="U4" pin="2"/>
+      <node ref="C1" pin="2"/>
       <node ref="C44" pin="2"/>
       <node ref="C46" pin="2"/>
-      <node ref="C50" pin="2"/>
       <node ref="C36" pin="2"/>
       <node ref="R28" pin="2"/>
       <node ref="C45" pin="2"/>
       <node ref="C33" pin="2"/>
-      <node ref="C1" pin="2"/>
       <node ref="P1" pin="5"/>
       <node ref="P1" pin="6"/>
       <node ref="C40" pin="2"/>
       <node ref="C41" pin="2"/>
       <node ref="C43" pin="2"/>
-      <node ref="Q6" pin="S"/>
+      <node ref="U8" pin="17"/>
+      <node ref="U8" pin="14"/>
       <node ref="C54" pin="2"/>
       <node ref="P4" pin="1"/>
       <node ref="P7" pin="3"/>
       <node ref="X2" pin="3"/>
       <node ref="U9" pin="2"/>
       <node ref="C42" pin="2"/>
-      <node ref="C55" pin="2"/>
-      <node ref="C57" pin="2"/>
       <node ref="C38" pin="2"/>
-      <node ref="C52" pin="1"/>
-      <node ref="C51" pin="1"/>
+      <node ref="C50" pin="2"/>
       <node ref="U7" pin="3"/>
       <node ref="U7" pin="2"/>
       <node ref="C30" pin="2"/>
       <node ref="C29" pin="2"/>
       <node ref="P12" pin="1"/>
+      <node ref="Q6" pin="S"/>
+      <node ref="U8" pin="21"/>
       <node ref="C35" pin="2"/>
+      <node ref="U8" pin="20"/>
       <node ref="Q2" pin="S"/>
       <node ref="Q4" pin="S"/>
       <node ref="C39" pin="2"/>
       <node ref="C37" pin="2"/>
-      <node ref="U8" pin="17"/>
-      <node ref="U8" pin="14"/>
-      <node ref="U8" pin="21"/>
-      <node ref="U6" pin="3"/>
-      <node ref="U6" pin="2"/>
-      <node ref="U8" pin="20"/>
       <node ref="U8" pin="8"/>
       <node ref="P6" pin="1"/>
+      <node ref="U6" pin="3"/>
+      <node ref="U6" pin="2"/>
+      <node ref="C55" pin="2"/>
+      <node ref="C57" pin="2"/>
+      <node ref="C52" pin="1"/>
+      <node ref="C51" pin="1"/>
       <node ref="U5" pin="3"/>
       <node ref="U5" pin="2"/>
       <node ref="C47" pin="2"/>
