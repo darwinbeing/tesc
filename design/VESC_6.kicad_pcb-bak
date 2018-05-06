@@ -8118,7 +8118,7 @@
   (gr_text GND (at 127 56.007 90) (layer F.SilkS) (tstamp 5AD2081A)
     (effects (font (size 0.508 0.508) (thickness 0.1016)))
   )
-  (gr_text "Made in China" (at 126.111 72.263 90) (layer B.SilkS) (tstamp 5AD13936)
+  (gr_text "MADE IN CHINA" (at 126.111 72.263 90) (layer B.SilkS) (tstamp 5AD13936)
     (effects (font (size 0.508 0.508) (thickness 0.1016)) (justify mirror))
   )
   (gr_text TESC (at 124.714 70.739 90) (layer B.SilkS)
