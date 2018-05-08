@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/VESC_6.sch</source>
-    <date>2018 May 08, Tuesday 21:46:51</date>
+    <date>2018 May 09, Wednesday 07:12:58</date>
     <tool>Eeschema 4.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1515,6 +1515,9 @@
     <comp ref="U10">
       <value>MPU9250</value>
       <footprint>Housings_DFN_QFN:QFN-24_3x3mm_Pitch0.4mm</footprint>
+      <fields>
+        <field name="manf#">MPU-9250</field>
+      </fields>
       <libsource lib="crf_1" part="MPU9250"/>
       <sheetpath names="/MPU9250/" tstamps="/5A8CB300/"/>
       <tstamp>5A8CD83F</tstamp>
@@ -2107,14 +2110,14 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="conn">
-      <uri>/Library/Application Support/kicad/library/conn.lib</uri>
+    <library logical="device">
+      <uri>/Library/Application Support/kicad/library/device.lib</uri>
     </library>
     <library logical="crf_1">
       <uri>/Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/Libraries/crf_1.lib</uri>
     </library>
-    <library logical="device">
-      <uri>/Library/Application Support/kicad/library/device.lib</uri>
+    <library logical="conn">
+      <uri>/Library/Application Support/kicad/library/conn.lib</uri>
     </library>
   </libraries>
   <nets>
