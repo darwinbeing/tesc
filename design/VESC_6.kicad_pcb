@@ -3,7 +3,7 @@
   (general
     (links 597)
     (no_connects 0)
-    (area 104.829157 50.3 175.858753 116.175817)
+    (area 114.924999 54.924999 175.075001 115.075001)
     (thickness 1.6)
     (drawings 110)
     (tracks 1987)
@@ -2385,13 +2385,13 @@
       (net 24 SUPPLY) (zone_connect 2))
   )
 
-  (module Capacitors_SMD:C_1210 (layer F.Cu) (tedit 5AD688A7) (tstamp 5ABBB907)
+  (module Capacitors_SMD:C_1210 (layer F.Cu) (tedit 5AFD916C) (tstamp 5ABBB907)
     (at 132.334 83.566 180)
     (descr "Capacitor SMD 1210, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 1210")
     (path /504F83BE/5A8B222D)
     (attr smd)
-    (fp_text reference C26 (at 0 -2.7 180) (layer F.SilkS) hide
+    (fp_text reference C26 (at 0 0 180) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_text value 4.7u_100V (at 0 2.7 180) (layer F.Fab) hide
@@ -6644,13 +6644,13 @@
     )
   )
 
-  (module Capacitors_SMD:C_1210 (layer F.Cu) (tedit 5AD688FB) (tstamp 5ABBB916)
+  (module Capacitors_SMD:C_1210 (layer F.Cu) (tedit 5AFD9199) (tstamp 5ABBB916)
     (at 139.192 66.675 90)
     (descr "Capacitor SMD 1210, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 1210")
     (path /504F83BE/5A8ADEA5)
     (attr smd)
-    (fp_text reference C27 (at 0 -1.905 90) (layer F.SilkS) hide
+    (fp_text reference C27 (at 0 0 90) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.1016)))
     )
     (fp_text value 4.7u_100V (at 0 2.7 90) (layer F.Fab) hide
