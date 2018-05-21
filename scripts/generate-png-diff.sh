@@ -3,6 +3,16 @@
 # If only one ref specified, generates a diff from that file
 # If no refs specified, assumes HEAD
 
+if [ -d /tmp/pdf ]; then
+    rm -rf /tmp/pdf/*
+fi
+
+if [ -d plot ]; then
+    rm -rf plot/*
+else
+    mkdir plot
+fi
+
 OUTPUT_DIR="./plot"
 
 # Find .kicad_files that differ between commits
@@ -70,7 +80,8 @@ echo "Kicad files saved to:  '$OUTPUT_DIR/$DIFF_1' and '$OUTPUT_DIR/$DIFF_2'"
 
 # Generate png files from kicad output
 #######################################
-curl -s https://gist.githubusercontent.com/spuder/4a76e42f058ef7b467d9/raw -o /tmp/plot_board.py
+# curl -s https://gist.githubusercontent.com/spuder/4a76e42f058ef7b467d9/raw -o /tmp/plot_board.py
+cp scripts/plot_board.py /tmp/plot_board.py
 chmod +x /tmp/plot_board.py
 for f in $OUTPUT_DIR/$DIFF_1/*.kicad_pcb; do
     mkdir -p /tmp/pdf/$DIFF_1
