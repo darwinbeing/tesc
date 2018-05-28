@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import sys
-
 from pcbnew import *
 filename=sys.argv[1]
 board = LoadBoard(filename)
@@ -12,19 +11,24 @@ popt.SetOutputDirectory(plotDir)
 
 # Set some important plot options:
 popt.SetPlotFrameRef(False)     #do not change it
-popt.SetLineWidth(FromMM(0.35))
+popt.SetPlotPadsOnSilkLayer(False)
+popt.SetLineWidth(FromMM(0.1))
+popt.SetPlotValue(True)
+popt.SetPlotReference(True)
+popt.SetPlotInvisibleText(False)
+popt.SetPlotViaOnMaskLayer(False)
+popt.SetUseAuxOrigin(False)
 
 popt.SetAutoScale(False)        #do not change it
 popt.SetScale(1)                #do not change it
 popt.SetMirror(False)
 popt.SetUseGerberAttributes(True)
-# popt.SetUseGerberProtelExtensions(False)
 popt.SetUseGerberProtelExtensions(True)
 popt.SetExcludeEdgeLayer(False);
-popt.SetUseAuxOrigin(True)
+popt.SetUseAuxOrigin(False)
 
 # This by gerbers only (also the name is truly horrid!)
-popt.SetSubtractMaskFromSilk(False)
+popt.SetSubtractMaskFromSilk(True)
 
 # Once the defaults are set it become pretty easy...
 # I have a Turing-complete programming language here: I'll use it...
@@ -79,13 +83,12 @@ minimalHeader = False
 offset = wxPoint(0,0)
 # False to generate 2 separate drill files (one for plated holes, one for non plated holes)
 # True to generate only one drill file
-# mergeNPTH = False
-mergeNPTH = True
+mergeNPTH = False
+# mergeNPTH = True
 drlwriter.SetOptions( mirror, minimalHeader, offset, mergeNPTH )
 
 metricFmt = True
-drlwriter.SetFormat( metricFmt )
-
+drlwriter.SetFormat( metricFmt, EXCELLON_WRITER.DECIMAL_FORMAT, 3, 3 )
 genDrl = True
 genMap = False
 # print 'create drill and map files in %s' % pctl.GetPlotDirName()
