@@ -5,6 +5,9 @@ import urllib
 import time
 import requests
 import sys
+
+from forex_python.converter import CurrencyRates
+
 reload(sys)
 sys.setdefaultencoding('utf8')
 
@@ -22,17 +25,19 @@ sys.setdefaultencoding('utf8')
 
 # m -3 u -6 n -9 p -12
 # valid_capvals = ['1.00E-07','1.20E-10','4.70E-09','1.50E-08','6.80E-06','8.20E-06']
-valid_capvals = ['1.00E-07']
+# valid_capvals = ['1.00E-07']
 # valid_capvals = ['1.50E-11']
 # valid_capvals = ['2.20E-06']
 # valid_capvals = ['1.20E-10']
 # valid_capvals = ['1.00E-04']
-# valid_capvals = ['2.20E-09']
+# valid_capvals = ['2.20E-08']
 # valid_capvals = ['1.00E-07']
 # valid_capvals = ['2.20E-09']
 # valid_capvals = ['1.50E-12']
 # valid_capvals = ['1.00E-12']
 # valid_capvals = ['4.70E-06']
+# valid_capvals = ['4.70E-09']
+valid_capvals = ['6.80E-04']
 
 valid_dielec = ['X5R','X6R','X7R','X8R', 'Y5R', 'Y6R', 'Y7R', 'Y8R','C0G/NP0']
 # pref_brand = 'Yageo'
@@ -49,29 +54,34 @@ valid_packsize = ['0603']
 
 # extra_capacitors = ['CL21A475KLCLQNC','UMK316AB7475KL-T','GRM21BR60J476ME15K','GRM31CR60J107ME39K']
 extra_capacitors = ['GCM1885C1H121JA16D','TPSB107K006R0400']
+# def exchange_rate(from_currency, to_currency):
+#     """ *Database*: Lookup current currency exchange rate:
+#         """
+
+#     # Verify argument types:
+#     assert isinstance(from_currency, str)
+#     assert isinstance(to_currency, str)
+
+#     # The documenation for this API can be found at:
+#     #    https://api.fixer.io
+#     # First construct the *exchange_url*:
+#     # https://api.fixer.io/latest?base=USD&symbols=CNY%22
+#     exchange_url = \
+#                    "https://api.fixer.io/latest?base={0}&symbols={1}".format(
+#                        from_currency, to_currency)
+#     # print("exchange_url='{0}'".format(exchange_url))
+
+#     # Now fetch the infromation from the server:
+#     exchange_response = requests.get(exchange_url)
+#     # Now extract the exchange rate and return it:
+#     exchange_information = exchange_response.json()
+#     # print("exchange_information=", exchange_information)
+#     return exchange_information["rates"]
+
 def exchange_rate(from_currency, to_currency):
-    """ *Database*: Lookup current currency exchange rate:
-        """
-
-    # Verify argument types:
-    assert isinstance(from_currency, str)
-    assert isinstance(to_currency, str)
-
-    # The documenation for this API can be found at:
-    #    https://api.fixer.io
-    # First construct the *exchange_url*:
-    # https://api.fixer.io/latest?base=USD&symbols=CNY%22
-    exchange_url = \
-                   "https://api.fixer.io/latest?base={0}&symbols={1}".format(
-                       from_currency, to_currency)
-    # print("exchange_url='{0}'".format(exchange_url))
-
-    # Now fetch the infromation from the server:
-    exchange_response = requests.get(exchange_url)
-    # Now extract the exchange rate and return it:
-    exchange_information = exchange_response.json()
-    # print("exchange_information=", exchange_information)
-    return exchange_information["rates"]
+    c = CurrencyRates()
+    rate = c.get_rate(from_currency, to_currency)
+    return rate
 
 def get_caps(capacitance):
     # this function returns a list of ceramic capacitors of require capacitance
@@ -79,20 +89,21 @@ def get_caps(capacitance):
     url = "http://octopart.com/api/v3/parts/search"
 
     # NOTE: Use your API key here (https://octopart.com/api/register)
-    url += "?apikey=1b1109c0"
+    url += "?apikey=566cc7d2"
 
     args = [
         # ('filter[fields][brand.name][]', pref_brand),
         ('filter[fields][specs.capacitance.value][]', capacitance),
         # ('filter[fields][specs.voltage_rating_dc.value][]', '100'),
-        ('filter[fields][specs.voltage_rating_dc.value][]', '50'),
+        ('filter[fields][specs.voltage_rating_dc.value][]', '63'),
+        # ('filter[fields][specs.voltage_rating_dc.value][]', '50'),
         # ('filter[fields][specs.voltage_rating_dc.value][]', '16'),
         # ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b110%'.encode('utf-8')),
         # ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b110%'.encode('utf-8')),
         # ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b15%'.encode('utf-8')),
         # ('filter[fields][specs.pin_count.value][]', '2'),
         # ('filter[fields][specs.case_package.value][]', '1206'),
-        ('filter[fields][specs.case_package.value][]', '0603'),
+        # ('filter[fields][specs.case_package.value][]', '0603'),
         # ('filter[fields][specs.case_package.value][]', '0402'),
         # ('filter[fields][specs.case_package.value][]', '1210'),
         # ('filter[fields][offers.seller.name][]', distributor),
@@ -189,20 +200,20 @@ def get_caps(capacitance):
                         rate = 1.0
                         currency = "CNY"
                     elif 'USD' in offer['prices']:
-                        dollar_to_cny_exchange_rate = exchange_rate("USD", "CNY")
-                        rate = dollar_to_cny_exchange_rate['CNY']
+                        rate = exchange_rate("USD", "CNY")
+                        # rate = dollar_to_cny_exchange_rate['CNY']
                         currency = "USD"
                     elif 'EUR' in offer['prices']:
-                        euro_to_cny_exchange_rate = exchange_rate("EUR", "CNY")
-                        rate =  euro_to_cny_exchange_rate['CNY']
+                        rate = exchange_rate("EUR", "CNY")
+                        # rate =  euro_to_cny_exchange_rate['CNY']
                         currency = "EUR"
                     elif 'GBP' in offer['prices']:
-                        pound_to_cny_exchange_rate = exchange_rate("GBP", "CNY")
-                        rate =  pound_to_cny_exchange_rate['CNY']
+                        rate = exchange_rate("GBP", "CNY")
+                        # rate =  pound_to_cny_exchange_rate['CNY']
                         currency = "GBP"
                     elif 'SGD' in offer['prices']:
-                        sgd_to_cny_exchange_rate = exchange_rate("SGD", "CNY")
-                        rate =  sgd_to_cny_exchange_rate['CNY']
+                        rate = exchange_rate("SGD", "CNY")
+                        # rate =  sgd_to_cny_exchange_rate['CNY']
                         currency = "SGD"
                     else:
                         # print("Unrecognized currency")
@@ -230,6 +241,7 @@ def get_caps(capacitance):
                         outlist.append(outline)
                         # print(json.dumps(part, indent=4, sort_keys=True))
 
+    outlist.sort(key = lambda x: int(x[10]))
     return outlist
 
 def get_cap_mpn(_mpn):
@@ -238,7 +250,7 @@ def get_cap_mpn(_mpn):
     url = "http://octopart.com/api/v3/parts/search"
 
     # NOTE: Use your API key here (https://octopart.com/api/register)
-    url += "?apikey=1b1109c0"
+    url += "?apikey=566cc7d2"
 
     args = [
         ('filter[fields][mpn][]', _mpn),

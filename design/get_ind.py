@@ -4,6 +4,8 @@ import urllib
 import time
 import requests
 
+from forex_python.converter import CurrencyRates
+
 # valid_indvals = ['1.00E-13','1.20E-13','1.50E-13','1.80E-13','2.20E-13','2.70E-13','3.30E-13','3.90E-13','4.70E-13','5.60E-13','6.80E-13','8.20E-13',\
 #                  '1.00E-12','1.20E-12','1.50E-12','1.80E-12','2.20E-12','2.70E-12','3.30E-12','3.90E-12','4.70E-12','5.60E-12','6.80E-12','8.20E-12',\
 #                  '1.00E-11','1.20E-11','1.50E-11','1.80E-11','2.20E-11','2.70E-11','3.30E-11','3.90E-11','4.70E-11','5.60E-11','6.80E-11','8.20E-11',\
@@ -21,12 +23,16 @@ import requests
 # valid_indvals = ['1.00E-07']
 # valid_indvals = ['1.50E-11']
 # valid_indvals = ['2.20E-06']
-valid_indvals = ['2.2E-05']
+# valid_indvals = ['2.2E-05']
+# valid_indvals = ['8.2E-09']
+# valid_indvals = ['3.9E-09']
+valid_indvals = ['2.7E-09']
 
 valid_dielec = ['X5R','X6R','X7R','X8R', 'Y5R', 'Y6R', 'Y7R', 'Y8R','C0G/NP0']
 # pref_brand = 'Yageo'
 # pref_brand = 'KEMET'
 pref_brand = 'Murata'
+# pref_brand = 'Coilcraft'
 # pref_brand = 'AVX'
 # distributor = 'Digi-Key'
 distributor = 'Mouser'
@@ -38,29 +44,34 @@ valid_packsize = ['0603']
 
 # extra_inductors = ['CL21A475KLCLQNC','UMK316AB7475KL-T','GRM21BR60J476ME15K','GRM31CR60J107ME39K']
 extra_inductors = ['LPS6235-223MRC']
+# def exchange_rate(from_currency, to_currency):
+#     """ *Database*: Lookup current currency exchange rate:
+#         """
+
+#     # Verify argument types:
+#     # assert isinstance(from_currency, str)
+#     # assert isinstance(to_currency, str)
+
+#     # The documenation for this API can be found at:
+#     #    https://api.fixer.io
+#     # First construct the *exchange_url*:
+#     # https://api.fixer.io/latest?base=USD&symbols=CNY%22
+#     exchange_url = \
+#                    "https://api.fixer.io/latest?base={0}&symbols={1}".format(
+#                        from_currency, to_currency)
+#     # print("exchange_url='{0}'".format(exchange_url))
+
+#     # Now fetch the infromation from the server:
+#     exchange_response = requests.get(exchange_url)
+#     # Now extract the exchange rate and return it:
+#     exchange_information = exchange_response.json()
+#     # print("exchange_information=", exchange_information)
+#     return exchange_information["rates"]
+
 def exchange_rate(from_currency, to_currency):
-    """ *Database*: Lookup current currency exchange rate:
-        """
-
-    # Verify argument types:
-    # assert isinstance(from_currency, str)
-    # assert isinstance(to_currency, str)
-
-    # The documenation for this API can be found at:
-    #    https://api.fixer.io
-    # First construct the *exchange_url*:
-    # https://api.fixer.io/latest?base=USD&symbols=CNY%22
-    exchange_url = \
-                   "https://api.fixer.io/latest?base={0}&symbols={1}".format(
-                       from_currency, to_currency)
-    # print("exchange_url='{0}'".format(exchange_url))
-
-    # Now fetch the infromation from the server:
-    exchange_response = requests.get(exchange_url)
-    # Now extract the exchange rate and return it:
-    exchange_information = exchange_response.json()
-    # print("exchange_information=", exchange_information)
-    return exchange_information["rates"]
+    c = CurrencyRates()
+    rate = c.get_rate(from_currency, to_currency)
+    return rate
 
 def get_inds(inductance):
     # this function returns a list of ceramic inductors of require inductance
@@ -68,15 +79,16 @@ def get_inds(inductance):
     url = "http://octopart.com/api/v3/parts/search"
 
     # NOTE: Use your API key here (https://octopart.com/api/register)
-    url += "?apikey=1b1109c0"
+    url += "?apikey=566cc7d2"
 
     args = [
         # ('filter[fields][brand.name][]', pref_brand),
         ('filter[fields][specs.inductance.value][]', inductance),
         # ('filter[fields][specs.voltage_rating_dc.value][]', '6.3'),
-        ('filter[fields][specs.inductance_tolerance.value][]', u'\u00b120%'.encode('utf-8')),
+        # ('filter[fields][specs.inductance_tolerance.value][]', u'\u00b120%'.encode('utf-8')),
         # ('filter[fields][specs.inductance_tolerance.value][]', u'\u00b15%'.encode('utf-8')),
         # ('filter[fields][specs.pin_count.value][]', '2'),
+        ('filter[fields][specs.case_package.value][]', '0402'),
         # ('filter[fields][specs.case_package.value][]', '1206'),
         ('filter[fields][offers.seller.name][]', distributor),
         # ('filter[fields][specs.packaging.value][]', 'Tape & Reel (TR)'),
@@ -98,9 +110,9 @@ def get_inds(inductance):
         except:
             'Error querying !!'
             gotresponse = True
-        if 'message' in search_response:
-            # received a message, print it out
-            print(search_response['message'])
+        # if 'message' in search_response:
+        #     # received a message, print it out
+        #     print(search_response['message'])
         if 'results' not in search_response:
             # add a delay for rate limiting
             time.sleep(0.3)
@@ -108,7 +120,7 @@ def get_inds(inductance):
             gotresponse = True
 
 
-    print(json.dumps(search_response, indent=4, sort_keys=True))
+    # print(json.dumps(search_response, indent=4, sort_keys=True))
     print('Got ' + str(search_response['hits']) + ' hits!')
 
     outlist = []
@@ -159,9 +171,9 @@ def get_inds(inductance):
             # print(offer['seller']['name'])
             if offer['seller']['name'] == distributor:
                 sku = offer['sku']
-                if brand == 'Coilcraft':
-                    print(brand)
-                    print(sku)
+                # if brand == 'Coilcraft':
+                #     print(brand)
+                #     print(sku)
                 stockqty = str(offer['in_stock_quantity'])
                 # if pkg[0] == 'Tape & Reel (TR)':
                 if True:
@@ -173,20 +185,20 @@ def get_inds(inductance):
                         rate = 1.0
                         currency = user_currency
                     elif 'USD' in offer['prices']:
-                        dollar_to_cny_exchange_rate = exchange_rate("USD", user_currency)
-                        rate = dollar_to_cny_exchange_rate[user_currency]
+                        rate = exchange_rate("USD", user_currency)
+                        # rate = dollar_to_cny_exchange_rate[user_currency]
                         currency = "USD"
                     elif 'EUR' in offer['prices']:
-                        euro_to_cny_exchange_rate = exchange_rate("EUR", user_currency)
-                        rate =  euro_to_cny_exchange_rate[user_currency]
+                        rate = exchange_rate("EUR", user_currency)
+                        # rate =  euro_to_cny_exchange_rate[user_currency]
                         currency = "EUR"
                     elif 'GBP' in offer['prices']:
                         pound_to_cny_exchange_rate = exchange_rate("GBP", user_currency)
                         rate =  pound_to_cny_exchange_rate[user_currency]
                         currency = "GBP"
                     elif 'SGD' in offer['prices']:
-                        sgd_to_cny_exchange_rate = exchange_rate("SGD", user_currency)
-                        rate =  sgd_to_cny_exchange_rate[user_currency]
+                        rate = exchange_rate("SGD", user_currency)
+                        # rate =  sgd_to_cny_exchange_rate[user_currency]
                         currency = "SGD"
                     else:
                         # print("Unrecognized currency")
@@ -206,7 +218,8 @@ def get_inds(inductance):
                             # print(rate)
                             price_cent = "{:.2f}".format((float(usdprice[1]) * rate))
                             break
-                    print("{} {} {} {} {}".format(sku, mpn, brand, price_cent, stockqty))
+
+                    print("{} {} {} {} {}".format(sku, mpn, brand.encode('utf-8'), price_cent, stockqty))
                     if int(stockqty) > 0:
                         # if pack_size in valid_packsize:
                         #     if dielec_rate in valid_dielec:
@@ -214,6 +227,7 @@ def get_inds(inductance):
                         outlist.append(outline)
                         # print(json.dumps(part, indent=4, sort_keys=True))
 
+    outlist.sort(key = lambda x: int(x[9]))
     return outlist
 
 def get_ind_mpn(_mpn):
@@ -222,7 +236,7 @@ def get_ind_mpn(_mpn):
     url = "http://octopart.com/api/v3/parts/search"
 
     # NOTE: Use your API key here (https://octopart.com/api/register)
-    url += "?apikey=1b1109c0"
+    url += "?apikey=566cc7d2"
 
     args = [
         ('filter[fields][mpn][]', _mpn),
@@ -246,9 +260,9 @@ def get_ind_mpn(_mpn):
         except:
             'Error querying !!'
             gotresponse = True
-        if 'message' in search_response:
-            # received a message, print it out
-            print(search_response['message'])
+        # if 'message' in search_response:
+        #     # received a message, print it out
+        #     print(search_response['message'])
         if 'results' not in search_response:
             # add a delay for rate limiting
             time.sleep(0.3)
@@ -295,8 +309,8 @@ def get_ind_mpn(_mpn):
             # print(offer['seller']['name'])
             if offer['seller']['name'] == distributor:
                 sku = offer['sku']
-                print(brand)
-                print(sku)
+                # print(brand)
+                # print(sku)
                 stockqty = str(offer['in_stock_quantity'])
             if offer['packaging'] == 'Tape & Reel':
                 if 'USD' in offer['prices']:

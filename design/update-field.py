@@ -162,8 +162,9 @@ def main():
     # update_field("VESC_6.sch", 'footprint', 'CRF1:SMD-0603_r', 'Resistors_SMD:R_0603', True)
     # update_field("VESC_6.sch", 'footprint', 'CRF1:SMD-0603_c', 'Capacitors_SMD:C_0603', True)
     # update_field("VESC_6.sch", 'footprint', 'w_smd_cap:c_1210', 'Capacitors_SMD:C_1210', True)
-    # update_field("VESC_6.sch", 'footprint', 'Resistors_SMD:R_0603', 'Resistor_SMD:R_0603_1608Metric', True)
-    update_field("VESC_6.sch", 'footprint', 'Capacitors_SMD:C_0603', 'Capacitor_SMD:C_0603_1608Metric', True)
+
+    update_field("VESC_6.sch", 'footprint', 'Resistor_SMD:R_0603_1608Metric', 'Resistors_SMD:R_0603', True)
+    update_field("VESC_6.sch", 'footprint', 'Capacitor_SMD:C_0603_1608Metric', 'Capacitors_SMD:C_0603', True)
 
 if __name__ == "__main__":
     main()
