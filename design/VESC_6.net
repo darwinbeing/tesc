@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/VESC_6.sch)
-    (date "2019 November 18, Monday 00:39:04")
+    (date "2019 November 18, Monday 00:55:40")
     (tool "Eeschema (5.1.4-0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
