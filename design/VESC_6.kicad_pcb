@@ -5226,7 +5226,7 @@
     )
   )
 
-  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5DD17BE0) (tstamp 5A9A4000)
+  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5DD22333) (tstamp 5A9A4000)
     (at 170.393 65.294 90)
     (descr "DirectFET L8 https://www.infineon.com/dgdl/Infineon-AN-1035-AN-v29_00-EN.pdf?fileId=5546d462533600a40153559159020f76")
     (tags "DirectFET L8")
@@ -5304,9 +5304,9 @@
       (net 23 /DRV8301/SH_C))
     (pad D smd rect (at -4.65 2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 23 /DRV8301/SH_C))
-    (pad D smd rect (at 4.65 0 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
-    (pad D smd rect (at 4.65 2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
-    (pad D smd rect (at 4.65 -2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
+    (pad D~ smd rect (at 4.65 0 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
+    (pad D~ smd rect (at 4.65 2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
+    (pad D~ smd rect (at 4.65 -2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
     (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
@@ -5405,7 +5405,7 @@
     )
   )
 
-  (module Mounting_Holes:MountingHole_3mm (layer F.Cu) (tedit 5AA36C37) (tstamp 5AA38FBE)
+  (module Mounting_Holes:MountingHole_3mm locked (layer F.Cu) (tedit 5AA36C37) (tstamp 5AA38FBE)
     (at 151.384 58.166)
     (descr "Mounting Hole 3mm, no annular")
     (tags "mounting hole 3mm no annular")
@@ -5424,7 +5424,7 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask))
   )
 
-  (module Mounting_Holes:MountingHole_3mm (layer F.Cu) (tedit 5AA36C3B) (tstamp 5AA38F94)
+  (module Mounting_Holes:MountingHole_3mm locked (layer F.Cu) (tedit 5AA36C3B) (tstamp 5AA38F94)
     (at 164.084 58.166)
     (descr "Mounting Hole 3mm, no annular")
     (tags "mounting hole 3mm no annular")
@@ -5686,7 +5686,7 @@
     )
   )
 
-  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5DD17BBB) (tstamp 5A9A3F14)
+  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5DD22340) (tstamp 5A9A3F14)
     (at 145.087 65.278 90)
     (descr "DirectFET L8 https://www.infineon.com/dgdl/Infineon-AN-1035-AN-v29_00-EN.pdf?fileId=5546d462533600a40153559159020f76")
     (tags "DirectFET L8")
@@ -5764,9 +5764,9 @@
       (net 19 /DRV8301/SH_A))
     (pad D smd rect (at -4.65 2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 19 /DRV8301/SH_A))
-    (pad D smd rect (at 4.65 0 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
-    (pad D smd rect (at 4.65 2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
-    (pad D smd rect (at 4.65 -2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
+    (pad D~ smd rect (at 4.65 0 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
+    (pad D~ smd rect (at 4.65 2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
+    (pad D~ smd rect (at 4.65 -2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
     (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
@@ -5865,7 +5865,7 @@
     )
   )
 
-  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5DD17BCE) (tstamp 5A9A3F8A)
+  (module IR-DirectFETs:DirectFET_L8 (layer F.Cu) (tedit 5DD22315) (tstamp 5A9A3F8A)
     (at 157.734 65.278 90)
     (descr "DirectFET L8 https://www.infineon.com/dgdl/Infineon-AN-1035-AN-v29_00-EN.pdf?fileId=5546d462533600a40153559159020f76")
     (tags "DirectFET L8")
@@ -5943,9 +5943,9 @@
       (net 21 /DRV8301/SH_B))
     (pad D smd rect (at -4.65 2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask)
       (net 21 /DRV8301/SH_B))
-    (pad D smd rect (at 4.65 0 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
-    (pad D smd rect (at 4.65 2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
-    (pad D smd rect (at 4.65 -2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
+    (pad D~ smd rect (at 4.65 0 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
+    (pad D~ smd rect (at 4.65 2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
+    (pad D~ smd rect (at 4.65 -2.2 90) (size 1.1 1.7) (layers F.Cu F.Paste F.Mask))
     (model ${KIPRJMOD}/Libraries/packages3d/DirectFET_L8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
