@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 113)
-    (tracks 2127)
+    (tracks 2129)
     (zones 0)
     (modules 146)
     (nets 136)
@@ -43,7 +43,7 @@
   )
 
   (setup
-    (last_trace_width 0.2032)
+    (last_trace_width 0.508)
     (user_trace_width 0.2032)
     (user_trace_width 0.254)
     (user_trace_width 0.3048)
@@ -6805,7 +6805,6 @@
   (segment (start 136.9728 104.775) (end 136.700599 105.047201) (width 0.2032) (layer B.Cu) (net 2) (tstamp 5DC7E739))
   (segment (start 133.0318 104.3432) (end 133.0318 105.215083) (width 0.2032) (layer B.Cu) (net 2) (tstamp 5DC7E736) (status 10))
   (segment (start 133.0318 105.215083) (end 132.455883 105.791) (width 0.2032) (layer B.Cu) (net 2) (tstamp 5DC7E733))
-  (segment (start 136.543142 112.467107) (end 138.629107 110.381142) (width 0.2032) (layer B.Cu) (net 2) (tstamp 5DCBF08A) (status 30))
   (segment (start 133.0318 102.743) (end 133.0318 104.3432) (width 0.2032) (layer B.Cu) (net 2) (tstamp 5DC7E72D) (status 30))
   (segment (start 120.65 99.683) (end 120.65 100.977) (width 0.508) (layer F.Cu) (net 2) (status 30))
   (segment (start 136.4615 79.9719) (end 136.4615 80.47228) (width 0.3048) (layer F.Cu) (net 2) (status 30))
@@ -7142,6 +7141,9 @@
   (segment (start 128.9 110.993) (end 128.905 110.998) (width 0.2032) (layer F.Cu) (net 2))
   (segment (start 128.9 109.1) (end 128.9 110.993) (width 0.2032) (layer F.Cu) (net 2) (status 10))
   (segment (start 135.253977 111.177942) (end 136.543142 112.467107) (width 0.2032) (layer B.Cu) (net 2) (status 20))
+  (segment (start 136.543142 112.467107) (end 138.629107 110.381142) (width 0.2032) (layer B.Cu) (net 2) (tstamp 5DCBF08A) (status 30))
+  (segment (start 137.541 109.839182) (end 138.056909 110.355091) (width 0.508) (layer F.Cu) (net 2) (status 20))
+  (segment (start 137.541 108.966) (end 137.541 109.839182) (width 0.508) (layer F.Cu) (net 2))
   (via (at 135.073207 89.012203) (size 0.6) (drill 0.3) (layers F.Cu B.Cu) (net 3) (tstamp 5DCC0FF0))
   (segment (start 138.9888 89.3452) (end 137.30012 89.3452) (width 0.2032) (layer B.Cu) (net 3) (tstamp 5DCC0FF3) (status 30))
   (segment (start 137.30012 89.3452) (end 136.906 89.73932) (width 0.2032) (layer B.Cu) (net 3) (tstamp 5DCC0D0D) (status 30))
