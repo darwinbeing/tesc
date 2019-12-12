@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/Thomas/Developer/HardwareDesign/BLDC/tesc/design/VESC_6.sch)
-    (date "2019 December 10, Tuesday 19:56:37")
+    (date "2019 December 12, Thursday 12:20:58")
     (tool "Eeschema (5.1.4-0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -539,7 +539,7 @@
       (tstamp 5A8AB050))
     (comp (ref D4)
       (value DIODE)
-      (footprint Diodes_SMD:D_SMB)
+      (footprint Diodes_SMD:D_SMA)
       (fields
         (field (name manf#) NTS260ESFT3G))
       (libsource (lib Device) (part D_Schottky_Small) (description "Schottky diode, small symbol"))
