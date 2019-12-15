@@ -48,6 +48,18 @@ for module in board.GetModules():
                 # italic, orientation
                 module.GraphicalItems().Remove(item)
 
+
+    # for item in board.GetTracks():
+    #     if (type(item) is pcbnew.VIA):
+    #         code = item.GetNetCode()
+    #         name = item.GetNetname()
+    #         print "  VIA   : Net %s is Code %d" % (name, code)
+
+    # for item in board.GetTracks():
+    #     code = item.GetNetCode()
+    #     name = item.GetNetname()
+    #     print "  Net %s is Code %d" % (name, code)
+
 pcbnew.Refresh()
 pcbnew.SaveBoard(board.GetFileName(), board)
 
