@@ -35,9 +35,9 @@ sys.setdefaultencoding('utf8')
 # valid_capvals = ['2.20E-09']
 # valid_capvals = ['1.50E-12']
 # valid_capvals = ['1.00E-12']
-# valid_capvals = ['4.70E-06']
+valid_capvals = ['4.70E-06']
 # valid_capvals = ['4.70E-09']
-valid_capvals = ['6.80E-04']
+# valid_capvals = ['6.80E-04']
 
 valid_dielec = ['X5R','X6R','X7R','X8R', 'Y5R', 'Y6R', 'Y7R', 'Y8R','C0G/NP0']
 # pref_brand = 'Yageo'
@@ -94,18 +94,18 @@ def get_caps(capacitance):
     args = [
         # ('filter[fields][brand.name][]', pref_brand),
         ('filter[fields][specs.capacitance.value][]', capacitance),
-        # ('filter[fields][specs.voltage_rating_dc.value][]', '100'),
-        ('filter[fields][specs.voltage_rating_dc.value][]', '63'),
+        ('filter[fields][specs.voltage_rating_dc.value][]', '100'),
+        # ('filter[fields][specs.voltage_rating_dc.value][]', '63'),
         # ('filter[fields][specs.voltage_rating_dc.value][]', '50'),
         # ('filter[fields][specs.voltage_rating_dc.value][]', '16'),
-        # ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b110%'.encode('utf-8')),
+        ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b110%'.encode('utf-8')),
         # ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b110%'.encode('utf-8')),
         # ('filter[fields][specs.capacitance_tolerance.value][]', u'\u00b15%'.encode('utf-8')),
         # ('filter[fields][specs.pin_count.value][]', '2'),
         # ('filter[fields][specs.case_package.value][]', '1206'),
         # ('filter[fields][specs.case_package.value][]', '0603'),
         # ('filter[fields][specs.case_package.value][]', '0402'),
-        # ('filter[fields][specs.case_package.value][]', '1210'),
+        ('filter[fields][specs.case_package.value][]', '1210'),
         # ('filter[fields][offers.seller.name][]', distributor),
         # ('filter[fields][specs.dielectric_characteristic.value][]', 'X7R'),
         # ('filter[fields][specs.packaging.value][]', 'Tape & Reel (TR)'),
@@ -233,7 +233,9 @@ def get_caps(capacitance):
                             # print(rate)
                             price_cent = "{:.2f}".format((float(usdprice[1]) * rate))
                             break
-                    print("{} {} {} {} {} {} {}".format(sku, mpn, dielectric_characteristic, brand, price_cent, stockqty, mydistributor))
+
+                    if int(stockqty) > 0:
+                        print("{:20} {:20} {:3} {:6} {:3} {:8} {}".format(sku, mpn, dielectric_characteristic, brand, price_cent, stockqty, mydistributor))
                     if int(stockqty) > 0:
                         # if pack_size in valid_packsize:
                         #     if dielec_rate in valid_dielec:
@@ -241,6 +243,7 @@ def get_caps(capacitance):
                         outlist.append(outline)
                         # print(json.dumps(part, indent=4, sort_keys=True))
 
+    # outlist.sort(key = lambda x: int(x[10]), reverse=True)
     outlist.sort(key = lambda x: int(x[10]))
     return outlist
 
