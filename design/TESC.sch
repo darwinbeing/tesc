@@ -1,14 +1,13 @@
 EESchema Schematic File Version 4
-LIBS:VESC_6-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
-Title "VESC 6.5"
+Title "TESC Plus"
 Date "2018-02-27"
 Rev "A"
-Comp "Benjamin Vedder"
+Comp "Benjamin Vedder/LI Tao"
 Comment1 ""
 Comment2 ""
 Comment3 ""
